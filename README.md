@@ -16,12 +16,12 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
 </colgroup>
 <tbody>
   <tr>
-    <td>#</td>
-    <td>Month-Day</td>
-    <td>Lecture</td>
-    <td>Lab</td>
-    <td>Project</td>
-    <td>Points</td>
+    <td><b>#</b></td>
+    <td><b>Month-Day</b></td>
+    <td><b>Lecture</b></td>
+    <td><b>Lab</b></td>
+    <td><b>Project</b></td>
+    <td><b>Points</b></td>
   </tr>
   <tr>
     <td>1</td>
