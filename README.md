@@ -159,4 +159,6 @@ You need at least 51 points overall, in this at least 50% of points from each of
 The grades will be given according to the table:
 
 | Grade |  | 3 | 3.5 | 4 | 4.5 | 5 |
-|:---:| :---: |:---:|:---:|:---:|:---:|:---:
+|:---:| :---: |:---:|:---:|:---:|:---:|:---:|
+| Score |  | (50, 60] | (60, 70] | (70, 80] | (80, 90] | (90, ∞) |
+
