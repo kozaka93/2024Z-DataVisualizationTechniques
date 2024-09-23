@@ -1,6 +1,6 @@
 # Data Visualization Techniques
 
-Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](https://github.com/krzyzinskim) [@woznicak](https://github.com/woznicak)
+Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabaszcz ](https://github.com/maciejchrabaszcz ) [@HubertR21](https://github.com/HubertR21) [@woznicak](https://github.com/woznicak)
 
 *Materials for courses conducted at the Faculty of Mathematics and Information Sciences, Warsaw University of Technology.*
 
@@ -25,7 +25,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>1</td>
-    <td></td>
+    <td>10-03</td>
     <td>Course introduction, data types, visualization tools</td>
     <td>R: review: proton, GitHub</td>
     <td>Introducing P1</td>
@@ -33,7 +33,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>2</td>
-    <td></td>
+    <td>10-10</td>
     <td>The Grammar of Graphics</td>
     <td>R: dplyr, tidyr, forcats</td>
     <td>Group work (P1.1): idea, data sources</td>
@@ -41,7 +41,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>3</td>
-    <td></td>
+    <td>10-17</td>
     <td>Ways to investigate the distribution of one variable, two variables and more</td>
     <td>R: ggplot2 - introduction</td>
     <td>Consultations: problems with data, change the topic</td>
@@ -49,7 +49,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>4</td>
-    <td></td>
+    <td>10-24</td>
     <td>Colors &amp; scales</td>
     <td>R: ggplot2 - plot modification, theme, facets</td>
     <td>Group work (P1.2): Data exploration &amp; First visualizations</td>
@@ -57,7 +57,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>5</td>
-    <td></td>
+    <td>10-31</td>
     <td>Maps - is it so complicated?</td>
     <td>R: maps</td>
     <td>Consultations: prototype of plots, discussion about visual view of poster </td>
@@ -65,7 +65,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>6</td>
-    <td></td>
+    <td>11-07</td>
     <td>Don't do this at home</td>
     <td>R: ggplot2 - advanced, extensions: patchwork, ggrepel</td>
     <td>Group work (P1.3): Advanced visualizations &amp; Prototype</td>
@@ -73,7 +73,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>7</td>
-    <td></td>
+    <td>11-21</td>
     <td>Presentation of P1</td>
     <td>R: plotly - interactive visualization</td>
     <td>Presentation of P1</td>
@@ -81,7 +81,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>8</td>
-    <td></td>
+    <td>11-28</td>
     <td>Dashboard</td>
     <td>R: Shiny - introduction</td>
     <td>Introducing P2</td>
@@ -89,7 +89,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>9</td>
-    <td></td>
+    <td>12-05</td>
     <td></td>
     <td>R: Shiny - exercise</td>
     <td>Group work (P2.1): idea, data sources</td>
@@ -97,7 +97,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>10</td>
-    <td></td>
+    <td>12-12</td>
     <td>History of Statistical Graphics</td>
     <td>R: Shiny - advanced</td>
     <td>Consultations: problems with data, change the topic, prototype of plots</td>
@@ -105,7 +105,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>11</td>
-    <td></td>
+    <td>12-19</td>
     <td>The International Business Communication Standards</td>
     <td>Python: pandas, numpy, pandas.plot</td>
     <td>Group work (P2.2): data exploration, prototype of plots</td>
@@ -113,7 +113,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>12</td>
-    <td></td>
+    <td>01-02</td>
     <td>Graph visualisation</td>
     <td>Python: matplotlib, seaborn</td>
     <td>Consultations: discuss about app design, final plots</td>
@@ -121,7 +121,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>13</td>
-    <td></td>
+    <td>01-09</td>
     <td>Revision</td>
     <td>Python: graphs + plotly</td>
     <td>Group work( P2.3): Plots and prototype of app</td>
@@ -129,7 +129,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>14</td>
-    <td></td>
+    <td>01-16</td>
     <td>Test</td>
     <td>Python: matplotlib, seaborn - advanced</td>
     <td>Consultations: prototype of app</td>
@@ -137,7 +137,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](
   </tr>
   <tr>
     <td>15</td>
-    <td></td>
+    <td>01-23</td>
     <td>Presentation of P2 (part 1)</td>
     <td>Python: EDA</td>
     <td>Presentation of P2 (part 2)</td>
