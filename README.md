@@ -27,7 +27,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>1</td>
     <td>10-03</td>
     <td>Course introduction, data types, visualization tools</td>
-    <td>R: review: proton, GitHub</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab01">R: review: proton, GitHub</a></td>
     <td>Introducing P1</td>
     <td></td>
   </tr>
