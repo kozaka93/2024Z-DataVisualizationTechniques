@@ -1,6 +1,6 @@
 ## P1: Zdrowie
 
-### Opis
+## Opis
 
 Pierwszy projekt poświęcony jest eksploracji danych dotyczących zdrowia. Jego celem jest przygotowanie plaatu w formacie A2 (+ .pdf), który przedstawi graficznie ciekawe informacje.
 
@@ -88,7 +88,7 @@ TBD
 
 
 
-### Oddanie projektu
+## Oddanie projektu
 
 Czas na wykonanie projektu jest do *20.11.2024* - do tego dnia (włącznie) będą przyjmowane Pul Request na GitHub. Nie umieszczenie projektu na GitHub jest równoznaczne z nie oddaniem projektu.
 
