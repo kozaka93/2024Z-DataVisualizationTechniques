@@ -130,8 +130,9 @@ top1000passwords
 logs
 employees[employees$surname == 'Pietraszko',]
 w <- logs[logs$login == "slap",]
-table(w)
-proton(action = "server", host="slap")
+w$host
+which.max(table(w$host))
+proton(action = "server", host="194.29.178.16")
 
 # 6. Zamieszczamy rozwiązanie na repozytorium -----------------------------
 
