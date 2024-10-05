@@ -35,7 +35,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>2</td>
     <td>10-10</td>
     <td>The Grammar of Graphics</td>
-    <td>R: dplyr, tidyr, forcats</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab02">R: dplyr, tidyr, forcats</a></td>
     <td>Group work (P1.1): idea, data sources</td>
     <td>P1 (1p)</td>
   </tr>
