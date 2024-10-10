@@ -45,7 +45,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>Ways to investigate the distribution of one variable, two variables and more</td>
     <td>R: ggplot2 - introduction</td>
     <td>Consultations: problems with data, change the topic</td>
-    <td>HW1 (6p)</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/issues/63">HW1</a> (6p)</td>
   </tr>
   <tr>
     <td>4</td>
