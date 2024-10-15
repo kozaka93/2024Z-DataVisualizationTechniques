@@ -63,12 +63,15 @@ ANS_TASK_02 <- df_orders %>%
 # UWAGA: zakladam ze discount dotyczy kazdego produktu indywidualnie
 # tzn jesli ktos zamowil 2 produkty i jest list price i discount
 # to traktuje to jako discount do kazdego z tych 2 produktow osobno
+# UWAGA 2: na potrzeby tego i kolejnych zadań informacje z pola 'discount' 
+# interpretuje jako czesc oryginalnej ceny, ktora zostala opuszczona (tzn 
+# discount 0.07 = 7% rabatu)
 
 ## Odpowiedz przypisana do zmiennej
 ANS_TASK_03 <- df_order_items %>% 
   left_join(df_orders, by = "order_id") %>% 
   select(order_date, product_id, quantity, list_price, discount) %>% 
-  mutate(order_year = strftime(order_date, '%Y'), final_price = quantity*(list_price - discount)) %>% 
+  mutate(order_year = strftime(order_date, '%Y'), final_price = quantity*(list_price * (1 - discount))) %>% 
   select(order_year, product_id, final_price) %>% 
   group_by(order_year, product_id) %>% 
   summarise(total_price = sum(final_price)) %>% 
@@ -145,7 +148,7 @@ ANS_TASK_06 <- df_customers %>%
 ## Odpowiedz przypisana do zmiennej
 
 order_prices <- df_order_items %>% 
-  mutate(total_price = quantity*(list_price-discount)) %>% 
+  mutate(total_price = quantity*(list_price * (1 - discount))) %>% 
   group_by(order_id) %>% 
   summarise(order_cost = sum(total_price))
 
@@ -266,7 +269,7 @@ ANS_TASK_11 <- df_order_items %>%
 ## Odpowiedz przypisana do zmiennej
 ANS_TASK_12 <- df_order_items %>% 
   inner_join(df_orders, by = "order_id") %>% 
-  mutate(order_weekday = strftime(order_date, '%A'), promotion_percent = 100*(1-(list_price - discount)/list_price)) %>% 
+  mutate(order_weekday = strftime(order_date, '%A'), promotion_percent = 100*discount) %>% 
   select(order_weekday, product_id, quantity, promotion_percent) %>% 
   group_by(order_weekday, product_id) %>% 
   summarise(avg_promotion_percent = weighted.mean(promotion_percent, quantity)) %>% 
