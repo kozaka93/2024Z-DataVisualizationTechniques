@@ -1,8 +1,6 @@
-# Instalacja potrzebnych pakietów
 install.packages('lubridate')
 install.packages('stringr')
 
-# Ładowanie bibliotek
 library(dplyr)
 library(tidyr)
 library(lubridate)
