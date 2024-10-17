@@ -42,7 +42,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>3</td>
     <td>10-17</td>
-    <td>Ways to investigate the distribution of one variable, two variables and more</td>
+    <td>Colors &amp; scales</td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab03">R: ggplot2 - introduction</a></td>
     <td>Consultations: problems with data, change the topic</td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/issues/63">HW1</a> (6p)</td>
@@ -50,7 +50,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>4</td>
     <td>10-24</td>
-    <td>Colors &amp; scales</td>
+    <td>Ways to investigate the distribution of one variable, two variables and more</td>
     <td>R: ggplot2 - plot modification, theme, facets</td>
     <td>Group work (P1.2): Data exploration &amp; First visualizations</td>
     <td>P1 (2p)</td>
