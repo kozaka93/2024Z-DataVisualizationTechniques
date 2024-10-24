@@ -51,7 +51,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>4</td>
     <td>10-24</td>
     <td>Ways to investigate the distribution of one variable, two variables and more</td>
-    <td>R: ggplot2 - plot modification, theme, facets</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab04">R: ggplot2 - plot modification, theme, facets</a></td>
     <td>Group work (P1.2): Data exploration &amp; First visualizations</td>
     <td>P1 (2p)</td>
   </tr>
