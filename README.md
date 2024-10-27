@@ -59,9 +59,9 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>5</td>
     <td>10-31</td>
     <td>Maps - is it so complicated?</td>
-    <td>R: maps</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab05">R: maps</a></td>
     <td>Consultations: prototype of plots, discussion about visual view of poster </td>
-    <td>HW2 (6p)</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/issues/142">HW2</a> (6p)</td>
   </tr>
   <tr>
     <td>6</td>
