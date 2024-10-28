@@ -1,5 +1,5 @@
 ###########################################
-###     WSTĘP DO EKSPLORACJI DANYCH     ###
+###    TECHNIKI WIZUALIZACJI DANYCH     ###
 ###           LABORATORIUM 5            ###
 ###########################################
 
