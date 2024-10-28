@@ -1,6 +1,6 @@
 ---
 title: "Praca domowa 2"
-author: "Imię Nazwisko"
+author: "Igor Zawada"
 output: 
   html_document:
     toc: true
@@ -14,6 +14,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(ggplot2)
+library(scales)
 df <- read.csv("house_data.csv")
 ```
 
@@ -27,11 +28,27 @@ Jak wygląda rozkład ceny nieruchomości w poszczególnych kodach pocztowych na
 
 ```{r zadanie 1, message=FALSE}
 
-# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df1 <- df %>%
+  mutate(year = substr(date, 1, 4))
+
+filtered_data <- df1 %>%
+  group_by(zipcode) %>%
+  filter(n() > 280) %>%
+  ungroup()
+
+ggplot(filtered_data, aes(x = as.factor(zipcode), y = price)) +
+  geom_violin(fill = "skyblue", color = "black", alpha = 0.7) +
+  scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE), breaks = seq(0, max(df$price, na.rm = TRUE), by = 1000000))+
+  facet_wrap(~ year, ncol = 1) +
+  labs(title = "Rozkład ceny nieruchomości w poszczególnych kodach pocztowych\nna przestrzeni lat",
+       x = "Kod pocztowy",
+       y = "Cena (USD)") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 ```
 
-**Komentarz:**
+**Komentarz: Tak prezentuje się rozkład względem kodów pocztowych. Rozdzielam wykres na lata, aby był bardziej czytelny**
 
 ## Zadanie 2
 
@@ -39,11 +56,44 @@ Czy jest różnica w rozkładzie ceny nierchomości od powierzchni mieszkalnej u
 
 ```{r zadanie 2, message=FALSE}
 
-# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+# df %>%
+#   mutate(sqft_living_m2 = sqft_living * 0.092903,
+#     has_basement = ifelse(sqft_basement > 0, "posiada piwnicę", "nie posiada piwnicy")) %>%
+#   ggplot(aes(x = sqft_living_m2, y = price, color = has_basement)) +
+#   geom_point(alpha = 0.5) + 
+#   geom_smooth(method = "lm", se = FALSE, linetype = "dashed") + 
+#   scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE), breaks = seq(0, max(df$price, na.rm = TRUE), by = 500000))+
+#   scale_x_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE), breaks = seq(0, max(df$sqft_living, na.rm = TRUE), by = 200))+
+#   labs(title = "Rozkład ceny w zależności od powierzchni mieszkalnej z podziałem na nieruchomości z piwnicą oraz bez",
+#        x = "Powierzchnia w metrach kwadratowych",
+#        y = "Cena w USD",
+#        color = "Basement") +
+#   theme_minimal() +
+#   scale_color_manual(values = c("posiada piwnicę" = "blue", "nie posiada piwnicy" = "red"))
+
+#alternatywny wykres
+
+df %>%
+  mutate(
+    sqft_living_m2 = sqft_living * 0.092903,
+    has_basement = ifelse(sqft_basement > 0, "Z piwnicą", "Bez piwnicy")
+  ) %>%
+  ggplot(aes(x = sqft_living_m2, y = price)) +
+  scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE), breaks = seq(0, max(df$price, na.rm = TRUE), by = 500000))+
+  scale_x_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE), breaks = seq(0, max(df$sqft_living, na.rm = TRUE), by = 200))+
+  geom_bin2d(bins = 50) + 
+  scale_fill_gradient(low = "lightblue", high = "red") + 
+  facet_wrap(~ has_basement) +  
+  labs(title = "Rozkład ceny w zależności od powierzchni mieszkalnej z podziałem na \nnieruchomości z piwnicą oraz bez",
+       x = "Powierzchnia (m²)",
+       y = "Cena (USD)") +
+  theme_minimal()
+
+
 
 ```
 
-**Komentarz:**
+**Komentarz: Nie widać znaczącej różnicy, wykresy różnią się tak naprawdę licznością obserwacji, jednak rozkład wygląda niemal identycznie.**
 
 ## Zadanie 3
 
@@ -51,33 +101,102 @@ Jaka jest zależność pomiędzy jakością wykończenia nieruchomości a liczb�
 
 ```{r zadanie 3, message=FALSE}
 
-# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df %>%
+  ggplot(aes(x = as.factor(floors), y = grade, fill = as.factor(floors))) +
+  geom_boxplot() +
+  labs(title = "Zależność między ilością pięter, a jakością wykończenia nieruchomości",
+       x = "Liczba pięter",
+       y = "Jakość wykończenia nieruchomości") +
+  scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE), breaks = seq(0, max(df$grade, na.rm = TRUE), by = 1))+
+  guides(fill = 'none') +
+  theme_minimal() +
+  scale_fill_brewer(palette = "Set3")
 
 ```
 
-**Komentarz:**
+**Komentarz: Widzimy wzrost jakości wykończenia dla większej ilości pięter np patrząc na średnie dla kazdej ilosci pięter, kategoria nieruchomości z 3 lub 3.5 piętrami jest bardzo mało liczna, więc można powiedzieć, że jest widoczne powiązanie.**
 
 ## Zadanie 4
 Jaka jest zależność między powierzchnią mieszkalną nieruchomości a powierzchnią gruntu w podziale na liczbę sypialni?
 
 ```{r zadanie 4, message=FALSE}
 
-# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df4 <- df %>%
+  mutate(bedrooms_group = case_when(
+    bedrooms <= 3 ~ "Mało (1-3)",
+    bedrooms <= 6 ~ "Średnio (4-6)",
+    bedrooms > 6  ~ "Dużo (7-33)"
+  ))
+
+# df4 %>%
+#   ggplot(aes(x = sqft_lot, y = sqft_living, color = bedrooms_group)) +
+#   geom_point(alpha = 0.3, size = 1) + 
+#   scale_color_manual(values = c("Mało (1-3)" = "purple", "Średnio (4-6)" = "green", "Dużo (7-33)" = "red")) + 
+#   scale_x_log10() +  
+#   scale_y_log10() +  
+#   labs(title = "Powierzchnia mieszkalna vs Powierzchnia działki",
+#        x = "Powierzchnia działki (logarytm)",
+#        y = "Powierzchnia mieszkalna (logarytm, sqft)",
+#        color = "Liczba sypialni (grupy)") +
+#   theme_minimal(base_size = 14) +
+#   theme(legend.position = "bottom",
+#         plot.title = element_text(face = "bold", size = 16),
+#         plot.subtitle = element_text(size = 12))
+
+
+df4 %>%
+  ggplot(aes(x = sqft_lot, y = sqft_living)) +
+  geom_bin2d(bins=70) +
+  scale_fill_gradient(low = "lightblue", high = "darkblue", name = "Gęstość")+ 
+  scale_x_log10(labels = comma) +  
+  scale_y_log10() +  
+  labs(title = "Powierzchnia mieszkalna vs Powierzchnia działki",
+       subtitle = "Podział na trzy grupy nieruchomości według ilości sypialni",
+       x = "Powierzchnia działki (logarytm, sqft)",
+       y = "Powierzchnia mieszkalna (logarytm, sqft)") +
+  facet_grid(~ bedrooms_group) + 
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "bottom",
+        plot.title = element_text(face = "bold", size = 16),
+        plot.subtitle = element_text(size = 12))
+
+
+
 
 ```
 
-**Komentarz:**
+**Komentarz: Z wykresu wywnioskować można, że nieruchomości z dużą liczbą sypialni mają większą powierzchnie mieszkalną w stosunku do powierzchni działki niż nieruchomości ze średnią i małą liczbą sypialni.**
 
 ## Zadanie 5
 Rozważmy tylko nieruchomości, które miały remont. W której dekadzie było najwięcej przeprowadzonych remontów? Czy w poszczególnych dekadach jest porównywalny procent nieruchmości dla każdej wartości miary jakości i wykończenia nieruchomości?
 
 ```{r zadanie 5, message=FALSE}
 
-# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df %>%
+  filter(yr_renovated > 0) %>%                         
+  mutate(decade = (yr_renovated %/% 10) * 10) %>%      
+  group_by(decade, grade) %>%                          
+  summarise(count = n(),                               
+            percentage = (count / nrow(df)) * 100) %>% 
+  ggplot(aes(x = factor(decade), y = percentage, fill = factor(grade))) + 
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Procent remontowanych nieruchomości względem dekady i jakości wykończenia",
+       x = "Dekada",
+       y = "Procent odnowionych nieruchomości",
+       fill = "Jakość wykończenia") +
+  theme_minimal()
+
+
+p <-  df %>%
+  filter(yr_renovated > 0) %>%                    
+  mutate(decade = (yr_renovated %/% 10) * 10) %>% 
+  group_by(decade) %>%                            
+  summarise(count = n()) %>%                     
+  arrange(desc(count))                      
 
 ```
 
-**Komentarz:**
+**Komentarz: Najwięcej remontów wykonano w latach 2000-2010. Nie jest porównywalny procent dla każdej miary jakości, gdyż widzimy, że nieruchomości o mierze jakości 7-8 miały procentowo częsciej remonty.**
 
 ## Zadanie 6
 
@@ -85,8 +204,59 @@ Jak prezentuje się wartość minimalna, średnia i maksymalna ceny nieruchmośc
 
 ```{r zadanie 6, message=FALSE}
 
-# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+
+wynik <- df %>%
+  group_by(yr_built) %>%
+  summarise(
+    min_cena = min(price, na.rm = TRUE),
+    srednia_cena = mean(price, na.rm = TRUE),
+    max_cena = max(price, na.rm = TRUE)
+  )
+
+ggplot(wynik, aes(x = yr_built)) +
+  geom_line(aes(y = min_cena, color = "Minimalna Cena")) +
+  geom_line(aes(y = srednia_cena, color = "Średnia Cena")) +
+  geom_line(aes(y = max_cena, color = "Maksymalna Cena")) +
+  labs(title = "Minimalna, Średnia i Maksymalna Cena Nieruchomości według Roku Budowy",
+       x = "Rok Budowy",
+       y = "Cena (USD)",
+       color = "Legenda") +
+  scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE), breaks = seq(0, max(df$price, na.rm = TRUE), by = 500000))+
+  theme_minimal()
+
+# library(tidyr)
+# 
+# wynik <- df %>%
+#   group_by(yr_built) %>%
+#   summarise(
+#     min_cena = min(price, na.rm = TRUE),
+#     srednia_cena = mean(price, na.rm = TRUE),
+#     max_cena = max(price, na.rm = TRUE)
+#   )
+# 
+# # Przekształcamy dane do formatu długiego, aby można było użyć facetingu
+# wynik_long <- wynik %>%
+#   pivot_longer(cols = c(min_cena, srednia_cena, max_cena),
+#                names_to = "typ_ceny",
+#                values_to = "cena")
+# 
+# # Tworzymy wykres z użyciem facet_grid
+# ggplot(wynik_long, aes(x = yr_built, y = cena)) +
+#   geom_line() +
+#   facet_grid(rows = vars(typ_ceny), scales = "free_y") +
+#   labs(title = "Minimalna, Średnia i Maksymalna Cena Nieruchomości według Roku Budowy",
+#        x = "Rok Budowy",
+#        y = "Cena (USD)") +
+#   theme_minimal()
 
 ```
 
-**Komentarz:**
+**Komentarz: Na wykresie widzimy, że maksymalna cena zmienia się drastycznie względem roku budowy nieruchomości, jednak minimalna i średnia oscylują przy tych samych wartościach.**
+
+
+
+
+
+
+
+
