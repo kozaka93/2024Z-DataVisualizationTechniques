@@ -62,7 +62,7 @@ ggplot(data=zad2,aes(y=price,x=sqft_living,color=as.factor(BasementBool)))+
        x = "Powierzchnia mieszkaniowa [sqft]", y = "Cena [USD]",color="Czy posiada piwnicę ?")
 ```
 
-**Komentarz:Mieszkania nie posiadające piwnic są zazwyczaj tańsze oraz mają mniejszą powierzchnię.**
+**Komentarz: Mieszkania nie posiadające piwnic są zazwyczaj tańsze oraz mają mniejszą powierzchnię.**
   
   ## Zadanie 3
   
@@ -136,7 +136,7 @@ p2<-ggplot(data=zad5,aes(x=as.factor(decadeRenovated),y=ProcGrade,fill=as.factor
 grid.arrange(p1,p2)
 ```
 
-**Komentarz:Najwięcej wyremontowanych domów było w 2000 dekadzie.
+**Komentarz: Najwięcej wyremontowanych domów było w 2000 dekadzie.
 Nie, w poszczególnych dekadach nie było porównywalnego procentu nieruchmości 
 dla każdej wartości miary jakości i wykończenia nieruchomości.
 **
@@ -162,5 +162,5 @@ ggplot(data=zad6,aes(x=yr_built))+
   labs(x="Rok wybudowania",y="Cena [USD]",color="Ceny")
 ```
 
-**Komentarz:Na przestrzeni lat bardzo duże wahania maksymalnej ceny mieszkań. 
+**Komentarz: Na przestrzeni lat bardzo duże wahania maksymalnej ceny mieszkań. 
 Cena minimanlna oraz średnia utrzymująca się na podobnym poziomie.**
