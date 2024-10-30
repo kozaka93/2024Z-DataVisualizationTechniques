@@ -1,0 +1,193 @@
+---
+title: "Praca domowa 2"
+author: "Imię Nazwisko"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    theme: united
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+df <- read.csv("house_data.csv")
+```
+
+## Dane 
+Dane wykorzystane w Pracy domowej 2 opisują wycenę nieruchmości. Każda obserwacja jest pewną nieruchmością, która posiada informacje takie jak powierzchnia, liczba pokoi, liczba łazienek i wiele więcj. Opis wszystkich kolumn w pliku `README.md`.
+
+
+## Zadanie 1
+
+Jak wygląda rozkład ceny nieruchomości w poszczególnych kodach pocztowych na przestrzeni lat? Rozważamy kody pocztowe, które mają więcej niż 280 posiadłości.
+
+```{r zadanie 1, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df %>%
+  mutate(year = as.numeric(format(as.Date(date, format = "%Y%m%dT%H%M%S"), "%Y"))) %>%
+  group_by(zipcode) %>%
+  filter(n() > 280) %>%
+  group_by(zipcode, year) %>%
+  ungroup() -> prices_by_zipcode
+ggplot(prices_by_zipcode, aes(x = as.factor(zipcode), y = price, fill = as.factor(year))) +
+  geom_violin() +
+  labs(title = "Rozkład cen nieruchomości na przestrzeni lat dla kodów pocztowych",
+       x = "Kod pocztowy",
+       y = "Cena (USD)",
+       fill = "Rok") +
+  theme(legend.position = "bottom", axis.text.x = element_text(angle = 45)) +
+  scale_y_continuous(labels = scales::comma)
+
+```
+
+**Komentarz:**
+Rozkłąd wygląda jak pokazane na wykresie. Widać, że dla każdego kodu pocztowego rozkład cen w 2015 był w miarę podobny do tego w 2014.
+
+## Zadanie 2
+
+Czy jest różnica w rozkładzie ceny nierchomości od powierzchni mieszkalnej uwzględniając podział na nieruchomości z piwnicą i bez?
+
+```{r zadanie 2, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df <- df %>%
+  mutate(has_basement = ifelse(sqft_basement > 0, "Z piwnicą", "Bez piwnicy"))
+ggplot(df, aes(x = sqft_living, y = price, color = has_basement)) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Rozkład ceny nieruchomości względem powierzchni mieszkalnej",
+       x = "Powierzchnia mieszkalna (sqft)",
+       y = "Cena (USD)",
+       color = "Typ nieruchomości") +
+  scale_y_continuous(labels = scales::comma) +
+  scale_x_continuous(labels = scales::comma)
+
+```
+
+**Komentarz:**
+Widać, że cena nieruchomości z piwnicą rośnie szybciej, więc szybko przewyższa cenę nieruchomości bez piwnicy, aczkolwiek przez chwilę na samym początku dla najmniejszych nieruchomości ta zależność jest odwrócona.
+
+## Zadanie 3
+
+Jaka jest zależność pomiędzy jakością wykończenia nieruchomości a liczbą pięter? 
+
+```{r zadanie 3, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+ggplot(df, aes(x = floors, y = grade)) +
+  geom_jitter(color = "blue", alpha = 0.5) +
+  geom_smooth(method = "lm", color = "red", se = FALSE) +
+  labs(title = "Zależność pomiędzy jakością wykończenia a liczbą pięter",
+       x = "Liczba pięter",
+       y = "Jakość wykończenia (grade)")
+
+```
+
+**Komentarz:**
+Widać na wykresie, że im większa liczba pięter tym lepsza jakośc wykończenia nieruchomości.
+
+## Zadanie 4
+Jaka jest zależność między powierzchnią mieszkalną nieruchomości a powierzchnią gruntu w podziale na liczbę sypialni?
+
+```{r zadanie 4, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+ggplot(df, aes(x = sqft_living, y = sqft_lot, color = as.factor(bedrooms))) +
+  geom_smooth(method = "lm", se = FALSE, aes(group = bedrooms)) +
+  labs(title = "Zależność między powierzchnią mieszkalną a powierzchnią gruntu",
+       x = "Powierzchnia mieszkalna (sqft)",
+       y = "Powierzchnia gruntu (sqft)",
+       color = "Liczba sypialni") +
+  scale_y_continuous(labels = scales::comma) +
+  scale_x_continuous(labels = scales::comma)
+
+```
+
+**Komentarz:**
+Zależności dla każdej ilości sypialni są bardzo różnorodne. Jedyna wyróżniająca się zależność to zależność dla 0 sypialni, ponieważ jedynie dla 0 sypialni wraz ze wzrostem powierzchni mieszkalnej maleje powierzchnia gruntu.
+
+## Zadanie 5
+Rozważmy tylko nieruchomości, które miały remont. W której dekadzie było najwięcej przeprowadzonych remontów? Czy w poszczególnych dekadach jest porównywalny procent nieruchmości dla każdej wartości miary jakości i wykończenia nieruchomości?
+
+```{r zadanie 5, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df <- df %>%
+  mutate(decade = case_when(
+    yr_renovated >= 1930 & yr_renovated < 1940 ~ "1930s",
+    yr_renovated >= 1940 & yr_renovated < 1950 ~ "1940s",
+    yr_renovated >= 1950 & yr_renovated < 1960 ~ "1950s",
+    yr_renovated >= 1960 & yr_renovated < 1970 ~ "1960s",
+    yr_renovated >= 1970 & yr_renovated < 1980 ~ "1970s",
+    yr_renovated >= 1980 & yr_renovated < 1990 ~ "1980s",
+    yr_renovated >= 1990 & yr_renovated < 2000 ~ "1990s",
+    yr_renovated >= 2000 & yr_renovated < 2010 ~ "2000s",
+    yr_renovated >= 2010 & yr_renovated < 2020 ~ "2010s",
+    yr_renovated == 0 ~ "0"
+  ))
+
+remont_counts <- df %>%
+  filter(yr_renovated > 0) %>%
+  group_by(decade) %>%
+  summarise(count = n())
+
+ggplot(remont_counts, aes(x = decade, y = count)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  labs(title = "Liczba remontów w poszczególnych dekadach",
+       x = "Dekada",
+       y = "Liczba remontów")
+
+quality_distribution <- df %>%
+  filter(yr_renovated > 0) %>%
+  group_by(decade, grade) %>%
+  summarise(count = n()) %>%
+  mutate(percentage = count) %>% 
+  group_by(decade) %>% 
+  mutate(percentage = percentage / sum(count) * 100)
+
+ggplot(quality_distribution, aes(x = as.factor(grade), y = percentage, fill = decade)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Procentowy rozkład jakości wykończenia w dekadach",
+       x = "Jakość wykończenia (grade)",
+       y = "Procent (%)") +
+  scale_y_continuous(labels = scales::percent_format(scale = 1))
+
+```
+
+**Komentarz:**
+Najwięcej remontów wykonano w dekadzie 2000-2010. Na drugim wykresie widać, że w poszczególnych dekadach procent nieruchmości dla każdej wartości miary jakości i wykończenia nieruchomości nie jest porównywalny. W latach 1930, 1940 najwięcej remontów zostało wykończonych z jakością 6, w 1950, 1960, 1970, 1980, 1990, 2010 z jakością 7. Tylko w latach 2000 najwięcej remontów było wykonanych z jakością 8.
+
+
+## Zadanie 6
+
+Jak prezentuje się wartość minimalna, średnia i maksymalna ceny nieruchmości w podziele na rok budowy nieruchomości.
+
+```{r zadanie 6, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+stats_by_year <- df %>%
+  group_by(yr_built) %>%
+  summarise(
+    min_price = min(price, na.rm = TRUE),
+    avg_price = mean(price, na.rm = TRUE),
+    max_price = max(price, na.rm = TRUE)
+  )
+
+ggplot(stats_by_year, aes(x = yr_built)) +
+  geom_line(aes(y = min_price, color = "Minimalna cena")) +
+  geom_line(aes(y = avg_price, color = "Średnia cena")) +
+  geom_line(aes(y = max_price, color = "Maksymalna cena")) +
+  labs(title = "Wartość minimalna, średnia i maksymalna ceny nieruchomości w podziale na rok budowy",
+       x = "Rok budowy",
+       y = "Cena (USD)",
+       color = "Statystyka") +
+  scale_y_continuous(labels = scales::comma)
+
+```
+
+**Komentarz:**
+Widać, że cena minimalna i średnia utrzymuje się na podobnym poziomie od wielu lat, natomiast cena maksymalna bardzo gwałtownie wzrasta i spada na przestrzeni lat.
