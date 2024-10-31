@@ -1,0 +1,216 @@
+---
+title: "Praca domowa 2"
+author: "Mateusz Jamroż"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    theme: united
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+df <- read.csv("house_data.csv")
+```
+
+## Dane 
+Dane wykorzystane w Pracy domowej 2 opisują wycenę nieruchmości. Każda obserwacja jest pewną nieruchmością, która posiada informacje takie jak powierzchnia, liczba pokoi, liczba łazienek i wiele więcj. Opis wszystkich kolumn w pliku `README.md`.
+
+
+## Zadanie 1
+
+Jak wygląda rozkład ceny nieruchomości w poszczególnych kodach pocztowych na przestrzeni lat? Rozważamy kody pocztowe, które mają więcej niż 280 posiadłości.
+
+```{r zadanie 1, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df$year <- as.numeric(format(substr(df$date, 1, 4)))
+
+
+zip_counts <- df %>%
+  group_by(zipcode) %>%
+  summarise(n=n()) %>%
+  filter(n > 280)
+
+
+df_filtered <- df %>%
+  filter(zipcode %in% zip_counts$zipcode)
+
+
+df_summary <- df_filtered %>%
+  group_by(zipcode, year) %>%
+  summarise(
+    median_price = median(price),
+    sd_price = sd(price)
+  )
+
+
+ggplot(df_summary, aes(x = factor(year), y = median_price/1000, fill = factor(zipcode))) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.6) +
+  labs(
+    title = "Mediana cen nieruchomości w kodach pocztowych",
+    x = "Rok",
+    y = "Mediana ceny (USD)",
+    fill = "Kod pocztowy"
+  ) +
+  theme_bw()
+
+```
+
+**Komentarz: Mamy wyraźne różnice w medianach cen pomiędzy poszczególnymi kodami. Niektóre regiony mają znacznie wyższe mediany cen, co może sugerować większe zapotrzebowanie lub wyższą wartość rynkową nieruchomości. Wahania między latami są jednak niewielkie, można zauważyć w przypadku większości kodów lekki wzrost lub utrzymanie ceny.**
+
+## Zadanie 2
+
+Czy jest różnica w rozkładzie ceny nierchomości od powierzchni mieszkalnej uwzględniając podział na nieruchomości z piwnicą i bez?
+
+```{r zadanie 2, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df <- df %>%
+  mutate(has_basement = ifelse(sqft_basement > 0, "Z piwnicą", "Bez piwnicy"))
+
+
+ggplot(df, aes(x = sqft_living, y = price/1000, color = has_basement)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) + 
+  labs(title = "Rozkład ceny nieruchomości od powierzchni mieszkalnej",
+       x = "Powierzchnia mieszkalna (sqft)",
+       y = "Cena w tysiącach(USD)",
+       color = "Obecność piwnicy")+
+  theme_bw()
+
+```
+
+**Komentarz: Wyniki wykazują, że ceny nieruchomości wzrastają wraz ze zwiększaniem powierzchni mieszkalnej. Nieruchomości z piwnicą przeważnie mają wyższe ceny w porównaniu do tych bez piwnicy przy podobnej powierzchni mieszkalnej. Linia trendu dla obu grup pokazuje dodatnią korelację między powierzchnią mieszkalną a ceną, jednak nieruchomości z piwnicą wykazują bardziej strome nachylenie, co sugeruje wyższe ceny za większą powierzchnię mieszkalną.**
+
+## Zadanie 3
+
+Jaka jest zależność pomiędzy jakością wykończenia nieruchomości a liczbą pięter? 
+
+```{r zadanie 3, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df_quality <- df %>%
+  mutate(quality_category = case_when(
+    grade >= 1 & grade <= 4 ~ "Bardzo niska",
+    grade >= 5 & grade <= 7 ~ "Niska",
+    grade >= 8 & grade <= 10 ~ "Wysoka",
+    grade >= 11 ~ "Bardzo wysoka"
+  )) %>%
+  group_by(floors, quality_category) %>%
+  mutate(
+    quality_category = factor(quality_category, levels = c("Bardzo wysoka","Wysoka", "Niska","Bardzo niska"))
+  ) %>%
+  summarise(n=n()) %>%
+  group_by(floors) %>%
+  mutate(percentage = n / sum(n) * 100)
+
+
+ggplot(df_quality, aes(x = factor(floors), y = percentage, fill = quality_category)) +
+  geom_bar(stat = "identity", position = "stack") +
+  labs(title = "Procentowy udział wysokiej jakości wykończenia względem liczby pięter",
+       x = "Liczba pięter",
+       y = "Procentowy udział (%)",
+       fill = "Jakość wykończenia") +
+  theme_minimal()
+
+```
+
+**Komentarz: Nieruchomości o wyższej jakości wykończenia częściej posiadają więcej pięter. Im większa liczba pięter, tym częściej występują wykończenia o wyższej jakości, takie jak „wysoka” i „bardzo wysoka”. Z kolei wykończenia „bardzo niska” lub „niska” są powszechniejsze w nieruchomościach jednopiętrowych  i 1.5-piętrowych.**
+
+## Zadanie 4
+Jaka jest zależność między powierzchnią mieszkalną nieruchomości a powierzchnią gruntu w podziale na liczbę sypialni?
+
+```{r zadanie 4, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+ggplot(df, aes(x = sqft_living, y = sqft_lot)) +
+  geom_point(aes(color = bedrooms), alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_viridis_c(option = "inferno", name = "Liczba sypialni", limits = c(0,7)) +
+  labs(title = "Zależność między powierzchnią mieszkalną, a powierzchnią gruntu",
+       x = "Powierzchnia mieszkalna (sqft)",
+       y = "Powierzchnia gruntu (sqft)") +
+  theme_bw() 
+```
+
+**Komentarz: Istnieje bardzo mocna korelacja pomiedzy powierzchnią mieszkalną, a liczbą sypialni. Linia trendu wykazuje, dodatnią korelację między powierzchnią mieszkania, a powierzchnią gruntu. Jest ona jednak bardzo niewielka. Może to wynikać z faktu, że budynki o dużej powierzchni mieszkalnej mogą być wielopiętrowe, więc nie potrzebują znacznej powierzchni gruntu. **
+
+## Zadanie 5
+Rozważmy tylko nieruchomości, które miały remont. W której dekadzie było najwięcej przeprowadzonych remontów? Czy w poszczególnych dekadach jest porównywalny procent nieruchmości dla każdej wartości miary jakości i wykończenia nieruchomości?
+
+```{r zadanie 5, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+df_5.1 <- df %>% 
+  filter(yr_renovated != 0) %>% 
+  mutate(dekada_remontu = floor(yr_renovated / 10) * 10) %>% 
+  count(dekada_remontu) %>%
+  arrange(desc(n))
+
+a <-ggplot(df_5.1, aes(x = factor(dekada_remontu), y = n)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  labs(x = "Dekada", y = "Liczba remontów", title = "Liczba remontów na dekadę") +
+  theme_bw()
+df_5.2 <- df %>%
+  filter(yr_renovated != 0) %>%
+  mutate(dekada_remontu = floor(yr_renovated / 10) * 10)
+grade_counts <- df_5.2 %>%
+  group_by(dekada_remontu, grade) %>%
+  summarise(count = n()) %>%
+  mutate(percent = count / sum(count) * 100)
+b<-ggplot(grade_counts, aes(x = factor(dekada_remontu), y = percent, fill = factor(grade))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(x = "Dekada remontu", y = "Procent", fill = "Ocena") +
+  ggtitle("Procentowy rozkład oceny nieruchomości") +
+  theme_bw()
+
+library(gridExtra)
+grid.arrange(a, b, ncol = 2)
+
+
+
+```
+
+**Komentarz: Znaczny wzrost liczby remontów odnotowano w dekadach od lat 80., co może wskazywać na większą potrzebę odnowienia starszych nieruchomości w tamtym czasie. Oceny wykończenia wskazują, że wyższe oceny są bardziej powszechne w budynkach mających niedawno remont, co sugeruje wzrost standardów wykończenia z biegiem czasu.**
+
+## Zadanie 6
+
+Jak prezentuje się wartość minimalna, średnia i maksymalna ceny nieruchmości w podziele na rok budowy nieruchomości.
+
+```{r zadanie 6, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+price_summary <- df %>%
+  group_by(yr_built) %>%
+  summarise(
+    cena_minimalna = min(price, na.rm = TRUE),
+    cena_średnia = mean(price, na.rm = TRUE),
+    cena_maksymalna = max(price, na.rm = TRUE)
+  )
+library(tidyr)
+
+price_summary_long <- price_summary %>%
+  pivot_longer(cols = c(cena_minimalna, cena_średnia, cena_maksymalna),
+               names_to = "price_type",
+               values_to = "price")
+
+
+ggplot(price_summary_long, aes(x = yr_built, y = price/1000, color = price_type)) +
+  geom_line(size = 1) +
+  labs(
+    title = "Cena nieruchomości w podziale na rok budowy",
+    x = "Rok budowy",
+    y = "Cena w tysiącach",
+    color = "Typ ceny"
+  ) +
+  theme_minimal() +
+  scale_color_manual(values = c("cena_minimalna" = "blue", "cena_średnia" = "green", "cena_maksymalna" = "red"))
+
+```
+
+**Komentarz: Nieruchomości z lat ok.1940-1975 mają generalnie niskie ceny minimalne, średnie i maksymalne, podczas gdy nowsze i najstarsze budynki mają wyższe ceny średnie i maksymalne. Wskazuje to na rosnącą wartość rynkową najstarszych budynków, o być może wartosci zabytkowej. Mogą one także często znajdować się w centrum miasta. Większe ceny w wypadku nowszych budynków mogą wynikać z wyższych kosztów budowy i lepszej jakości wykończenia.**
