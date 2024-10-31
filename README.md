@@ -50,7 +50,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>4</td>
     <td>10-24</td>
-    <td>Ways to investigate the distribution of one variable, two variables and more</td>
+    <td><a href="https://www.data-to-viz.com/">Ways to investigate the distribution of one variable, two variables and more</a></td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab04">R: ggplot2 - plot modification, theme, facets</a></td>
     <td>Group work (P1.2): Data exploration &amp; First visualizations</td>
     <td>P1 (2p)</td>
@@ -58,10 +58,10 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>5</td>
     <td>10-31</td>
-    <td>Maps - is it so complicated?</td>
-    <td>R: maps</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/blob/main/lectures/L05-maps.pdf">Maps - is it so complicated?</a></td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab05">R: maps</a></td>
     <td>Consultations: prototype of plots, discussion about visual view of poster </td>
-    <td>HW2 (6p)</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/issues/142">HW2</a> (6p)</td>
   </tr>
   <tr>
     <td>6</td>
