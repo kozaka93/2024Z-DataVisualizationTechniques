@@ -1,0 +1,183 @@
+---
+title: "Praca domowa 2"
+author: "Krzysztof Osiński"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    theme: united
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(gridExtra)
+df <- read.csv("house_data.csv")
+```
+
+## Dane 
+Dane wykorzystane w Pracy domowej 2 opisują wycenę nieruchmości. Każda obserwacja jest pewną nieruchmością, która posiada informacje takie jak powierzchnia, liczba pokoi, liczba łazienek i wiele więcj. Opis wszystkich kolumn w pliku `README.md`.
+
+
+## Zadanie 1
+
+Jak wygląda rozkład ceny nieruchomości w poszczególnych kodach pocztowych na przestrzeni lat? Rozważamy kody pocztowe, które mają więcej niż 280 posiadłości.
+
+```{r zadanie 1, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+
+df %>%
+  mutate(yr_sold = substr(date, 1, 4)) %>%
+  group_by(zipcode) %>%
+  filter(n() > 280) %>%
+  select(zipcode, yr_sold, price) %>%
+  ggplot(aes(x = as.factor(zipcode), y = price, color = as.factor(yr_sold))) +
+  geom_boxplot() +
+  scale_x_discrete(guide=guide_axis(angle = 45))+
+  scale_y_continuous(labels = scales::dollar) +
+  labs(title = "Rozkład ceny nieruchomości w poszczególnych kodach pocztowych",
+       subtitle = "Lata 2014-2015",
+       x = "Kod pocztowy", 
+       y = "Cena (USD)",
+       color = "Rok sprzedaży") +
+  theme_minimal()
+
+```
+
+**Komentarz: W latach 2014-2015 ceny nieruchomości dla danego kodu pocztowego były zbliżone zarówno pod względem mediany jak i kwantyli. W 2015 roku można zaobserwować mniej wartości skrajnie dużych w porównaniu do pozostałych, a gdy występują to są przeważnie niższe niż w 2014 roku.**
+
+## Zadanie 2
+
+Czy jest różnica w rozkładzie ceny nierchomości od powierzchni mieszkalnej uwzględniając podział na nieruchomości z piwnicą i bez?
+
+```{r zadanie 2, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+
+df %>%
+  mutate(has_basement = ifelse(sqft_basement > 0, "Tak", "Nie")) %>%
+  select(price, sqft_living, has_basement) %>%
+  ggplot(aes(x = sqft_living, y = price, color = as.factor(has_basement))) +
+  geom_point(alpha = 0.3) + 
+  geom_smooth(method = "loess") + 
+  scale_x_continuous(guide=guide_axis(angle = 45))+
+  scale_y_continuous(labels = scales::dollar) + 
+  labs(
+    title = "Rozkład cen nieruchomości od powierzchni mieszkalnej",
+    x = "Powierzchnia mieszkalna (sqft)", 
+    y = "Cena (USD)",
+    color = "Czy posiada piwnicę?") +
+  theme_minimal()
+  
+```
+
+**Komentarz:  W obydwu przypadkach widać oczywistą zależność, iż wraz ze wzrostem powieżchni rośnie cena nieruchomości. Przeważnie nieruchomości posiadające piwnicę mają większą powierzchnię mieszkalną, zaś przy zbliżonej powierzchni mają wyższe ceny niż te nieruchomości, które piwnicy nie posiadają (linia trendu). Są zaś wyjątki, np. cena nieruchomości o najwyższej powierzchni mieszkalnej była bliska 2 milionów dolarów, czyli prawie 4 razy niższa od ceny najdroższej sprzedanej nieruchomości.**
+
+## Zadanie 3
+
+Jaka jest zależność pomiędzy jakością wykończenia nieruchomości a liczbą pięter? 
+
+```{r zadanie 3, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+
+df %>%
+  ggplot(aes(x = factor(floors), y = grade, fill = factor(floors))) +
+  geom_violin(alpha = 0.8) +  
+  stat_summary(fun = mean, geom = "point", size = 4) +
+  scale_y_continuous(breaks = seq(0, max(df$grade), 2)) + 
+  labs(title = "Zależność między jakością wykończenia nieruchomości a liczbą pięter", y = "Ocena jakości wykończenia", x = "Liczba pięter") +
+  theme(plot.title = element_text(hjust = 0.5), legend.position = "none")
+
+```
+
+**Komentarz: Przeważnie najgorzej wykończone są nieruchomości posiadające 1 lub 1.5 piętra. Jest ich także najwiętej. Wraz ze wzrostem liczby pięter rośnie standard wykończenia, choć najwyższy średni stopień jakości wykończenia posiadają nieruchomości o 2,5 kondygnacji.**
+
+## Zadanie 4
+Jaka jest zależność między powierzchnią mieszkalną nieruchomości a powierzchnią gruntu w podziale na liczbę sypialni?
+
+```{r zadanie 4, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+
+df %>% 
+  ggplot(aes(x = log(sqft_lot), y = log(sqft_living))) +
+  geom_point(alpha = 0.2, color="darkred", size = 2) +
+  facet_wrap(~ bedrooms, nrow = 2) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8)) +
+  labs(
+    title = "Zależność między powierzchnią mieszkalną a powierzchnią gruntu",
+    subtitle = "W podziale na liczbę sypialni",
+    x = "Logarytm z powierzchni gruntowej (sqft)",
+    y = "Logarytm z powierzchni mieszkaniowej (sqft)"
+  ) +
+  theme(plot.title = element_text(hjust = 0.5),
+        plot.subtitle = element_text(hjust = 0.5))
+
+```
+
+**Komentarz: Zdecydowana większość nieruchomości posiada od 2 do 5 sypialni. W tym przedziale widoczna jest tendencja, że powierchnia mieszkaniowa rośnie wraz ze wzrostem powierzchni gruntu. Wraz ze wzrostem liczby sypialni rośnie powierzchnia mieszkaniowa, choć tendencję wzrostową widać jedynie do liczby 6 sypialni. Zauważyć można iż nieruchomości o dużej liczbie sypialni (powyżej 6) rzadko kiedy mają grunt o dużej powierzchni.**
+
+## Zadanie 5
+Rozważmy tylko nieruchomości, które miały remont. W której dekadzie było najwięcej przeprowadzonych remontów? Czy w poszczególnych dekadach jest porównywalny procent nieruchmości dla każdej wartości miary jakości i wykończenia nieruchomości?
+
+```{r zadanie 5, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+
+zad5 <- df %>%
+  filter(yr_renovated > 0) %>%
+  mutate(decade = (yr_renovated %/% 10) *10) %>%
+  group_by(decade) %>%
+  mutate(property_count = n()) %>%
+  group_by(decade, grade) %>%
+  mutate(grade_count = n(), grade_percentage = grade_count / property_count)
+
+p1 <- ggplot(zad5, aes(x = as.factor(decade))) +
+  geom_bar(fill = "darkblue") +
+  labs(x = "Dekady", y = "Liczba remontów", title = "Remonty w kolejnych dekadach")
+
+p2 <- ggplot(zad5, aes(x = as.factor(decade), y = grade_percentage, fill = as.factor(grade))) +
+  geom_col(position = "dodge") +
+  labs(y = "Procent wykończeń w danym standardzie", x = "Dekady", fill = "Jakość") +
+  theme(legend.position = "bottom")
+
+grid.arrange(p1, p2, ncol = 2)
+
+```
+
+**Komentarz: Najwięcej przeprowadzonych remontów było w pierwszej dekadzie XXI wieku. Wzrost liczby remontów w danej dekadzie był widoczny aż do 2010 roku. W poszczególnych dekadach procent nieruchmości wykończonych według danej miary jakości jest różny. Początkowo w latach 1930-1950 widać, że większość nieruchomości wykończona była w standardzie o mierze jakości 6, zaś od piątej dekady XX wieku najczęściej nieruchomości remontowane są w standardzie o mierze 7. Wraz z biegiem lat coraz częstrze były przypadki, wykańczania domów w wyższym standardzie, np. o mierze jakości 8 lub 9.**
+
+## Zadanie 6
+
+Jak prezentuje się wartość minimalna, średnia i maksymalna ceny nieruchmości w podziele na rok budowy nieruchomości.
+
+```{r zadanie 6, message=FALSE}
+
+# Tu umieść kod do wygenerowania odpowiedzi do zadania.
+
+df %>%
+  group_by(yr_built) %>%
+  summarise(
+    min_price = min(price, na.rm = TRUE),
+    max_price = max(price, na.rm = TRUE),
+    avg_price = mean(price, na.rm = TRUE)) %>% 
+  ggplot(aes(x = yr_built)) +
+    geom_line(aes(y = min_price, color = 'Cena minimalna'), linewidth = 0.7) +
+    geom_line(aes(y = max_price, color = 'Cena maksymalna'), linewidth = 0.7) +
+    geom_line(aes(y = avg_price, color = 'Cena średnia'), linewidth = 0.7) +
+    scale_y_continuous(labels = scales::dollar) +
+    labs(title = "Ceny nieruchomości w podziale na rok budowy", 
+         x = "Rok wybudowania", 
+         y = "Cena (USD)") +
+    theme(plot.title = element_text(hjust = 0.5),
+          legend.title = element_blank())
+
+```
+
+**Komentarz: Zaobserwować można ogromne wahania maksymalnej ceny nieruchomości na przestrzeni lat. Jej skrajnie wysokie wartości dotyczą lat ok. 1910, 1940 i 2001, zaś skrajnie niskie lat ok. 1903, 1920 i 1945. Cena minimalna oraz średnia cena utrzymywały się na podobnym poziomie.**
