@@ -1,0 +1,155 @@
+---
+title: "Praca domowa 2"
+author: "Hanna Szczerbińska"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    theme: united
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+df <- read.csv("house_data.csv")
+```
+
+## Dane 
+Dane wykorzystane w Pracy domowej 2 opisują wycenę nieruchomości. Każda obserwacja jest pewną nieruchmością, która posiada informacje takie jak powierzchnia, liczba pokoi, liczba łazienek i wiele więcj. Opis wszystkich kolumn w pliku `README.md`.
+
+
+## Zadanie 1
+
+Jak wygląda rozkład ceny nieruchomości w poszczególnych kodach pocztowych na przestrzeni lat? Rozważamy kody pocztowe, które mają więcej niż 280 posiadłości.
+
+```{r zadanie 1, message=FALSE}
+
+df %>% 
+  mutate(sell_year = substr(date, 1, 4)) %>% 
+  select(id, sell_year, price, zipcode) %>% 
+  group_by(zipcode) %>% 
+  filter(n() > 280) %>% 
+  ungroup() %>% 
+  ggplot(aes(x = as.factor(zipcode), y = price, fill = sell_year)) +
+  geom_boxplot(outlier.size = 0.75) +
+  guides(x = guide_axis(angle = 90)) +
+  scale_y_continuous(labels = scales::comma) +
+  labs(title = "Rozkład cen nieruchomości w poszczególnych \nkodach pocztowych na przestrzeni lat", 
+       x = "kod pocztowy", 
+       y = "cena nieruchomości [$]", 
+       fill = "rok sprzedaży") +
+  theme(plot.title = element_text(hjust = 0.5, size = 14, face = "bold"))
+
+```
+
+**Komentarz: mediana ceny nieruchomości w większości kodów pocztowych nieznacznie wzrosła między rokiem 2014 a 2015**
+
+## Zadanie 2
+
+Czy jest różnica w rozkładzie ceny nieruchomości od powierzchni mieszkalnej uwzględniając podział na nieruchomości z piwnicą i bez?
+
+```{r zadanie 2, message=FALSE}
+
+df %>% 
+  mutate(if_basement = ifelse(sqft_basement > 0, "piwnica", "brak piwnicy")) %>% 
+  select(id, price, sqft_living, if_basement) %>% 
+  ggplot(aes(x = sqft_living, y = price, color = if_basement, fill = if_basement)) +
+  stat_density_2d(aes(alpha = after_stat(level)), geom = "polygon", alpha = 0.2) +
+  scale_fill_manual(values = c("brak piwnicy" = "red", "piwnica" = "blue")) +
+  scale_color_manual(values = c("brak piwnicy" = "red", "piwnica" = "blue")) +
+  guides(fill = guide_legend(title = "status posiadania piwnicy")) +
+  labs(title = "rozkład ceny nieruchomości od powierzchni mieszkalnej", 
+       x = "powierzchnia mieszkalna", 
+       y = "cena nieruchomości [$]", 
+       color = "status posiadania piwnicy")
+
+```
+
+**Komentarz: stosunek ceny nieruchomości do powierzchni mieszkalnej jest do siebie zbliżony niezależnie od obecności piwnicy, jednak w przypadku nieruchomości bez piwnicy trochę częściej zdarzają się mniejsze i tańsze nieruchomości (w przeliczeniu na koszt stopy kwadratowej powierzchni mieszkalnej), natomiast nieruchomości z piwnicą są zazwyczaj trochę większe i droższe**
+
+## Zadanie 3
+
+Jaka jest zależność pomiędzy jakością wykończenia nieruchomości a liczbą pięter? 
+
+```{r zadanie 3, message=FALSE}
+
+df %>% 
+  select(id, grade, floors) %>% 
+  ggplot(aes(x = as.factor(floors), y = grade)) +
+  geom_boxplot() +
+  labs(title = "jakość wykończenia nieruchomości a liczba pięter", 
+       x = "liczba pięter", 
+       y = "jakość wykończenia")
+
+```
+
+**Komentarz: jakość wykończenia nieruchomości przeważnie nieznacznie rośnie wraz z liczbą pięter**
+
+## Zadanie 4
+Jaka jest zależność między powierzchnią mieszkalną nieruchomości a powierzchnią gruntu w podziale na liczbę sypialni?
+
+```{r zadanie 4, message=FALSE}
+# przez 'powierzchnie gruntu' rozumiem powierzchnie dzialki; gdyby to miala byc sama powierzchnia ziemi bez domu, to trzeba by bylo zrobic dodatkowe pole w ktorym odejmuje jedno od drugiego
+
+df %>% 
+  select(id, sqft_living, sqft_lot, bedrooms) %>% 
+  ggplot(aes(x = sqft_living, y = sqft_lot)) +
+  geom_point() +
+  facet_wrap(~bedrooms, 
+             labeller = labeller(bedrooms = function(x) paste("Liczba sypialni:", x))) +
+  labs(title = "powierzchnia mieszkalna nieruchomości a powierzchnia gruntu", 
+       x = "powierzchnia mieszkalna [sqft]", 
+       y = "powierzchnia gruntu [sqft]")
+
+```
+
+**Komentarz: rozkład powierzchni gruntu w zależności od powierzchni mieszkalnej nieruchomości jest mniej więcej jednostajny, z nieznacznie większą liczbą nieruchomości o większej powierzchni gruntu w przypadku średniej powierzchni mieszkalnej (ok. 3000-5000 sqft); dodatkowo można zauważyć, że przeważnie im większa liczba sypialni, tym większa powierzchnia mieszkalna, przy zachowaniu podobnego rozkładu powierzchni gruntu**
+
+## Zadanie 5
+Rozważmy tylko nieruchomości, które miały remont. W której dekadzie było najwięcej przeprowadzonych remontów? Czy w poszczególnych dekadach jest porównywalny procent nieruchomości dla każdej wartości miary jakości i wykończenia nieruchomości?
+
+```{r zadanie 5, message=FALSE}
+
+df %>% 
+  filter(yr_renovated > 0) %>% 
+  mutate(decade_renovated = paste(substr(yr_renovated, 1, 3), "0s", sep="")) %>% 
+  group_by(decade_renovated, grade) %>% 
+  summarise(cnt = n()) %>% 
+  ungroup() %>% 
+  ggplot(aes(x = decade_renovated, y = cnt, fill = as.factor(grade))) +
+  geom_bar(position = "stack", stat = "identity") +
+  labs(title = "liczba przeprowadzonych remontów w poszczególnych dekadach \nz podziałem na poszczególne wartości miary jakości konstrukcji i wykończenia", 
+       x = "dekada", 
+       y = "liczba przeprowadzonych remontów", 
+       fill = "jakość konstrukcji \ni wykończenia")
+
+```
+
+**Komentarz: najwięcej remontów było przeprowadzonych w dekadzie 2000-2009; w późniejszych dekadach zauważalnie rośnie udział nieruchomości o wyższych wartościach miary jakości konstrukcji i wykończenia**
+
+## Zadanie 6
+
+Jak prezentuje się wartość minimalna, średnia i maksymalna ceny nieruchmości w podziele na rok budowy nieruchomości.
+
+```{r zadanie 6, message=FALSE}
+
+df %>% 
+  select(id, price, yr_built) %>% 
+  group_by(yr_built) %>% 
+  summarise(avg_price = mean(price), min_price = min(price), max_price = max(price)) %>% 
+  ggplot(aes(x = yr_built)) +
+  geom_line(aes(y = avg_price, color = "średnia cena nieruchomości")) +
+  geom_line(aes(y = min_price, color = "minimalna cena nieruchomości")) +
+  geom_line(aes(y = max_price, color = "maksymalna cena nieruchomości")) +
+  scale_y_continuous(labels = scales::comma) +
+  labs(title = "wartość minimalna, średnia i maksymalna ceny nieruchomości \nw podziale na rok budowy nieruchomości", 
+       x = "rok budowy nieruchomości", 
+       y = "cena nieruchomości [$]", 
+       colour = "")
+
+```
+
+**Komentarz: minimalna i średnia cena nieruchomości utrzymuje się od lat na podobnym poziomie; cena maksymalna zmienia się znacząco w zależności od roku**
