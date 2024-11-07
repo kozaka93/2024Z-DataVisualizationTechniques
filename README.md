@@ -67,7 +67,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>6</td>
     <td>11-07</td>
     <td>Don't do this at home</td>
-    <td>R: ggplot2 - advanced, extensions: patchwork, ggrepel</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab06">R: ggplot2 - advanced, extensions: patchwork, ggrepel</a></td>
     <td>Group work (P1.3): Advanced visualizations &amp; Prototype</td>
     <td>P1 (2p)</td>
   </tr>
