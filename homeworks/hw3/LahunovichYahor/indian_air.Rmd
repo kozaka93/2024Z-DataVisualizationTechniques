@@ -1,0 +1,66 @@
+---
+title: "Praca domowa 3 - TWD"
+author: "Yahor Lahunovich"
+date: "16.11.2024"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+## Wizualizacja źródłowa
+
+Źródło: [LinkedIn - Finshots](https://www.linkedin.com/posts/finshots_indigo-is-the-largest-indian-airline-with-activity-7262712575585333249-OXVL?utm_source=share&utm_medium=member_desktop)  
+Data: 14.11.2024  
+
+![Wizualizacja źródłowa](/home/yahor/Documents/uni/sem_3/twd/2024Z-DataVisualizationTechniques/homeworks/hw3/LahunovichYahor/indian_air.jpeg)
+
+## Uzasadnienie potrzeby poprawy wizualizacji
+
+- Zajęło mi kilka minut, aby zrozumieć tę wizualizację.  
+- Największy operator lotniczy, IndiGo, został przedstawiony jako największe koło, a pozostali operatorzy znajdują się wewnątrz niego, co utrudnia porównanie danych.  
+- Trudno jest bezpośrednio porównać wartości poszczególnych operatorów lotniczych.
+
+## Wizualizacja poprawiona
+
+```{r setup, include=FALSE}
+# Ładowanie bibliotek
+library(dplyr)
+library(forcats)
+library(ggplot2)
+```
+
+```{r}
+airline <- c("IndiGo", "Air India", "Vistara", "Akasa Air", "SpiceJet", "Others")
+value <- c(63, 15.1, 10, 4.4, 2, 5.5)
+df <- data.frame(airline, value) 
+
+df$airline <- fct_reorder(df$airline, df$value, .desc = TRUE)
+
+ggplot(data = df, aes(x = airline, y = value)) +
+  geom_col(fill = "dodgerblue", alpha = 0.8) +
+  geom_text(aes(label = value), hjust = -0.2, size = 3.5, color = "black") +
+  labs(
+    title = "Major Airlines in India (2024)",
+    subtitle = "Percentage of total flights",
+    x = NULL,
+    y = "Percentage (%)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 12),
+    axis.text.x = element_text(size = 10),
+    axis.text.y = element_text(size = 12),
+    axis.title.y = element_blank()
+  ) +
+  coord_flip() +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
+```
+
+
+
+## Uzasadnienie, dlaczego przygotowany wykres jest lepszy od oryginalnego
+
+- Wykres jest bardzo łatwy i szybki do odczytania. 
+- Łatwo porównać wartości.  
+- Wyraźnie widoczna jest dominacja głównego operatora lotniczego.
