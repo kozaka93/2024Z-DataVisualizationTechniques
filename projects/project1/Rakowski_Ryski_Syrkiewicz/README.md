@@ -11,4 +11,4 @@ Sources:
 - [CDC WISQARS](https://wisqars.cdc.gov/)
 - [National Institute on Drug Abuse](https://nida.nih.gov/)
   
-![Title or Description](https://github.com/Micaet/Projekt_1_TWD/blob/main/Rakowski_Ryski_Syrkiewicz.png)
+![Title or Description](Rakowski_Ryski_Syrkiewicz.png)
