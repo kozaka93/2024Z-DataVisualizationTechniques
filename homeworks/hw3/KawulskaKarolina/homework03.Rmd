@@ -1,0 +1,111 @@
+---
+title: "Praca domowa 3"
+author: "Karolina Kawulska"
+output:
+  html_document:
+    code_folding: hide
+    warning: FALSE
+    toc: true
+    toc_float: true
+    message: false
+    theme: united
+  pdf_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+ourworlddata <- read.csv("https://ourworldindata.org/grapher/living-planet-index-comparison.csv?v=1&csvType=filtered&useColumnShortNames=true")
+
+```
+
+## Wykres bazowy
+
+Wykres dotyczy wskaźnika mierzącego średni spadek populacji monitorowanych gatunków dzikiej przyrody. LPI pokazuje, jak zmieniała się liczebność gatunków dzikiej przyrody od 1970 roku. Raporty z lat 2022 i 2024 zostały wykorzystane, aby porównać te zmiany.
+
+
+![](C:/Users/karo/Desktop/TWD/wykrespd3.png)
+
+**Komentarz: Na wykresie dotyczącym Europy i Centralnej Azji wykres wychodzi poza skalę osi OY. Poza tym wykres jest dobrze zrobiony.**
+
+## Moje rozwiązanie
+
+Wykres odtworzony w RStudio za pomocą pakietu ggplot2.
+
+```{r, message=FALSE}
+
+ourworlddata <- ourworlddata %>%
+  filter(!is.na(living_planet_index_average),!is.na(lpi_final)) %>%
+  mutate(living_planet_index_average = living_planet_index_average/100,
+         lpi_final = lpi_final/100)
+ourworlddata$Entity <- factor(ourworlddata$Entity, levels = c("World", "Europe and Central Asia", "North America", "Latin America and the Caribbean","Africa","Asia and Pacific"))
+
+ourworlddata_long <- ourworlddata %>%
+  rename(report_2024 = lpi_final,
+         report_2022 = living_planet_index_average) %>%
+  pivot_longer(
+    cols = starts_with("report_"),  
+    names_to = "Report",          
+    values_to = "Value"            
+  ) %>%
+  mutate(
+    Report = gsub("report_", "", Report) 
+  )
+
+suppressWarnings({
+  test1 <- ourworlddata_long %>%
+    ggplot(aes(x = Year,y = Value,color = Report)) +
+    geom_line(linewidth  = 0.5) +
+    facet_wrap(~Entity) +
+    labs( x = "Year", title = "Comparison of the Living Planet Index across reports",
+    subtitle = "The Living Planet Index (LPI) measures the average decline in monitored wildlife populations, where values in\n1970 are equal to 100. The LPI published in the 2022 and 2024 report are shown for comparison.") +
+    scale_y_continuous(
+      limits = c(0, 1.4),           
+      breaks = seq(0, 1.4, by = 0.2), 
+      labels = scales::percent       
+    ) +
+    scale_color_manual(  
+      values = c(
+        "2022" = "#B7612E",
+        "2024" = "#486090"
+      ),
+      labels = c("2022" = "2022 Report", "2024" = "2024 Report")
+    ) +
+    scale_x_continuous(limits = c(1970, 2020), 
+                     breaks = seq(1970, 2020, by = 10),
+                     expand = c(0, 0)) +
+    theme_minimal() +
+    theme(
+      legend.justification = c("left", "top"),
+      legend.position = "top",
+      legend.position.inside = c(0.05, 0.95),
+      legend.title = element_blank(),  
+      legend.text = element_text(color = "gray30",size = 7),
+      axis.line.x = element_line(color = "grey70", linewidth = 0.5),
+      axis.ticks.x = element_line(size = 0.5, color = "grey70",linewidth = 0.3),
+      axis.ticks.length = unit(0.15, "cm"), 
+      axis.text.x = element_text(margin = margin(t = 5)),
+      axis.title.y = element_blank(),
+      panel.spacing.x = unit(0.8, "cm"),
+      panel.grid = element_blank(),
+      panel.grid.major.y = element_line(color = "grey70", linetype = "dotted",linewidth = 0.3),
+      plot.title = element_text( face = "bold", size = 12, color = "gray30"), 
+      plot.subtitle = element_text( size = 9, color = "gray40"),
+      axis.text = element_text( size = 7, color = "gray40"),                  
+      strip.text = element_text(face = "bold", size = 8, color = "gray30"),
+      axis.title.x = element_text(face = "bold", size = 9, color = "gray30"),  
+      plot.margin = margin(t = 8, r = 12, b = 5, l = 5))
+    }) 
+print(test1)
+
+```
+
+**Komentarz: Wykres już nie wykracza poza skalę osi OY. Dodałam również opis osi OX i zmieniłam kolor czcionki na ciemniejszy, aby tekst był bardziej widoczny.**
+
+## Uwagi
+
+
+Wykres został opublikowany 10.10.2024r. Korzystałam ze strony https://ourworldindata.org/2024-living-planet-index, dokładniej z 2 wykresu umieszczonego w artykule. Nie byłam w stanie samymi bazowymi elementami w RStudio odtworzyc identycznie wykresu np. (czcionka - mialam problemy z instalowaniem czcionki użytej w opisie wykresu, legenda - nie udalo się zamaist linii zrobic kwadratów wypełnionych kolorem odpowiadającym kolorom linii wykresu). Również nie bylam w stanie zrobić animacji na tle lat.
