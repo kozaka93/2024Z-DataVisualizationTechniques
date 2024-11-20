@@ -11,4 +11,5 @@ Sources:
 https://sapienlabs.org/mhq     
 https://mentalstateoftheworld.report
 
-![Hallak_Tomaszkiewicz_Wójcicka](https://github.com/user-attachments/assets/5621595b-c081-4a02-ac6c-06f012e485f5)
+![Hallak_Tomaszkiewicz_Wójcicka](https://github.com/user-attachments/assets/09424a26-6a13-49ee-a820-503520b6b241)
+
