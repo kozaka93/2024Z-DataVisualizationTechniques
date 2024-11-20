@@ -27,7 +27,7 @@ ourworlddata <- read.csv("https://ourworldindata.org/grapher/living-planet-index
 Wykres dotyczy wskaźnika mierzącego średni spadek populacji monitorowanych gatunków dzikiej przyrody. LPI pokazuje, jak zmieniała się liczebność gatunków dzikiej przyrody od 1970 roku. Raporty z lat 2022 i 2024 zostały wykorzystane, aby porównać te zmiany.
 
 
-![](C:/Users/karo/Desktop/TWD/wykrespd3.png)
+![](wykrespd3.png)
 
 **Komentarz: Na wykresie dotyczącym Europy i Centralnej Azji wykres wychodzi poza skalę osi OY. Poza tym wykres jest dobrze zrobiony.**
 
