@@ -2,8 +2,8 @@ The poster focuses on analyzing the six dimensions of mental health through the 
 The poster highlights correlations such as the impact of a positive household atmosphere during childhood and the number of close friendships on mental health, while also emphasizing the role of education.
 
 Authors:
-Elissa Hallak
-Oliwia Wójcicka
+Elissa Hallak,
+Oliwia Wójcicka,
 Julia Tomaszkiewicz
 
 Sources:     
