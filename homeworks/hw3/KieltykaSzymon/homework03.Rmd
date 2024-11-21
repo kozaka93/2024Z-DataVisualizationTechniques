@@ -18,7 +18,7 @@ library(ggplot2)
 
 ## Wykres błędny
 
-**Źródło:** <https://obserwatorgospodarczy.pl/2024/10/15/eksport-polski-doluje-winne-niemcy-i-silny-zloty/>
+**Źródło:** <https://obserwatorgospodarczy.pl/2024/10/15/eksport-polski-doluje-winne-niemcy-i-silny-zloty/> (15.10.2024)
 
 ![](hw3.png)
 
