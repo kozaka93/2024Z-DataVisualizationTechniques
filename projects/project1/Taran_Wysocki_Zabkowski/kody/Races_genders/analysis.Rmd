@@ -1,0 +1,440 @@
+---
+title: "Heart problems analysis"
+output: html_notebook
+---
+
+```{r Dane}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+cardio <- read.csv("cardio_train.csv", sep = ";")
+cardio_cleaned <- read.csv("cardio_cleaned.csv")
+```
+
+```{r}
+zmienne <- c("height", "weight", "ap_hi", "ap_lo", "cholesterol")
+for(zmienna in zmienne){
+  pom <- cardio %>%  
+  filter(between(.data[[zmienna]], quantile(.data[[zmienna]], probs = 0.05), quantile(.data[[zmienna]], probs = 0.95))) %>% 
+  mutate(!!sym(zmienna) := .data[[zmienna]] + runif(length(.data[[zmienna]]), min = 0, max = 0.1*max(.data[[zmienna]])), 
+         age = age + runif(length(age), min = 0, max = 0.1*max(age)))
+  
+  p <- ggplot(pom, aes(x = age, y = .data[[zmienna]])) +
+          geom_point(shape = 16, color = rgb(pom$cardio, 0, 0, 0.5)) +
+          labs(title = "testing", x = "age", y = zmienna) +
+          theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+        print(p)
+  print(cor(pom[,zmienna], pom$age))
+}
+
+pom2 <- cardio %>% group_by(gender) %>% summarise(count=n())
+
+barplot(pom2$count, pom2$gender, names.arg = pom2$gender)
+```
+
+```{r}
+zmienne <- c("height", "weight", "ap_hi", "ap_lo")
+for(zmienna in zmienne){
+  pom <- cardio_cleaned[is.na(cardio_cleaned)] <- 0
+  pom <- cardio_cleaned %>%
+  filter(between(.data[[zmienna]], quantile(.data[[zmienna]], probs = 0.05), quantile(.data[[zmienna]], probs = 0.95)) ) %>% 
+  mutate(!!sym(zmienna) := .data[[zmienna]] + runif(length(.data[[zmienna]]), min = 0, max = 0.01*max(.data[[zmienna]])), 
+         age = age + runif(length(age), min = 0, max = 0.01*max(age)))
+  
+  p <- ggplot(pom, aes(x = age, y = .data[[zmienna]])) +
+          geom_point(shape = 16, color = rgb(pom$cardio, 0, 0, 0.5)) +
+          labs(title = "testing", x = "age", y = zmienna) +
+          theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+        print(p)
+  print(cor(pom[,zmienna], pom$age))
+}
+```
+
+
+
+
+```{r Races prep}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+usa_death_data <- read.csv("slctmort.csv", sep = ";")
+
+colnames(usa_death_data) <- substr(colnames(usa_death_data), 2, 5)
+colnames(usa_death_data)[1] <- "Races"
+#View(usa_death_data)
+
+usa_death_data_long <- usa_death_data %>%
+  filter(grepl("All causes|Diseases of heart", Races)) %>% 
+  pivot_longer(cols = colnames(usa_death_data)[-1],
+               names_to = "Year",
+               values_to = "Deaths") %>% 
+  mutate_all(~ replace(., . == "" | . == "- - -" | . == "…", NA)) %>% 
+  mutate(Deaths = as.integer(gsub(",", "", Deaths)),
+         Year = as.numeric(Year))
+```
+
+```{r}
+usa_death_data_long %>%
+      ggplot(aes(x = as.factor(Year), y = Deaths, color = Races)) +
+      geom_point(size = 1) +
+      geom_line() + 
+      labs(title = "Death Counts by Year ",
+           x = "Year", 
+           y = "Number of Deaths",
+           color = "Cause of Death") +
+      theme(legend.position="none")
+
+Races_causes <- unique(usa_death_data_long$Races)
+
+usa_death_data_long %>% 
+  #filter(Year > 1990) %>% 
+  filter(Races %in% Races_causes[c(1, 2)]) %>% 
+      ggplot(aes(x = Year, y = Deaths, color = as.factor(Races))) +
+      geom_point(size = 1) +
+      geom_line() + 
+      ylim(c(0, max(usa_death_data_long$Deaths)))+
+      labs(title = "Death Counts by Year ",
+           x = "Year", 
+           y = "Number of Deaths",
+           color = "Cause of Death")
+
+usa_death_data_long %>% 
+  filter(Year >= 1990) %>% 
+  filter(Races %in% Races_causes[c(7, 8, 9, 10, 11, 12, 27, 28)]) %>% 
+      ggplot(aes(x = Year, y = Deaths, color = as.factor(Races))) +
+      geom_point(size = 1) +
+      geom_line() +
+      ylim(c(0, max(usa_death_data_long$Deaths)))+
+      labs(title = "Death Counts by Year ",
+           x = "Year", 
+           y = "Number of Deaths",
+           color = "Cause of Death")
+
+
+usa_death_data_long %>% 
+  filter(Year >= 1990) %>% 
+  filter(Races %in% Races_causes[c(7, 8, 11, 12)]) %>% 
+      ggplot(aes(x = Year, y = Deaths, color = as.factor(Races))) +
+      geom_point(size = 1) +
+      geom_line() +
+      ylim(c(0, max(usa_death_data_long$Deaths)))+
+      labs(title = "Death Counts by Year ",
+           x = "Year", 
+           y = "Number of Deaths",
+           color = "Cause of Death")
+```
+
+```{r}
+Races_causes <- unique(usa_death_data_long$Races)
+pom<-usa_death_data_long %>% 
+  filter(Year >= 1990) %>% 
+  filter(Races %in% Races_causes[c(7, 8, 11, 12)]) %>% 
+  mutate(Races = if_else(Races == "Black or African American All causes", "Black_AllCauses", 
+                 if_else(Races == "Black or African American Diseases of heart", "Black_HeartDiseases",
+                 if_else(Races == "Race, Hispanic origin, and cause of death White All causes", "White_AllCauses", 
+                 if_else(Races == "Race, Hispanic origin, and cause of death White Diseases of heart", "White_HeartDiseases", "")))))
+
+pom %>% 
+  ggplot(aes(x = Year, y = Deaths, color = as.factor(Races))) +
+  geom_point(size = 1) +
+  geom_line() + 
+  ylim(c(0, max(usa_death_data_long$Deaths)))+
+  labs(title = "Death Counts by Year ",
+       x = "Year", 
+       y = "Number of Deaths",
+       color = "Cause of Death")
+
+
+pom %>% 
+  pivot_wider(names_from = Races, values_from = Deaths) %>% 
+  mutate(White_DeathsRatio = White_HeartDiseases/White_AllCauses,
+         Black_DeathsRatio = Black_HeartDiseases/Black_AllCauses) %>% 
+  ggplot(aes(x = Year)) +
+  geom_line(aes(y = White_DeathsRatio, color = "White"), linewidth = 1) +
+  geom_line(aes(y = Black_DeathsRatio, color = "Black"), linewidth = 1) +
+  ylim(0, NA) +
+  labs(title = "Death ratios for White and Black",
+       x = "Year",
+       y = "Ratio",
+       color = "Race") +  # Label for legend
+  scale_color_manual(values = c("White" = "#ffffff", "Black" = "#721f14")) +
+  guides(color = guide_legend(
+    override.aes = list(
+      color = c("#721f14", "white")
+    )
+  )) +
+  theme(
+    text = element_text(size = 25),
+    axis.text.x = element_text(angle = 0, hjust = 1),
+    axis.text = element_text(color = "white"),
+    axis.title = element_text(color = "white"),
+    plot.title = element_blank(),
+    legend.text = element_text(color = "white"),
+    legend.title = element_text(color = "white"),
+    panel.background = element_rect(fill = "transparent", colour = NA),
+    plot.background = element_rect(fill = "transparent", colour = NA),
+    legend.background = element_rect(fill = "transparent"),
+    legend.box.background = element_rect(fill = "transparent", color = NA),
+    legend.key = element_rect(fill = "transparent")
+  ) -> p
+print(p)
+
+
+  ggsave(
+  plot = p,
+  filename = "Races-plot.png",
+  bg = "transparent"
+)
+ 
+  
+  pom %>% 
+  pivot_wider(names_from = Races, values_from = Deaths) %>% 
+  mutate(White_DeathsRatio = White_HeartDiseases/White_AllCauses,
+         Black_DeathsRatio = Black_HeartDiseases/Black_AllCauses) %>% 
+  ggplot(aes(x = Year)) +
+  geom_line(aes(y = White_DeathsRatio, color = "White"), linewidth = 1) +
+  geom_line(aes(y = Black_DeathsRatio, color = "Black"), linewidth = 1) +
+  ylim(0, NA) +
+  labs(title = "Death ratios for White and Black",
+       x = "Year",
+       y = "Ratio",
+       color = "Race") + 
+  scale_color_manual(values = c("White" = "#ffffff", "Black" = "#d85d4c")) + 
+  guides(color = guide_legend(
+    override.aes = list(
+      color = c("#d85d4c", "white")
+    )
+  )) +
+  theme(
+    text = element_text(size = 25, color = "white", family = "Playfair Display"), 
+    axis.text.x = element_text(angle = 0, hjust = 1, color = "white"),
+    axis.text = element_text(color = "white"), 
+    axis.title = element_text(color = "white"),
+    plot.title = element_blank(),
+    legend.text = element_text(color = "white"),
+    legend.title = element_text(color = "white"),
+    panel.background = element_rect(fill = "#535966", colour = NA),
+    plot.background = element_rect(fill = "#535966", colour = NA),
+    legend.background = element_rect(fill = "#535966"),
+    legend.box.background = element_rect(fill = "#535966", color = NA),
+    legend.key = element_rect(fill = "#535966"),
+    plot.margin = margin(0, 0, 0, 0)
+  ) -> p2
+  
+  
+  print(p2)
+    ggsave(
+  plot = p2,
+  filename = "Races-plot_v2.png"#,bg = "transparent"
+)
+```
+
+
+
+```{r}
+for(i in 1:((length(colnames(usa_death_data))-1)/2) ){
+  usa_death_data_long <- usa_death_data %>%
+    pivot_longer(cols = c(.data[[colnames(usa_death_data)[[i*2-1]]]], .data[[colnames(usa_death_data)[[i*2]]]]),
+                 names_to = "Cause",
+                 values_to = "Deaths")
+  
+  p<-usa_death_data_long %>%
+      ggplot(aes(x = Year, y = Deaths, color = Cause)) +
+      geom_point(size = 1) +
+      geom_line() + 
+      labs(title = paste("Death Counts by Year ", colnames(usa_death_data)[[i*2-1]]),
+           x = "Year", 
+           y = "Number of Deaths",
+           color = "Cause of Death") +
+      theme_minimal()
+  print(p)
+}
+```
+
+```{r frmgham analysis prep}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+frmgham <- read.csv("frmgham2.csv")
+str(frmgham)
+
+frmgham <- frmgham %>% mutate(SEX = if_else(SEX==1, "Male", "Female"))
+```
+
+
+```{r}
+zmienne <- colnames(frmgham)[c(3,4,5, 8, 9, 12, 13, 20, 22, 23)]
+for(j in zmienne){
+  for(i in zmienne){
+    frmgham[is.na(frmgham)] <- 0
+    #pom <- frmgham %>%
+    #filter(between(.data[[zmienna]], quantile(.data[[zmienna]], probs = 0.05), quantile(.data[[zmienna]], probs = 0.95)) ) %>% 
+    #mutate(!!sym(zmienna) := .data[[zmienna]] + runif(length(.data[[zmienna]]), min = 0, max = 0.01*max(.data[[zmienna]])), 
+    #       age = age + runif(length(age), min = 0, max = 0.01*max(age)))
+    
+    p <- ggplot(frmgham, aes(x = .data[[i]], y = .data[[j]])) +
+            geom_point(shape = 16, color = rgb(frmgham$CVD, 0, 0, 0.5)) +
+            labs(title = cor(frmgham[,i], frmgham[,j]) , x = i, y = j) +
+            theme(axis.title.y = element_text(angle = 0, vjust = 0.5, hjust = 1))    
+    print(p)
+    print(paste(i,"  ",j,"  ",cor(frmgham[,i], frmgham[,j]), 
+                ifelse(abs(cor(frmgham[,i], frmgham[,j]))>0.3, "AAAAAAAAAAAAAAAa", "")))
+  }
+}
+
+```
+
+```{r}
+normalise <- function(x, na.rm = FALSE) ((x-min(x, na.rm = na.rm)) / 
+                          (max(x, na.rm = na.rm)-min(x, na.rm = na.rm)))
+
+frmgham_long <- frmgham %>% 
+  mutate_at(colnames(frmgham)[3:13], ~normalise(., na.rm = TRUE)) %>% 
+  pivot_longer(cols = colnames(frmgham)[c(29, 27, 10, 8, 11)], 
+               names_to = "Variable", 
+               values_to = "Value")
+
+frmgham_long %>% 
+  ggplot(aes(x=Variable, y=Value, colour = as.factor(SEX)))+
+  geom_boxplot()+
+  labs(title = "title", x= "vars",y= "normalised")+
+  theme(axis.text.x = element_text(angle = 60, hjust=1),
+        axis.title.y = element_text(angle = 0))
+
+frmgham_long <- frmgham %>% 
+  #mutate(across(colnames(frmgham)[3:13], ~ normalise(.x, na.rm = TRUE))) %>% 
+  
+  pivot_longer(cols = colnames(frmgham)[3:13], 
+               names_to = "Variable", 
+               values_to = "Value")
+
+frmgham %>% 
+  filter(CIGPDAY==0) %>% 
+  #group_by(RANDID, SEX, CIGPDAY) %>% 
+  ggplot(aes(x=SEX))+
+  geom_bar()
+
+frmgham %>% 
+  filter(CIGPDAY>0) %>% 
+  #group_by(RANDID, SEX, CIGPDAY) %>% 
+  ggplot(aes(x = SEX, y=CIGPDAY))+
+  geom_boxplot()
+
+
+frmgham %>% 
+  filter(CIGPDAY==0) %>% 
+  #group_by(RANDID, SEX, CIGPDAY) %>% 
+  ggplot(aes(x=as.factor(DEATH)))+
+  geom_bar()
+
+frmgham %>% 
+  filter(CIGPDAY>0) %>% 
+  #group_by(RANDID, SEX, CIGPDAY) %>% 
+  ggplot(aes(x = as.factor(DEATH), y=CIGPDAY))+
+  geom_boxplot()
+
+
+
+frmgham %>% 
+  filter(CIGPDAY==0) %>% 
+  #group_by(RANDID, SEX, CIGPDAY) %>% 
+  ggplot(aes(x=as.factor(PREVCHD)))+
+  geom_bar()
+
+frmgham %>% 
+  filter(CIGPDAY>0) %>% 
+  #group_by(RANDID, SEX, CIGPDAY) %>% 
+  ggplot(aes(x = as.factor(PREVCHD), y=CIGPDAY))+
+  geom_boxplot()
+
+#frmgham %>% 
+#  filter(CIGPDAY>0) %>% 
+#  ggplot(aes(x=CIGPDAY, fill = SEX))+
+#  geom_density(alpha = 0.7)
+```
+
+```{r}
+#frmgham <- frmgham %>% filter(complete.cases(.))
+
+frmgham %>%
+  ggplot(aes(y=AGE, x=as.character(SEX))) +
+  geom_boxplot(alpha=0.5)
+
+
+frmgham %>%
+  ggplot(aes(x=AGE)) +
+  geom_density()
+
+frmgham %>%
+  ggplot(aes(x=AGE, fill=as.character(CIGPDAY %/% 25))) +
+  geom_density(alpha=0.5)
+
+```
+
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+
+differences <- data.frame(
+  Hypertension = 15, # 15% higher risk of CVD for men with hypertension
+  Alcohol = 10,     # 10% higher heart disease mortality rate among men who drink
+  Obesity = -20,    # 20% higher risk of heart disease mortality among obese women
+  Diabetes = -25,  # 25% higher risk of heart disease mortality among women with diabetes
+  Smoking = -30  # 30% higher risk of heart disease mortality in smoking women than men
+)
+
+differences_long <- differences %>% 
+  pivot_longer(cols = everything(),
+               names_to = "Variable",
+               values_to = "Value")
+
+differences_long$Variable <- factor(differences_long$Variable,
+                                          levels = c(
+                                                     "Smoking",
+                                                     "Diabetes",
+                                                     "Obesity",
+                                                     "Alcohol",
+                                            "Hypertension"
+                                                     ))
+
+ggplot(differences_long, aes(x = Value, y = as.factor(Variable), fill = Value<0)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_fill_manual(values = c("TRUE" = "#D2B48C", "FALSE" = "#d85d4c"),
+                    labels = c("TRUE" = "Women", "FALSE" = "Men"))+
+  labs(x="Difference in odds of dying due to heart disease between men and women", 
+       title = "Ratio of dead of heart disease to all that were using/had:") +
+  scale_x_continuous(labels = abs, limits = c(-40, 40), n.breaks = 11)+
+   theme(
+        plot.title = element_blank(),
+        axis.text.x = element_text(angle = 0, vjust = 1, size=20),
+        axis.text = element_text(color = "white"),
+        axis.title = element_text(color = "white"),
+        axis.title.x = element_text(color = "white", size=15),
+        #axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.text = element_text(color = "white"),
+        text = element_text(size=25),
+        legend.title = element_blank(),
+  panel.background = element_rect(fill = "#535966",
+                                  colour = NA_character_),
+  plot.background = element_rect(fill = "#535966",
+                                 colour = NA_character_),
+  legend.background = element_rect(fill = "#535966", color = NA),
+  legend.box.background = element_rect(fill = "#535966", color = NA),
+  legend.key = element_rect(fill = "#535966")
+)+ guides(fill = guide_legend(title = NA)) -> p
+  
+print(p)
+
+  ggsave(
+  plot = p,
+  filename = "Men-woman-plot.png"#,bg = "transparent"
+)
+
+```
