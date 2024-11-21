@@ -1,0 +1,13 @@
+https://www.cdc.gov/heart-disease/data-research/facts-stats/index.html
+https://allofus.nih.gov/news-events/announcements/all-us-dataset-positioned-advance-heart-disease-research
+https://github.com/singator/bdah/blob/master/data/Framingham%20Longitudinal%20Data%20Documentation_v2.pdf
+https://catalog.data.gov/dataset/rates-and-trends-in-heart-disease-and-stroke-mortality-among-us-adults-35-by-county-a-2000-45659
+Races:
+https://www.cdc.gov/nchs/nvss/deaths.htm
+https://www.cdc.gov/nchs/hus/spotlight/HeartDiseaseSpotlight_2019_0404.pdf
+https://www.cdc.gov/nchs/nvss/bridged_race.htm
+Genders:
+https://www.heart.org/-/media/PHD-Files-2/Science-News/2/2024-Heart-and-Stroke-Stat-Update/2024-Statistics-At-A-Glance-final_2024.pdf
+https://www.cdc.gov/nchs/hus/topics/heart-disease-deaths.htm
+https://www.cdc.gov/heart-disease/about/women-and-heart-disease.html
+
