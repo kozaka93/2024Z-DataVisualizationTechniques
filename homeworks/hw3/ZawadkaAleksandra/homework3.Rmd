@@ -1,0 +1,61 @@
+---
+title: "Praca Domowa 3"
+author: "Zawadka Aleksandra"
+output: 
+  html_document:
+    code_folding: hide
+    theme: united
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(scales)
+Sys.setlocale("LC_TIME", "en_US.UTF-8")
+data <- data.frame(
+  date = seq(as.Date("2024-07-20"), as.Date("2024-11-05"), by="4 days"),
+  margin = c(-3.5, -3.5 , -1.9, -1.8, -1.2, -0.4, -0.2, 0.1, 0.3, 0.4, 0.1, 0.1, -0.4, -0.6, -0.3, -0.2, -0.1, -0.6, -0.8, -0.6, -0.6, -0.8, -1, -1.1, -1, -1.5, -1.9, -1.8))
+```
+## Wykres do poprawy
+Wykres przedstawia różnicę procentową poparcia dla partii GOP i Dem w Arizonie.
+```{r, echo=FALSE, out.width="80%"}
+knitr::include_graphics("ArizonaPlot.png")
+```
+
+Źródło: 
+https://www.racetothewh.com/president/2024/states
+
+data publikacji: 05.11.2024
+
+Poprawy wymaga skala na osiach. Na osi OY między 0% a 3% są 3pp, a między 3% a 5% 2pp. Daty na osi OX też się nie zgadzają. Między większością jest różnica 5 dni, ale między niektórymi są to 2 dni, a między 25paź a 1lis jest 7 dni.
+
+## Poprawiony wykres
+```{r wykres, message=FALSE}
+ggplot(data, aes(x = date, y = margin)) +
+  geom_line(color = "#6c54db", linewidth = 1) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +
+  labs(title = "Trend Line - Projected Lead",
+       subtitle = "Dem Lead vs GOP Lead",
+       x = "Date", y = "Margin") +
+  scale_y_continuous(expand=c(0,0),labels = percent_format(scale = 1),
+                     limits = c(-4, 2),           
+                     breaks = c(-4, -2, 0, 2)) +
+  scale_x_date(
+    breaks = seq(as.Date("2024-07-20"), as.Date("2024-11-05"), by="4 days"),
+    date_labels = "%b %d",
+    expand = c(0, 0)
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid.minor.x = element_blank(),
+        plot.title = element_text(hjust = 0.5, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5),
+        axis.text.x = element_text(angle = 45, hjust = 1, color = "black"),
+        axis.text.y = element_text( color = "black")
+      
+  ) +
+  annotate("text", x = as.Date("2024-11-03"), y = 1.5, label = "Dem Lead", color = "#0a5fc0", hjust = 1, fontface = "bold") +
+  annotate("text", x = as.Date("2024-11-03"), y = -3.5, label = "GOP Lead", color = "#8f0f12", hjust = 1, fontface = "bold")
+
+```
+
+Poprzedni wykres wprowadzał odbiorcę w błąd z powodu złej skali. Zmiany poparcia pokazywane co różną ilość dni nie były miarodajne. Przygotowany nowy wykres zachowuje skalę na obu osiach. Na osi OY co 2pp, a na osi OX daty są co 4 dni, żeby objąć cały zakres 108 dni (od 20 lipca do 5 listopada). Dodałam też oznaczenia na osiach i podtytuł.
