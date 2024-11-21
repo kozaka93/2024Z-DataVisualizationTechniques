@@ -1,0 +1,205 @@
+measure,location,sex,age,cause,metric,year,val,upper,lower
+Prevalence,Afghanistan,Both,All ages,Anxiety disorders,Rate,2021,5702.069769,8018.88923,4024.252091
+Prevalence,Albania,Both,All ages,Anxiety disorders,Rate,2021,5015.936363,6707.268644,3607.798326
+Prevalence,Algeria,Both,All ages,Anxiety disorders,Rate,2021,5443.23102,7382.827961,3839.177586
+Prevalence,American Samoa,Both,All ages,Anxiety disorders,Rate,2021,4336.930246,5962.647351,3052.974271
+Prevalence,Andorra,Both,All ages,Anxiety disorders,Rate,2021,6909.081028,9271.308499,5088.895994
+Prevalence,Angola,Both,All ages,Anxiety disorders,Rate,2021,3589.73152,5058.903271,2494.175271
+Prevalence,Antigua and Barbuda,Both,All ages,Anxiety disorders,Rate,2021,5663.313133,7676.588255,4014.314551
+Prevalence,Argentina,Both,All ages,Anxiety disorders,Rate,2021,6597.51935,8812.612759,4768.688604
+Prevalence,Armenia,Both,All ages,Anxiety disorders,Rate,2021,3592.188314,4798.389888,2624.301037
+Prevalence,Australia,Both,All ages,Anxiety disorders,Rate,2021,6333.388581,8498.619982,4501.48064
+Prevalence,Austria,Both,All ages,Anxiety disorders,Rate,2021,7214.108912,9393.110687,5160.207224
+Prevalence,Azerbaijan,Both,All ages,Anxiety disorders,Rate,2021,3061.39906,4185.182978,2173.237751
+Prevalence,Bahamas,Both,All ages,Anxiety disorders,Rate,2021,5848.378003,8090.849482,4291.101915
+Prevalence,Bahrain,Both,All ages,Anxiety disorders,Rate,2021,6120.719336,8097.566185,4318.957285
+Prevalence,Bangladesh,Both,All ages,Anxiety disorders,Rate,2021,3761.164245,5030.802907,2703.457042
+Prevalence,Barbados,Both,All ages,Anxiety disorders,Rate,2021,5826.292172,7784.333499,4282.292055
+Prevalence,Belarus,Both,All ages,Anxiety disorders,Rate,2021,5369.680728,7279.366745,3853.324019
+Prevalence,Belgium,Both,All ages,Anxiety disorders,Rate,2021,6173.394993,8301.439337,4503.170178
+Prevalence,Belize,Both,All ages,Anxiety disorders,Rate,2021,5150.30797,7151.987294,3645.796159
+Prevalence,Benin,Both,All ages,Anxiety disorders,Rate,2021,2968.314322,4137.912747,2059.818356
+Prevalence,Bermuda,Both,All ages,Anxiety disorders,Rate,2021,5663.513419,7507.03059,4018.910892
+Prevalence,Bhutan,Both,All ages,Anxiety disorders,Rate,2021,3383.964498,4557.587959,2385.701239
+Prevalence,Bolivia,Both,All ages,Anxiety disorders,Rate,2021,7678.107511,10320.73259,5516.257019
+Prevalence,Bosnia and Herzegovina,Both,All ages,Anxiety disorders,Rate,2021,4917.044995,6563.194168,3545.307677
+Prevalence,Botswana,Both,All ages,Anxiety disorders,Rate,2021,4706.782728,6501.960264,3376.327986
+Prevalence,Brazil,Both,All ages,Anxiety disorders,Rate,2021,9642.946551,11206.94517,8241.582032
+Prevalence,Brunei,Both,All ages,Anxiety disorders,Rate,2021,3520.994216,4873.938595,2479.884777
+Prevalence,Bulgaria,Both,All ages,Anxiety disorders,Rate,2021,5390.571508,7311.916308,3851.662535
+Prevalence,Burkina Faso,Both,All ages,Anxiety disorders,Rate,2021,2827.282184,3957.177344,1938.185791
+Prevalence,Burundi,Both,All ages,Anxiety disorders,Rate,2021,3699.770231,5058.306451,2549.211045
+Prevalence,Ivory Coast,Both,All ages,Anxiety disorders,Rate,2021,3001.535031,4198.664513,2102.53579
+Prevalence,Cape Verde,Both,All ages,Anxiety disorders,Rate,2021,3667.324263,5066.054398,2581.180738
+Prevalence,Cambodia,Both,All ages,Anxiety disorders,Rate,2021,4668.377087,6358.877092,3310.630205
+Prevalence,Cameroon,Both,All ages,Anxiety disorders,Rate,2021,3077.165865,4216.481969,2111.430553
+Prevalence,Canada,Both,All ages,Anxiety disorders,Rate,2021,5260.76224,7189.716313,3816.646984
+Prevalence,Central African Republic,Both,All ages,Anxiety disorders,Rate,2021,3739.417561,5224.828279,2629.727058
+Prevalence,Chad,Both,All ages,Anxiety disorders,Rate,2021,2747.303279,3950.964912,1917.041941
+Prevalence,Chile,Both,All ages,Anxiety disorders,Rate,2021,6984.317872,9416.163932,4950.583941
+Prevalence,China,Both,All ages,Anxiety disorders,Rate,2021,3734.495745,4332.765553,3201.181656
+Prevalence,Colombia,Both,All ages,Anxiety disorders,Rate,2021,5916.19586,8161.419967,4167.573138
+Prevalence,Comoros,Both,All ages,Anxiety disorders,Rate,2021,4074.580823,5718.424256,2981.637309
+Prevalence,Republic of Congo,Both,All ages,Anxiety disorders,Rate,2021,3880.800678,5300.737489,2764.02344
+Prevalence,Cook Islands,Both,All ages,Anxiety disorders,Rate,2021,4538.370518,6080.884677,3364.355577
+Prevalence,Costa Rica,Both,All ages,Anxiety disorders,Rate,2021,5367.49918,7309.745554,3791.103906
+Prevalence,Croatia,Both,All ages,Anxiety disorders,Rate,2021,4779.158233,6588.453125,3353.521874
+Prevalence,Cuba,Both,All ages,Anxiety disorders,Rate,2021,5705.42052,7516.438248,4093.413432
+Prevalence,Cyprus,Both,All ages,Anxiety disorders,Rate,2021,7240.181168,9787.70824,5279.23048
+Prevalence,Czech Republic,Both,All ages,Anxiety disorders,Rate,2021,4405.442482,5933.874417,3229.090156
+Prevalence,North Korea,Both,All ages,Anxiety disorders,Rate,2021,3902.287224,5210.128103,2774.593171
+Prevalence,Democratic Republic of the Congo,Both,All ages,Anxiety disorders,Rate,2021,3480.970403,4890.205411,2446.218862
+Prevalence,Denmark,Both,All ages,Anxiety disorders,Rate,2021,6262.234925,8327.63028,4529.289445
+Prevalence,Djibouti,Both,All ages,Anxiety disorders,Rate,2021,3780.952595,5282.787709,2730.421739
+Prevalence,Dominica,Both,All ages,Anxiety disorders,Rate,2021,5614.007999,7568.817634,4009.296757
+Prevalence,Dominican Republic,Both,All ages,Anxiety disorders,Rate,2021,5153.135005,6938.195042,3734.494114
+Prevalence,Ecuador,Both,All ages,Anxiety disorders,Rate,2021,6645.988092,9081.13814,4804.712818
+Prevalence,Egypt,Both,All ages,Anxiety disorders,Rate,2021,5189.741186,7074.310603,3702.988819
+Prevalence,El Salvador,Both,All ages,Anxiety disorders,Rate,2021,5220.809192,7055.897592,3672.503963
+Prevalence,Equatorial Guinea,Both,All ages,Anxiety disorders,Rate,2021,3696.051123,5231.41314,2544.858596
+Prevalence,Eritrea,Both,All ages,Anxiety disorders,Rate,2021,3745.923371,5083.144098,2602.249519
+Prevalence,Estonia,Both,All ages,Anxiety disorders,Rate,2021,4775.339334,6633.315711,3375.743073
+Prevalence,Eswatini,Both,All ages,Anxiety disorders,Rate,2021,4915.484114,6708.645694,3478.495378
+Prevalence,Ethiopia,Both,All ages,Anxiety disorders,Rate,2021,3723.501245,4535.92806,3056.257053
+Prevalence,Fiji,Both,All ages,Anxiety disorders,Rate,2021,4421.284913,6087.054941,3139.932313
+Prevalence,Finland,Both,All ages,Anxiety disorders,Rate,2021,4849.763591,6738.151828,3501.616395
+Prevalence,France,Both,All ages,Anxiety disorders,Rate,2021,7827.387273,10436.81244,5716.503249
+Prevalence,Gabon,Both,All ages,Anxiety disorders,Rate,2021,4179.720627,5862.412068,2970.567086
+Prevalence,Gambia,Both,All ages,Anxiety disorders,Rate,2021,3278.959599,4485.590856,2295.379895
+Prevalence,Georgia,Both,All ages,Anxiety disorders,Rate,2021,3063.070887,4198.696398,2173.214787
+Prevalence,Germany,Both,All ages,Anxiety disorders,Rate,2021,7850.030269,10419.03998,5689.188976
+Prevalence,Ghana,Both,All ages,Anxiety disorders,Rate,2021,3119.280918,4338.109177,2266.784733
+Prevalence,Greece,Both,All ages,Anxiety disorders,Rate,2021,7275.905177,9641.111097,5314.452651
+Prevalence,Greenland,Both,All ages,Anxiety disorders,Rate,2021,6349.633914,8682.285655,4441.088101
+Prevalence,Grenada,Both,All ages,Anxiety disorders,Rate,2021,5518.054704,7410.21618,3919.9478
+Prevalence,Guam,Both,All ages,Anxiety disorders,Rate,2021,4609.754274,6078.761133,3351.964805
+Prevalence,Guatemala,Both,All ages,Anxiety disorders,Rate,2021,5130.192129,6848.855585,3653.643549
+Prevalence,Guinea,Both,All ages,Anxiety disorders,Rate,2021,3182.663457,4468.718444,2205.994637
+Prevalence,Guinea-Bissau,Both,All ages,Anxiety disorders,Rate,2021,3077.197892,4320.40196,2147.082309
+Prevalence,French Guiana,Both,All ages,Anxiety disorders,Rate,2021,5725.579233,7838.608255,4046.557679
+Prevalence,Haiti,Both,All ages,Anxiety disorders,Rate,2021,5117.985971,7096.219911,3615.388535
+Prevalence,Honduras,Both,All ages,Anxiety disorders,Rate,2021,5380.026425,7421.250219,3839.34907
+Prevalence,Hungary,Both,All ages,Anxiety disorders,Rate,2021,4663.284998,6339.87328,3443.190083
+Prevalence,Iceland,Both,All ages,Anxiety disorders,Rate,2021,5908.697408,7765.213173,4277.937785
+Prevalence,India,Both,All ages,Anxiety disorders,Rate,2021,3674.878146,4268.762119,3142.747133
+Prevalence,Indonesia,Both,All ages,Anxiety disorders,Rate,2021,4442.189601,5244.381061,3795.391182
+Prevalence,Iran,Both,All ages,Anxiety disorders,Rate,2021,8538.699833,9815.872953,7283.908253
+Prevalence,Iraq,Both,All ages,Anxiety disorders,Rate,2021,5967.848343,8196.650347,4205.139522
+Prevalence,Ireland,Both,All ages,Anxiety disorders,Rate,2021,8045.647135,10919.64548,5976.331178
+Prevalence,Israel,Both,All ages,Anxiety disorders,Rate,2021,4400.48689,6008.646152,3174.499974
+Prevalence,Italy,Both,All ages,Anxiety disorders,Rate,2021,6948.939355,7956.943272,5931.513534
+Prevalence,Jamaica,Both,All ages,Anxiety disorders,Rate,2021,5588.339224,7638.061667,3960.52127
+Prevalence,Japan,Both,All ages,Anxiety disorders,Rate,2021,3177.785481,3650.936282,2744.25357
+Prevalence,Jordan,Both,All ages,Anxiety disorders,Rate,2021,5983.45602,7941.022942,4164.590431
+Prevalence,Kazakhstan,Both,All ages,Anxiety disorders,Rate,2021,2456.368968,3202.466382,1736.041163
+Prevalence,Kenya,Both,All ages,Anxiety disorders,Rate,2021,3769.048624,4458.618314,3204.634632
+Prevalence,Kiribati,Both,All ages,Anxiety disorders,Rate,2021,4174.424153,5893.660809,3008.72605
+Prevalence,Kuwait,Both,All ages,Anxiety disorders,Rate,2021,5506.737737,7441.235201,3908.407357
+Prevalence,Kyrgyzstan,Both,All ages,Anxiety disorders,Rate,2021,2481.546482,3417.99099,1727.071084
+Prevalence,Laos,Both,All ages,Anxiety disorders,Rate,2021,4966.318705,6785.283132,3499.014815
+Prevalence,Latvia,Both,All ages,Anxiety disorders,Rate,2021,5402.924297,7447.798113,3873.621211
+Prevalence,Lebanon,Both,All ages,Anxiety disorders,Rate,2021,8538.20885,11446.51651,5974.632903
+Prevalence,Lesotho,Both,All ages,Anxiety disorders,Rate,2021,4845.320309,6722.642163,3527.835585
+Prevalence,Liberia,Both,All ages,Anxiety disorders,Rate,2021,3227.3814,4435.314569,2276.420983
+Prevalence,Libya,Both,All ages,Anxiety disorders,Rate,2021,6670.54318,9119.25475,4780.326227
+Prevalence,Lithuania,Both,All ages,Anxiety disorders,Rate,2021,6179.656637,8263.588088,4464.547191
+Prevalence,Luxembourg,Both,All ages,Anxiety disorders,Rate,2021,6531.250179,8847.663513,4767.292298
+Prevalence,Madagascar,Both,All ages,Anxiety disorders,Rate,2021,3959.679309,5554.73434,2729.50835
+Prevalence,Malawi,Both,All ages,Anxiety disorders,Rate,2021,4015.654237,5586.398072,2795.798069
+Prevalence,Malaysia,Both,All ages,Anxiety disorders,Rate,2021,5464.206193,7509.843241,3889.035776
+Prevalence,Maldives,Both,All ages,Anxiety disorders,Rate,2021,4169.930093,5735.28772,2980.637981
+Prevalence,Mali,Both,All ages,Anxiety disorders,Rate,2021,2678.597909,3744.371269,1861.692948
+Prevalence,Malta,Both,All ages,Anxiety disorders,Rate,2021,6873.343505,9304.381992,4831.132959
+Prevalence,Marshall Islands,Both,All ages,Anxiety disorders,Rate,2021,4198.944849,5838.450789,3074.778637
+Prevalence,Mauritania,Both,All ages,Anxiety disorders,Rate,2021,2860.599693,4056.063486,2046.209975
+Prevalence,Mauritius,Both,All ages,Anxiety disorders,Rate,2021,4717.211889,6274.801388,3321.227922
+Prevalence,Mexico,Both,All ages,Anxiety disorders,Rate,2021,4720.123045,5502.469864,3986.10296
+Prevalence,Micronesia,Both,All ages,Anxiety disorders,Rate,2021,4276.910907,5979.68246,3024.789212
+Prevalence,Monaco,Both,All ages,Anxiety disorders,Rate,2021,6715.907356,9248.628425,4706.823426
+Prevalence,Mongolia,Both,All ages,Anxiety disorders,Rate,2021,2178.317578,3065.329227,1587.306779
+Prevalence,Montenegro,Both,All ages,Anxiety disorders,Rate,2021,5103.138338,6841.62653,3592.940265
+Prevalence,Morocco,Both,All ages,Anxiety disorders,Rate,2021,6139.203586,8308.744724,4421.702491
+Prevalence,Mozambique,Both,All ages,Anxiety disorders,Rate,2021,3892.330137,5338.426084,2774.236291
+Prevalence,Myanmar,Both,All ages,Anxiety disorders,Rate,2021,4706.159293,6244.388025,3377.116048
+Prevalence,Namibia,Both,All ages,Anxiety disorders,Rate,2021,4818.764072,6519.059979,3403.421972
+Prevalence,Nauru,Both,All ages,Anxiety disorders,Rate,2021,4067.61671,5644.41372,2934.404625
+Prevalence,Nepal,Both,All ages,Anxiety disorders,Rate,2021,3903.94077,5568.44564,2730.566808
+Prevalence,Netherlands,Both,All ages,Anxiety disorders,Rate,2021,8077.657424,10698.23677,5773.590579
+Prevalence,New Zealand,Both,All ages,Anxiety disorders,Rate,2021,7704.069648,9630.362676,6074.680095
+Prevalence,Nicaragua,Both,All ages,Anxiety disorders,Rate,2021,5203.284242,7094.864545,3733.501647
+Prevalence,Niger,Both,All ages,Anxiety disorders,Rate,2021,2504.939582,3516.838625,1742.80128
+Prevalence,Nigeria,Both,All ages,Anxiety disorders,Rate,2021,2802.60063,3292.083594,2368.349496
+Prevalence,Niue,Both,All ages,Anxiety disorders,Rate,2021,4443.068109,5965.015892,3165.896886
+Prevalence,North Macedonia,Both,All ages,Anxiety disorders,Rate,2021,5297.785147,7094.209185,3837.984453
+Prevalence,Northern Mariana Islands,Both,All ages,Anxiety disorders,Rate,2021,4733.687811,6414.911841,3396.774502
+Prevalence,Norway,Both,All ages,Anxiety disorders,Rate,2021,7860.095732,9219.174889,6667.318215
+Prevalence,Oman,Both,All ages,Anxiety disorders,Rate,2021,5777.077083,7886.820621,4037.79506
+Prevalence,Pakistan,Both,All ages,Anxiety disorders,Rate,2021,3422.218527,4242.715228,2762.938493
+Prevalence,Palau,Both,All ages,Anxiety disorders,Rate,2021,4407.172107,6114.695349,3162.547457
+Prevalence,Palestine,Both,All ages,Anxiety disorders,Rate,2021,6367.790654,8667.523167,4480.389693
+Prevalence,Panama,Both,All ages,Anxiety disorders,Rate,2021,4747.587421,6602.071535,3339.963705
+Prevalence,Papua New Guinea,Both,All ages,Anxiety disorders,Rate,2021,3777.424935,5183.316867,2627.383151
+Prevalence,Paraguay,Both,All ages,Anxiety disorders,Rate,2021,8570.50153,11462.79309,6179.236145
+Prevalence,Peru,Both,All ages,Anxiety disorders,Rate,2021,7466.165768,10421.88172,5116.500644
+Prevalence,Philippines,Both,All ages,Anxiety disorders,Rate,2021,4770.415644,5529.224218,4088.09766
+Prevalence,Poland,Both,All ages,Anxiety disorders,Rate,2021,4450.694471,5154.741781,3827.30627
+Prevalence,Portugal,Both,All ages,Anxiety disorders,Rate,2021,9952.698269,13155.07993,7176.808614
+Prevalence,Puerto Rico,Both,All ages,Anxiety disorders,Rate,2021,5563.011597,7373.648272,3977.21299
+Prevalence,Qatar,Both,All ages,Anxiety disorders,Rate,2021,5209.086653,7385.767976,3613.885476
+Prevalence,South Korea,Both,All ages,Anxiety disorders,Rate,2021,3787.565015,5055.784442,2701.145766
+Prevalence,Moldova,Both,All ages,Anxiety disorders,Rate,2021,5299.190749,7084.279788,3801.126863
+Prevalence,Romania,Both,All ages,Anxiety disorders,Rate,2021,4608.422899,6120.516414,3174.131423
+Prevalence,Russia,Both,All ages,Anxiety disorders,Rate,2021,4649.537975,5372.474224,4040.688025
+Prevalence,Rwanda,Both,All ages,Anxiety disorders,Rate,2021,3976.303813,5519.284112,2815.732262
+Prevalence,Saint Kitts and Nevis,Both,All ages,Anxiety disorders,Rate,2021,5569.246017,7510.746345,3994.517903
+Prevalence,Saint Lucia,Both,All ages,Anxiety disorders,Rate,2021,5964.998204,7963.748588,4347.338214
+Prevalence,Saint Vincent and the Grenadines,Both,All ages,Anxiety disorders,Rate,2021,5483.381852,7336.070742,3876.288735
+Prevalence,Samoa,Both,All ages,Anxiety disorders,Rate,2021,3982.909678,5436.260269,2854.082235
+Prevalence,San Marino,Both,All ages,Anxiety disorders,Rate,2021,6986.955638,9275.260438,5011.975168
+Prevalence,Sao Tome and Principe,Both,All ages,Anxiety disorders,Rate,2021,3165.688697,4291.29754,2202.672087
+Prevalence,Saudi Arabia,Both,All ages,Anxiety disorders,Rate,2021,5591.503655,7653.771461,3967.620606
+Prevalence,Senegal,Both,All ages,Anxiety disorders,Rate,2021,3271.714147,4560.326605,2325.334952
+Prevalence,Serbia,Both,All ages,Anxiety disorders,Rate,2021,4623.462115,6319.21839,3309.454308
+Prevalence,Seychelles,Both,All ages,Anxiety disorders,Rate,2021,4600.994254,6254.921471,3361.763064
+Prevalence,Sierra Leone,Both,All ages,Anxiety disorders,Rate,2021,3095.277739,4259.482785,2187.057763
+Prevalence,Singapore,Both,All ages,Anxiety disorders,Rate,2021,3233.769384,4375.289585,2295.68338
+Prevalence,Slovakia,Both,All ages,Anxiety disorders,Rate,2021,4835.031062,6483.745655,3566.760868
+Prevalence,Slovenia,Both,All ages,Anxiety disorders,Rate,2021,4445.133727,6062.148704,3195.016887
+Prevalence,Solomon Islands,Both,All ages,Anxiety disorders,Rate,2021,3996.9375,5622.817718,2854.905753
+Prevalence,Somalia,Both,All ages,Anxiety disorders,Rate,2021,3559.24344,4936.723791,2474.113033
+Prevalence,South Africa,Both,All ages,Anxiety disorders,Rate,2021,4998.329754,6007.931731,4174.382426
+Prevalence,South Sudan,Both,All ages,Anxiety disorders,Rate,2021,3947.059657,5461.818098,2799.372998
+Prevalence,Spain,Both,All ages,Anxiety disorders,Rate,2021,6084.203432,8175.249387,4477.956619
+Prevalence,Sri Lanka,Both,All ages,Anxiety disorders,Rate,2021,4749.984891,6357.932946,3303.376332
+Prevalence,Sudan,Both,All ages,Anxiety disorders,Rate,2021,5751.404402,8162.648931,4120.614232
+Prevalence,Suriname,Both,All ages,Anxiety disorders,Rate,2021,5777.211772,7721.011722,4088.888313
+Prevalence,Sweden,Both,All ages,Anxiety disorders,Rate,2021,5996.6614,7508.090439,4771.830312
+Prevalence,Switzerland,Both,All ages,Anxiety disorders,Rate,2021,7874.0308,10438.50495,5795.500338
+Prevalence,Syria,Both,All ages,Anxiety disorders,Rate,2021,6737.145724,9181.953515,4763.094348
+Prevalence,Taiwan (Province of China),Both,All ages,Anxiety disorders,Rate,2021,4131.333883,5545.89843,3024.607272
+Prevalence,Tajikistan,Both,All ages,Anxiety disorders,Rate,2021,2638.255004,3649.32214,1841.255295
+Prevalence,Thailand,Both,All ages,Anxiety disorders,Rate,2021,4252.633909,5774.203419,3000.463183
+Prevalence,Timor-Leste,Both,All ages,Anxiety disorders,Rate,2021,3842.916129,5154.297467,2728.582549
+Prevalence,Togo,Both,All ages,Anxiety disorders,Rate,2021,3239.94266,4434.061231,2267.492657
+Prevalence,Tokelau,Both,All ages,Anxiety disorders,Rate,2021,4326.696025,5861.404243,3176.683652
+Prevalence,Tonga,Both,All ages,Anxiety disorders,Rate,2021,4045.085343,5422.097428,2876.137767
+Prevalence,Trinidad and Tobago,Both,All ages,Anxiety disorders,Rate,2021,5711.060189,7969.152489,4162.3627
+Prevalence,Tunisia,Both,All ages,Anxiety disorders,Rate,2021,6980.538912,9474.70461,5050.88832
+Prevalence,Turkey,Both,All ages,Anxiety disorders,Rate,2021,5614.342021,7667.846137,3927.475832
+Prevalence,Turkmenistan,Both,All ages,Anxiety disorders,Rate,2021,2638.271909,3530.949561,1862.540434
+Prevalence,Tuvalu,Both,All ages,Anxiety disorders,Rate,2021,4201.929602,5772.906683,2969.704963
+Prevalence,Uganda,Both,All ages,Anxiety disorders,Rate,2021,3767.387863,5187.275821,2697.955049
+Prevalence,Ukraine,Both,All ages,Anxiety disorders,Rate,2021,4357.793417,5539.574791,3268.864639
+Prevalence,United Arab Emirates,Both,All ages,Anxiety disorders,Rate,2021,5389.944798,7389.263016,3720.685179
+Prevalence,UK,Both,All ages,Anxiety disorders,Rate,2021,5749.756144,6557.270507,4997.208404
+Prevalence,Tanzania,Both,All ages,Anxiety disorders,Rate,2021,3796.561752,5294.106201,2649.843836
+Prevalence,USA,Both,All ages,Anxiety disorders,Rate,2021,7306.189671,8410.008459,6279.479401
+Prevalence,United States Virgin Islands,Both,All ages,Anxiety disorders,Rate,2021,5581.697601,7378.919635,4065.984543
+Prevalence,Uruguay,Both,All ages,Anxiety disorders,Rate,2021,6822.461349,9133.507732,5021.27679
+Prevalence,Uzbekistan,Both,All ages,Anxiety disorders,Rate,2021,2318.789478,3218.21869,1667.289323
+Prevalence,Vanuatu,Both,All ages,Anxiety disorders,Rate,2021,4040.153788,5623.340294,2840.327959
+Prevalence,Venezuela,Both,All ages,Anxiety disorders,Rate,2021,4582.753169,6248.754565,3278.476494
+Prevalence,Vietnam,Both,All ages,Anxiety disorders,Rate,2021,2670.034023,3576.378112,1914.803855
+Prevalence,Yemen,Both,All ages,Anxiety disorders,Rate,2021,5060.934207,6882.570982,3620.497513
+Prevalence,Zambia,Both,All ages,Anxiety disorders,Rate,2021,4124.732159,5693.379432,2861.147723
+Prevalence,Zimbabwe,Both,All ages,Anxiety disorders,Rate,2021,3688.05827,5157.669471,2534.633575
