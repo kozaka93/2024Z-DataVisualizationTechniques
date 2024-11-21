@@ -12,6 +12,6 @@ Autorzy:
 
 Uwagi:
 Nie udało nam się dodać jednej ramki (hsw_ph3_06_tabular.tsv) do folderu kody, ponieważ plik był większy niż 25MB.
-Można go znaleźć i pobrac wchodząc w pierwszy link ze źródeł.
+Udało się dodać tylko przez umieszczenie jej w zip-folderze. Także można ją znaleźć i pobrac wchodząc w pierwszy link ze źródeł.
 
 ![Tytul](Kawulska_Dzeranhouskaya.png)
