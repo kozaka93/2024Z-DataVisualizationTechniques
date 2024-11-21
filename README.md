@@ -75,7 +75,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>7</td>
     <td>11-21</td>
     <td>Presentation of P1</td>
-    <td>R: plotly - interactive visualization</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab07">R: plotly - interactive visualization</a></td>
     <td>Presentation of P1</td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/issues/212">HW3</a> (6p)</td>
   </tr>
