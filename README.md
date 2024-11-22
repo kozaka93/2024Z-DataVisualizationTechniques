@@ -84,7 +84,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>11-28</td>
     <td>-</td>
     <td>- </td>
-    <td>-</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/projects/project2">Introducing P2</a></td>
     <td>P1 (20p)</td>
   </tr>
   <tr>
