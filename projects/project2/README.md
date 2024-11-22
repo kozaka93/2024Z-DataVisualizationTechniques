@@ -20,7 +20,7 @@ Za projekt można otrzymać od 0 do 29 punktów, z czego:
 
 ## Oddanie projektu
 
-Czas na wykonanie projektu jest do **22-01-2023** - do tego dnia (włącznie) będą przyjmowane Pull Requests (PR) na GitHub.
+Czas na wykonanie projektu jest do **22-01-2025** - do tego dnia (włącznie) będą przyjmowane Pull Requests (PR) na GitHub.
 
 W PR o nazwie `[projekt2] Nazwisko1_Nazwisko2_Nazwisko3` należy zamieścić folder o nazwie `nazwisko1_nazwisko2_nazwisko3` zawierający:
 
