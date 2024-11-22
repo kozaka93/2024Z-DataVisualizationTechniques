@@ -82,23 +82,23 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>8</td>
     <td>11-28</td>
-    <td>Dashboard</td>
-    <td>R: Shiny - introduction</td>
-    <td>Introducing P2</td>
+    <td>--</td>
+    <td>-- </td>
+    <td>--</td>
     <td>P1 (20p)</td>
   </tr>
   <tr>
     <td>9</td>
     <td>12-05</td>
-    <td></td>
-    <td>R: Shiny - exercise</td>
+    <td>Dashboard</td>
+    <td>R: Shiny - introduction & exercise</td>
     <td>Group work (P2.1): idea, data sources</td>
     <td>P2 (1p)</td>
   </tr>
   <tr>
     <td>10</td>
     <td>12-12</td>
-    <td>History of Statistical Graphics</td>
+    <td>--</td>
     <td>R: Shiny - advanced</td>
     <td>Consultations: problems with data, change the topic, prototype of plots</td>
     <td>HW4 (6p)</td>
@@ -106,7 +106,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>11</td>
     <td>12-19</td>
-    <td>The International Business Communication Standards</td>
+    <td>History of Statistical Graphics <br>The International Business Communication Standards</td>
     <td>Python: pandas, numpy, pandas.plot</td>
     <td>Group work (P2.2): data exploration, prototype of plots</td>
     <td>P2 (2p)</td>
