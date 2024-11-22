@@ -82,9 +82,9 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>8</td>
     <td>11-28</td>
-    <td>--</td>
-    <td>-- </td>
-    <td>--</td>
+    <td>-</td>
+    <td>- </td>
+    <td>-</td>
     <td>P1 (20p)</td>
   </tr>
   <tr>
@@ -98,7 +98,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>10</td>
     <td>12-12</td>
-    <td>--</td>
+    <td>-</td>
     <td>R: Shiny - advanced</td>
     <td>Consultations: problems with data, change the topic, prototype of plots</td>
     <td>HW4 (6p)</td>
