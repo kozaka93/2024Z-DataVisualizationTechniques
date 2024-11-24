@@ -1,0 +1,49 @@
+---
+title: '[HW3]'
+author: "Liliana Sirko"
+date: "2024-11-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Wizualizacja Źródłowa
+
+![](/Users/lila/Desktop/SirkoLiliana/originalPlot.jpg)
+
+Źródło: NBC News, Nov 5, 2024, \n
+https://www.nbcnews.com/video/first-exit-polls-reveal-data-across-america-223659077634
+
+Zaprezentowany wykres kołowy jest trójwymiarowy, co bardzo utrudnia dostrzeżenie różnicy pomiędzy 36% i 30%. Pole powierzchni "The Economy" jest znacznie więsze od "State of democracy", pomimo tego, że reprezentuje mniejszą wartość.
+
+## Poprawiona Wizualizacja:
+
+```{r, echo=TRUE, results='hide', message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+
+df <- tibble(Values = c("STATE OF DEMOCRACY", "THE ECONOMY", "ABORTION", "IMMIGRATION", "FOREIGN POLICY", "OTHER"),
+             Percentages = c(36, 30, 14, 11, 4, 5))
+
+df$Values <- factor(df$Values, levels = c("STATE OF DEMOCRACY", "THE ECONOMY", "ABORTION", "IMMIGRATION", "FOREIGN POLICY", "OTHER"))
+
+```
+
+```{r pressure, echo=TRUE}
+ggplot(df, aes(x = Values, y = Percentages, fill = Values)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.margin = margin(10, 10, 10, 10)) +
+  scale_y_continuous(
+    limits = c(0, max(df$Percentages) + 5),
+    labels = scales::percent_format(scale = 1)) +
+  geom_text(aes(label = paste0(Percentages, "%")), vjust = -0.5, size = 4) +
+  labs(title = "Most Important Isuue", x = " ", y = " ", fill = " ")
+
+```
+
+Wykres słupkowy pozwala na łatwiejsze porównywanie wartości procentowych oraz eliminuje mylące efekty wizualne powodowane przez trójwymiarową naturę orginalnego wykresu.   
