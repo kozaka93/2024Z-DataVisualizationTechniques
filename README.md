@@ -91,7 +91,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>9</td>
     <td>12-05</td>
     <td>Dashboard</td>
-    <td>R: Shiny - introduction & exercise</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab09">R: Shiny - introduction & exercise</a></td>
     <td>Group work (P2.1): idea, data sources</td>
     <td>P2 (1p)</td>
   </tr>
