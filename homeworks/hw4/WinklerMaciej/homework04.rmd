@@ -1,0 +1,58 @@
+---
+title: "Praca domowa 4"
+author: "Maciej Winkler"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    theme: united
+  pdf_document:
+    toc: true
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+```
+
+Do utworzenia wykresu została użyta ramka danych "TABL. 6. WYCHOWANKOWIE INSTYTUCJONALNEJ PIECZY ZASTĘPCZEJ WEDŁUG WIEKU". Wykorzystujemy z niej ogólne dane ilości wychowanków pieczy instytucjonalnej z 2023 roku z podziałem na przedziały wiekowe tych wychochawnków.
+
+```{r wykres, message=FALSE, warning = FALSE}
+df1 <- read.csv("2023_PieczaZastepczaWychowankowie.csv")
+
+
+df1 <- df1[c(13:28),-2]
+colnames(df1) <- c('Wojewodztwo', 'ogolem', '0', '1-3', '4-6', '7-9', '10-13', '14-17', '17+')
+df1 <- df1[, -c(10, 11)]
+df1[8,3] <- 0
+df1 <- df1[,-2]
+
+df1_long <- df1 %>%
+  pivot_longer(cols = `0`:`17+`, 
+               names_to = "Przedzial_wiekowy", 
+               values_to = "Liczba_osob")
+
+df1_long <- df1_long %>%
+  mutate(Liczba_osob = as.numeric(Liczba_osob))
+df1_long[83, 3] <- 1141
+
+df1_long <- df1_long %>%
+  mutate(Przedzial_wiekowy = factor(Przedzial_wiekowy, 
+                                    levels = c("0", "1-3", "4-6", "7-9", "10-13", "14-17", "17+")))
+
+
+ggplot(df1_long, aes(x = Przedzial_wiekowy, y = Liczba_osob, fill = Przedzial_wiekowy)) +
+  geom_col() +
+  facet_wrap(~ Wojewodztwo) +
+  scale_y_continuous(breaks = function(x) pretty(x, n = 5)) +
+  theme_minimal() +
+  labs(title = "Liczba wychowanków instytucjonalnej pieczy zastępczej według wieku",
+       x = "Przedział wiekowy",
+       y = "Liczba osób") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+Wyżej umieszczony wykres ukazuje ilość wychowanków pieczy instytucjonalnej z podziałem na wiek w poszczególnych województwach. Z wykresu możemy wyczytać, że wśród wychowanków przewyżają osoby z przedziału 14-17 lat w każdym województwie, a ogólem największa ilość wychowanków pieczy jest w województwach Śląskim i Dolnośląskim.
