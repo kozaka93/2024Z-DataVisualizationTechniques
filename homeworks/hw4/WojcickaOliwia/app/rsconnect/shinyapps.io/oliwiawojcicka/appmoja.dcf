@@ -1,0 +1,12 @@
+name: appmoja
+title: appmoja
+username: oliwiawojcicka
+account: oliwiawojcicka
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13547899
+bundleId: 9480458
+url: https://oliwiawojcicka.shinyapps.io/appmoja/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
