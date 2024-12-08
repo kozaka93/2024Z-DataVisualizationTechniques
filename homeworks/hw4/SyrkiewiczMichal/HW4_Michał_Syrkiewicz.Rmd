@@ -1,0 +1,94 @@
+---
+title: "Wizualizacja zmiany liczby wychowanków w latach 2016-2023"
+output:
+  html_document:
+    df_print: paged
+---
+Do wygenerowania wizualizacji wykorzystałem dane dotyczące liczby wychowanków w placówkach w latach 2016 i 2023  oraz te same dane w podziale na województwa.
+```{r Użyte pakiety, message=FALSE, warning=FALSE,include = FALSE}
+library(leaflet)
+library(sf)
+library(dplyr)
+library(glue)
+
+```
+```{r Przygotowywanie danych do wizualizacji, message=FALSE, warning=FALSE,,include = FALSE}
+
+
+dane <- data.frame(
+  Wojewodztwo <- c(
+    "Łódzkie", "Świętokrzyskie", "Wielkopolskie", "Kujawsko-Pomorskie", "Małopolskie", 
+    "Dolnośląskie", "Lubelskie", "Lubuskie", "Mazowieckie", "Opolskie", 
+    "Podlaskie", "Pomorskie", "Śląskie", "Podkarpackie", "Warmińsko-Mazurskie",
+    "Zachodniopomorskie"
+  ),
+  Wychowankowie_2016 = c(1560, 740, 1441, 1701, 1645, 3120, 1402, 678, 2675, 695, 581, 1415, 3542, 966, 1350,1403),
+  Wychowankowie_2023 = c(1689, 760, 1208, 1811, 1673, 3050, 1297, 664, 2531, 539, 597, 1501, 3131, 819, 1182, 1205)
+)
+
+dane <- dane %>%
+  mutate(
+    Roznica = Wychowankowie_2023 - Wychowankowie_2016,
+    Procent_Roznicy = (Roznica / Wychowankowie_2016) * 100,
+    Wojewodztwo = Wojewodztwo....c..Łódzkie....Świętokrzyskie....Wielkopolskie...
+  ) %>% select(c(6,2,3,4,5))
+
+granice <- st_read("https://raw.githubusercontent.com/andilabs/polska-wojewodztwa-geojson/refs/heads/master/polska-wojewodztwa.geojson")
+
+
+```
+```{r Tworzenie mapy, message=FALSE, warning=FALSE,include = FALSE}
+
+granice$name <- dane$Wojewodztwo
+colnames(granice)[12] <-"Wojewodztwo"
+granice_dane <- granice %>%
+  left_join(dane, by = "Wojewodztwo")
+
+granice_dane$labels <- glue(
+  "<strong>{granice_dane$Wojewodztwo}</strong><br/>
+   Wychowankowie w 2023: <strong>{granice_dane$Wychowankowie_2023}</strong><br/>
+   Wychowankowie w 2016: <strong>{granice_dane$Wychowankowie_2016}</strong><br/>
+   Różnica: <strong>{granice_dane$Roznica}</strong> osób (<i>{format(granice_dane$Procent_Roznicy, digits = 2)}%</i>)"
+)
+granice_dane$labels <- lapply(granice_dane$labels, htmltools::HTML)
+
+pal <- colorNumeric(
+  palette = c("darkgreen", "white", "darkred"),
+  domain = c(-23, 23)
+)
+
+p <- leaflet(granice_dane) %>%
+  addTiles() %>%
+  addPolygons(
+    fillColor = ~pal(Procent_Roznicy),  
+    weight = 1,
+    color = "black",
+    fillOpacity = 0.8,
+    label = ~labels, 
+    labelOptions = labelOptions(
+      style = list("color" = "black"),
+      textsize = "13px",
+      direction = "auto"
+    )
+  ) %>%
+  addLegend(
+    pal = pal,
+    values = ~Procent_Roznicy,
+    title = "Różnica w %",
+    position = "bottomright"
+  )
+
+```
+```{r,echo=FALSE}
+p
+```
+
+
+Moja wizualizacja prezentuje zmianę, zarówno procentową, jak i numeryczną liczby wychowanków w placówkach. Dla każdego województwa użytkownik otrzymuje informacje na temat liczby wychowanków w roku 2016 i 2023, ich różnicę o raz procent zmiany ich liczby. <br>
+
+Z wykresu wynika, że nie w każdym województwie zanotowano spadek liczby wychowanków w ośrodkach i placówkach opiekuńczych. Spadek miał miejsce w 10 województwach, największy, bo aż 22% na Opolszczyźnie.
+Wzrosty, które nie są tak duże jak spadki.Największe z nich na poziomie 6% na Lubelszczyźnie, Pomorzu oraz województwie Kujawsko-Pomorskim. W 5 województwach można powiedzieć, że liczba praktycznie się nie zmieniła. Zmiana była tam w zakresie [-3%, 3%].
+Jednakże można zaobserwować spadek liczby wychowanków w skali całego kraju.
+
+Autor: Michał Syrkiewicz <br>
+Źródło danych: Fundacja Gajusz
