@@ -1,4 +1,4 @@
-# Jak zmienia sie problem (pozostawienia noworodkow w Szpitalu) w Polsce na przestrzeni lat 
+# Jak zmienia sie problem (pozostawienia noworodkow w Szpitalu) w Polsce na przestrzeni lat?
 
 Wykorzystano dane o urodzeniach żywych w Polsce na przestrzeni lat oraz dane
 o noworodkach pozostawionych w szpitalu nie z powodów zdrowotnych(dane z podzialem na lata), 
@@ -7,7 +7,7 @@ danych na przestrzeni lat, co umożliwiło pokazanie rozwoju problemu oraz jego
 tendencji z latami. Rowniez uwzgledniona dodatkowa informacja
 o wprowadzeniu programu 500+ 1 kwietnia 2016
 
-![PozostawioneLataPoslka](PozostawioneLataPoslka)
+![PozostawioneLataPoslka](PozostawioneLataPoslka.png)
 
 Wizualizacja przedstawia skale oraz ogolny rozwoj problemu w Polsce
 Wyrozniony zostal miesiac wprowadzenia "500+", widac ze program
