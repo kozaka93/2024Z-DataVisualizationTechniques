@@ -31,6 +31,7 @@ o noworodkach pozostawionych w szpitalu nie z powodów zdrowotnych
 Została pokazana skala problemu porzucenia noworodków w poszczególnych
 województwach. Wykorzystano podział danych na województwa, co pozwoliło
 na dokładną analizę regionalną.
+Wykresy wygenerowane interaktywnie poprzez shiny aplikacje.
 
 ![2023](2023.png)
 
