@@ -5,6 +5,13 @@
 # 
 # Wizualizacja pokazuje ilość przypadków porzucenia noworodków
 # lub ilość wychowanków w pieczy zastępczej na 1000 osob w zależności od wyboru użytkownika
+# 
+# Po wprowadzeniu 500+ można zauważyć niewielki spadek procentu porzuconych
+# noworodków jednak nie widać trwałej zmiany
+# 
+# W większości województw w ostatnich latach panuje niewielka tendencja wzrostowa 
+# wśród procenta osób wychowywanych w pieczy zastępczej
+# 
 
 library(shiny)
 library(dplyr)
@@ -74,11 +81,13 @@ server <- function(input, output) {
       if(input$dataset == "Pozostawione noworodki"){
         p <- p + labs(title = "Ilość pozostawionych noworodków na 1000 urodzeń",
                       y = "Ilość pozostawień na 1000 urodzeń") +
-          scale_fill_manual(values = "#E5545D")
+          scale_fill_manual(values = "#E5545D") +
+          scale_y_continuous(limits = c(0,7), expand = c(0,0))
       } else {
         p <- p + labs(title = "Ilość wychowanków w pieczy zastępczej na 1000 osób w wieku 0-24 lat",
                       y = "Ilość wychowanków na 1000 osób") +
-          scale_fill_manual(values = "#576CB0")
+          scale_fill_manual(values = "#576CB0")+
+          scale_y_continuous(limits = c(0,11), expand = c(0,0))
       }
       p
       
