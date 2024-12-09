@@ -1,0 +1,817 @@
+measure,location,sex,age,cause,metric,year,val,upper,lower
+Prevalence,China,Both,20+ years,Depressive disorders,Percent,2014,0.0443279673320317,0.0493363790573141,0.0399649373286704
+Prevalence,China,Both,20+ years,Anxiety disorders,Percent,2014,0.0342833287496765,0.0392194685950775,0.0296521922982643
+Prevalence,Democratic People's Republic of Korea,Both,20+ years,Depressive disorders,Percent,2014,0.041634248778777,0.0489479431817349,0.0356368523603194
+Prevalence,China,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0008572225941863,0.0009759051302116,0.0007518313201114
+Prevalence,China,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0864263918125589,0.0937345548992434,0.079610974342485
+Prevalence,Democratic People's Republic of Korea,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0004449821347884,0.0006142398332446,0.0003117318240785
+Prevalence,Democratic People's Republic of Korea,Both,20+ years,Anxiety disorders,Percent,2014,0.0398113761587286,0.0484695765805462,0.0320749864164146
+Prevalence,Taiwan (Province of China),Both,20+ years,Anxiety disorders,Percent,2014,0.0407211425722019,0.0497729030176701,0.0329229930696528
+Prevalence,Democratic People's Republic of Korea,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0721578664738926,0.0797842283259649,0.0660902031930116
+Prevalence,Taiwan (Province of China),Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0008561686969225,0.0009070111263499,0.0008052016831711
+Prevalence,Taiwan (Province of China),Both,20+ years,Depressive disorders,Percent,2014,0.0417399715626533,0.0489825330469409,0.0355667365958651
+Prevalence,Taiwan (Province of China),Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0860246420169884,0.0912114501756442,0.0813776096275792
+Prevalence,Cambodia,Both,20+ years,Depressive disorders,Percent,2014,0.0418541548867483,0.048868104953878,0.0361261823934407
+Prevalence,Indonesia,Both,20+ years,Depressive disorders,Percent,2014,0.0350403396955179,0.0396034476260006,0.0310517175249
+Prevalence,Cambodia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002571280522734,0.0003252895021877,0.0001939693171671
+Prevalence,Lao People's Democratic Republic,Both,20+ years,Depressive disorders,Percent,2014,0.0384462555182823,0.0448649767474837,0.0330738705930238
+Prevalence,Indonesia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002483311771033,0.0003196904025793,0.0001853882151167
+Prevalence,Cambodia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.046023043101106,0.0502976491106721,0.0417892150547469
+Prevalence,Malaysia,Both,20+ years,Depressive disorders,Percent,2014,0.0470779368328776,0.0540540901640613,0.0416323315844211
+Prevalence,Indonesia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0388597565451966,0.0427976480230269,0.0352072830384376
+Prevalence,Maldives,Both,20+ years,Depressive disorders,Percent,2014,0.0410462385038758,0.0477894371737769,0.0356535191172801
+Prevalence,Myanmar,Both,20+ years,Depressive disorders,Percent,2014,0.0321864977002691,0.0384424292758994,0.027162704751896
+Prevalence,Lao People's Democratic Republic,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002064627970611,0.0002727691612342,0.0001511227480726
+Prevalence,Philippines,Both,20+ years,Depressive disorders,Percent,2014,0.0413970364708565,0.0470677057797424,0.0370474630269508
+Prevalence,Thailand,Both,20+ years,Depressive disorders,Percent,2014,0.044180378542135,0.0515158663315943,0.0381624229738062
+Prevalence,Sri Lanka,Both,20+ years,Depressive disorders,Percent,2014,0.0415647210443829,0.0483296890363366,0.0361408026100773
+Prevalence,Timor-Leste,Both,20+ years,Depressive disorders,Percent,2014,0.0387378127800576,0.0456022089146335,0.0336689896067044
+Prevalence,Lao People's Democratic Republic,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.053612034834171,0.0579181909485197,0.0492761504608426
+Prevalence,Indonesia,Both,20+ years,Anxiety disorders,Percent,2014,0.0432918025956805,0.0507352698840437,0.0369125684776803
+Prevalence,Viet Nam,Both,20+ years,Depressive disorders,Percent,2014,0.0354094685431065,0.0419359230625326,0.0302772033448727
+Prevalence,Malaysia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002176628112933,0.0002437787915739,0.0001943085734117
+Prevalence,Cambodia,Both,20+ years,Anxiety disorders,Percent,2014,0.0491058419749602,0.0622052331256421,0.0389393081198002
+Prevalence,Lao People's Democratic Republic,Both,20+ years,Anxiety disorders,Percent,2014,0.0550582965458074,0.0683016582248993,0.0445421413535192
+Prevalence,Malaysia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0845709295561301,0.0912586796215902,0.0787928114793114
+Prevalence,Kiribati,Both,20+ years,Depressive disorders,Percent,2014,0.0415411783667844,0.0488208227556897,0.0356078433532702
+Prevalence,Fiji,Both,20+ years,Depressive disorders,Percent,2014,0.0416035101216896,0.0482134916323276,0.036083956247683
+Prevalence,Malaysia,Both,20+ years,Anxiety disorders,Percent,2014,0.0544865308698736,0.0674367454339721,0.0443025505030394
+Prevalence,Maldives,Both,20+ years,Anxiety disorders,Percent,2014,0.0420967920402327,0.0541488817289267,0.0328543353431598
+Prevalence,Marshall Islands,Both,20+ years,Depressive disorders,Percent,2014,0.0406017840629064,0.0477618677589905,0.0347455718000449
+Prevalence,Maldives,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,7.4024850002e-05,8.57206339936e-05,6.36209759639e-05
+Prevalence,Samoa,Both,20+ years,Depressive disorders,Percent,2014,0.0395484230571901,0.0459866460543066,0.0341670212540766
+Prevalence,Solomon Islands,Both,20+ years,Depressive disorders,Percent,2014,0.0420832065618708,0.0499561936215701,0.0359561595059231
+Prevalence,Maldives,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0433643654429115,0.0472970621949451,0.0397648340686416
+Prevalence,Myanmar,Both,20+ years,Anxiety disorders,Percent,2014,0.0456424852277361,0.0578020004342415,0.0359904509531114
+Prevalence,Papua New Guinea,Both,20+ years,Depressive disorders,Percent,2014,0.0436907821856636,0.0514167525463452,0.0376964161101832
+Prevalence,Philippines,Both,20+ years,Anxiety disorders,Percent,2014,0.049768108044482,0.0578471264885341,0.042334669303054
+Prevalence,Georgia,Both,20+ years,Depressive disorders,Percent,2014,0.0552801190173669,0.0621519687648713,0.0487489988189168
+Prevalence,Azerbaijan,Both,20+ years,Depressive disorders,Percent,2014,0.0402567358802561,0.0467021941268418,0.0348599630573559
+Prevalence,Armenia,Both,20+ years,Depressive disorders,Percent,2014,0.0463543264506914,0.0528311397138033,0.0404688417863172
+Prevalence,Vanuatu,Both,20+ years,Depressive disorders,Percent,2014,0.0418822601102757,0.0489227321847132,0.0358785949339083
+Prevalence,Kazakhstan,Both,20+ years,Depressive disorders,Percent,2014,0.0516693914584272,0.0587807562913565,0.0458117591335886
+Prevalence,Sri Lanka,Both,20+ years,Anxiety disorders,Percent,2014,0.0461933865797514,0.0577321430365888,0.0365619715256341
+Prevalence,Myanmar,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002267081844543,0.0002927457788991,0.0001733683600715
+Prevalence,Tajikistan,Both,20+ years,Depressive disorders,Percent,2014,0.0394611129225798,0.0464239911722569,0.0341380093918586
+Prevalence,Tonga,Both,20+ years,Depressive disorders,Percent,2014,0.0378209521634752,0.0442135949324242,0.0324571497695362
+Prevalence,Micronesia (Federated States of),Both,20+ years,Depressive disorders,Percent,2014,0.0412193879665801,0.0484504768340807,0.0354878562817981
+Prevalence,Myanmar,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0842818490682102,0.0902064052034753,0.0785470239447687
+Prevalence,Mongolia,Both,20+ years,Depressive disorders,Percent,2014,0.0592585961291886,0.0686831482207742,0.0516826781427759
+Prevalence,Philippines,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001888001942044,0.0002029601559359,0.0001741781588603
+Prevalence,Kyrgyzstan,Both,20+ years,Depressive disorders,Percent,2014,0.0496914726655298,0.0568509231871836,0.0435880023216987
+Prevalence,Sri Lanka,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001603144227491,0.0001777145668454,0.0001435473048115
+Prevalence,Philippines,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.042638450156295,0.0471191924985369,0.0385385666565585
+Prevalence,Sri Lanka,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1404830454559421,0.1486940831089355,0.1318638924513805
+Prevalence,Thailand,Both,20+ years,Anxiety disorders,Percent,2014,0.0423113133837416,0.0521978513627193,0.0336664015266734
+Prevalence,Timor-Leste,Both,20+ years,Anxiety disorders,Percent,2014,0.0440678614749479,0.0559038681778319,0.0348442802663622
+Prevalence,Viet Nam,Both,20+ years,Anxiety disorders,Percent,2014,0.0270083748367077,0.0337216452864601,0.0213663993098729
+Prevalence,Thailand,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0004390552964209,0.0005149155808974,0.0003752271998987
+Prevalence,Turkmenistan,Both,20+ years,Depressive disorders,Percent,2014,0.0447076268770063,0.0518801661770694,0.0392210960121427
+Prevalence,Thailand,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0753752126706501,0.0810061479650698,0.0703782842939137
+Prevalence,Timor-Leste,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001691625405978,0.0002134448379494,0.000132898895081
+Prevalence,Viet Nam,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000302590906774,0.0003719445437505,0.0002446725459857
+Prevalence,Timor-Leste,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.055633501876342,0.0607111821928253,0.0508063341816748
+Prevalence,Bosnia and Herzegovina,Both,20+ years,Depressive disorders,Percent,2014,0.0439778425177037,0.0506757242960678,0.0386021366007677
+Prevalence,Hungary,Both,20+ years,Depressive disorders,Percent,2014,0.0477715536877611,0.0542062158950285,0.0420594304077366
+Prevalence,Viet Nam,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0444221408996162,0.0473498156150334,0.0415320290844124
+Prevalence,Bulgaria,Both,20+ years,Depressive disorders,Percent,2014,0.0448528955201455,0.0510904758059841,0.0394834225574749
+Prevalence,Marshall Islands,Both,20+ years,Anxiety disorders,Percent,2014,0.044084146595488,0.0558412653787364,0.0342401086992561
+Prevalence,Fiji,Both,20+ years,Anxiety disorders,Percent,2014,0.0445092056328811,0.0555668093511763,0.0353333937148401
+Prevalence,Kiribati,Both,20+ years,Anxiety disorders,Percent,2014,0.0450272781168126,0.0565928048152076,0.0354623215642803
+Prevalence,Albania,Both,20+ years,Depressive disorders,Percent,2014,0.0374694039054576,0.0433945077576682,0.0323943467221005
+Prevalence,Tonga,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0003656589650745,0.0004530436538971,0.0002913150128302
+Prevalence,Solomon Islands,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0934223897728771,0.1014305807414669,0.0868562647732746
+Prevalence,Uzbekistan,Both,20+ years,Depressive disorders,Percent,2014,0.0460659699683615,0.0531868211953334,0.0397993398460518
+Prevalence,Tonga,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1708650671999692,0.1826259039833763,0.1591125718189898
+Prevalence,Micronesia (Federated States of),Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0003363848902289,0.0004767681030941,0.0002369543489425
+Prevalence,Samoa,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001048784035388,0.0001320765111316,8.05660184375e-05
+Prevalence,Kiribati,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001666328415078,0.0002197912307228,0.0001244682571164
+Prevalence,Solomon Islands,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002162704487668,0.0002954723406223,0.0001583922721596
+Prevalence,Marshall Islands,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002706610840866,0.0003895735838464,0.0001746802935009
+Prevalence,Papua New Guinea,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1204050730208386,0.1307084572159662,0.1120535830489828
+Prevalence,Marshall Islands,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.2686685913442844,0.2965305534215096,0.2434457584557446
+Prevalence,Croatia,Both,20+ years,Depressive disorders,Percent,2014,0.0495433934811906,0.0564748791927708,0.0432383905637465
+Prevalence,North Macedonia,Both,20+ years,Depressive disorders,Percent,2014,0.0398004304584109,0.0459133944570114,0.0347392439910738
+Prevalence,Samoa,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1982119123877272,0.2153733552238236,0.1820968095122405
+Prevalence,Poland,Both,20+ years,Depressive disorders,Percent,2014,0.0330255041680542,0.0371624606541273,0.0295367714315185
+Prevalence,Fiji,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1898652470367429,0.2007193114461783,0.180062079526878
+Prevalence,Papua New Guinea,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001416941991524,0.0002265674541543,9.63936920182e-05
+Prevalence,Czechia,Both,20+ years,Depressive disorders,Percent,2014,0.0468416544502149,0.0533322854568657,0.0413495143353319
+Prevalence,Montenegro,Both,20+ years,Depressive disorders,Percent,2014,0.0448606352797509,0.0512687731436447,0.0391283999094007
+Prevalence,Fiji,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001087838889134,0.0001328396861501,8.76200603364e-05
+Prevalence,Romania,Both,20+ years,Depressive disorders,Percent,2014,0.0426982937016628,0.0487905140226286,0.0372740425669247
+Prevalence,Micronesia (Federated States of),Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1806340121168121,0.1942415086808179,0.1689205052385945
+Prevalence,Serbia,Both,20+ years,Depressive disorders,Percent,2014,0.0460762042970615,0.0523634997389753,0.040518169671393
+Prevalence,Kiribati,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1667854077181684,0.1796909083145765,0.1542900382264498
+Prevalence,Slovakia,Both,20+ years,Depressive disorders,Percent,2014,0.0436607634745407,0.0499755627395917,0.0381625207841147
+Prevalence,Slovenia,Both,20+ years,Depressive disorders,Percent,2014,0.0523447799061436,0.0589684557007496,0.0465008947498008
+Prevalence,Vanuatu,Both,20+ years,Anxiety disorders,Percent,2014,0.0445436441789697,0.0560958673460543,0.0349923054289651
+Prevalence,Tonga,Both,20+ years,Anxiety disorders,Percent,2014,0.0451315001332582,0.0566541380235634,0.0357803175286699
+Prevalence,Micronesia (Federated States of),Both,20+ years,Anxiety disorders,Percent,2014,0.0444744666616391,0.055778567407978,0.0352149859883986
+Prevalence,Vanuatu,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001783672744173,0.0002805191161378,0.0001199121833267
+Prevalence,Georgia,Both,20+ years,Anxiety disorders,Percent,2014,0.0279970108044865,0.034380445731148,0.0225488213720772
+Prevalence,Armenia,Both,20+ years,Anxiety disorders,Percent,2014,0.031809536749362,0.0395500369292262,0.0255296438968633
+Prevalence,Kyrgyzstan,Both,20+ years,Anxiety disorders,Percent,2014,0.0252085918346815,0.0320247732976426,0.0198606749138517
+Prevalence,Azerbaijan,Both,20+ years,Anxiety disorders,Percent,2014,0.0279831187956079,0.0351884483309902,0.0218829054016484
+Prevalence,Mongolia,Both,20+ years,Anxiety disorders,Percent,2014,0.0224266920095954,0.0258638161887805,0.0193208973193403
+Prevalence,Samoa,Both,20+ years,Anxiety disorders,Percent,2014,0.0443784752181138,0.05537105231984,0.035111099370354
+Prevalence,Tajikistan,Both,20+ years,Anxiety disorders,Percent,2014,0.0272868961487315,0.0351209996643728,0.0213020343989567
+Prevalence,Solomon Islands,Both,20+ years,Anxiety disorders,Percent,2014,0.0445151862866775,0.056207579543649,0.0348987842721343
+Prevalence,Kazakhstan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0003003787404759,0.0003330763238428,0.0002746156643949
+Prevalence,Turkmenistan,Both,20+ years,Anxiety disorders,Percent,2014,0.0267415282793385,0.0339557665591082,0.0209902956635562
+Prevalence,Papua New Guinea,Both,20+ years,Anxiety disorders,Percent,2014,0.0441161543835496,0.0557173141828227,0.0343429952936412
+Prevalence,Kazakhstan,Both,20+ years,Anxiety disorders,Percent,2014,0.025730295509492,0.0321238569426675,0.0202630021057796
+Prevalence,Kazakhstan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0776008116756238,0.0827002212967109,0.0731681327976877
+Prevalence,Georgia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0005806216463703,0.0006478780620981,0.0005173330158004
+Prevalence,Turkmenistan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001279201911873,0.0001417274110793,0.0001152286247128
+Prevalence,Azerbaijan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002592091632129,0.0003304088643155,0.0001961541167517
+Prevalence,Tajikistan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0389724684567299,0.0423532786267305,0.0359074172125408
+Prevalence,Turkmenistan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0428982574114514,0.0473753629313126,0.0396238401504503
+Prevalence,Kyrgyzstan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001639485322187,0.0001785844911921,0.000149877497094
+Prevalence,Georgia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0881278484001787,0.0958839065932877,0.0810663195941725
+Prevalence,Mongolia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0410187799219647,0.0447932390075566,0.0376436933780838
+Prevalence,Albania,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0005239796276188,0.0006863063368155,0.0003773283329506
+Prevalence,Bosnia and Herzegovina,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0009241828481122,0.0010261313574891,0.0008121968160372
+Prevalence,Armenia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0005423831431623,0.0005746254145786,0.0005090509403924
+Prevalence,Kyrgyzstan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.04541593805583,0.0500965848158711,0.0415754998324704
+Prevalence,Vanuatu,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1159062859901654,0.1249030177289491,0.108026826029895
+Prevalence,Estonia,Both,20+ years,Depressive disorders,Percent,2014,0.0620387513687398,0.0701310010616438,0.0549122706123005
+Prevalence,Tajikistan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,9.52849759194e-05,0.0001300180761467,6.82737108041e-05
+Prevalence,Mongolia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002469614711133,0.000316340060269,0.0001905767382212
+Prevalence,Uzbekistan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,9.90387841507e-05,0.0001099263270778,8.9667617637e-05
+Prevalence,Bulgaria,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0009808505174421,0.0010835264197744,0.0008905840044981
+Prevalence,Uzbekistan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.061007249326244,0.067250422514136,0.0559024218207983
+Prevalence,Bosnia and Herzegovina,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1272064685845531,0.1377508252623931,0.1170098138267238
+Prevalence,Azerbaijan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0551067282599299,0.0603778996145091,0.0505298964328583
+Prevalence,Bulgaria,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1105817480043784,0.117703676216223,0.104824484305679
+Prevalence,Armenia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0750844468583602,0.0824319141353728,0.0696237134461164
+Prevalence,Albania,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0583817654446163,0.0655882823876172,0.0524335246487859
+Prevalence,Belarus,Both,20+ years,Depressive disorders,Percent,2014,0.06320657609862,0.0715356254253289,0.0557114346819582
+Prevalence,Latvia,Both,20+ years,Depressive disorders,Percent,2014,0.0621514132406923,0.0691695069887548,0.0561515447853955
+Prevalence,Albania,Both,20+ years,Anxiety disorders,Percent,2014,0.0448049845430258,0.055059148104887,0.0359454679025842
+Prevalence,Russian Federation,Both,20+ years,Depressive disorders,Percent,2014,0.0501030087250088,0.0564172264438996,0.0446557973304921
+Prevalence,Ukraine,Both,20+ years,Depressive disorders,Percent,2014,0.0640189152635465,0.0723692927285923,0.0567182027854889
+Prevalence,Lithuania,Both,20+ years,Depressive disorders,Percent,2014,0.0663338040933189,0.0747919464815441,0.0581396480384822
+Prevalence,Republic of Moldova,Both,20+ years,Depressive disorders,Percent,2014,0.0518598001446752,0.0589371302629612,0.0455622754489194
+Prevalence,Czechia,Both,20+ years,Anxiety disorders,Percent,2014,0.0406014905394079,0.0498981825686453,0.0327323324910724
+Prevalence,North Macedonia,Both,20+ years,Anxiety disorders,Percent,2014,0.0433778481322518,0.0537398040521703,0.0348557882384816
+Prevalence,Romania,Both,20+ years,Anxiety disorders,Percent,2014,0.0403811973079134,0.0495197765619784,0.0324821280374633
+Prevalence,Uzbekistan,Both,20+ years,Anxiety disorders,Percent,2014,0.0249585704241231,0.031764313849348,0.0194945043655407
+Prevalence,Bosnia and Herzegovina,Both,20+ years,Anxiety disorders,Percent,2014,0.0432641779763636,0.0530975173870051,0.0348326750456534
+Prevalence,Croatia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0015842977068823,0.0017226575588929,0.0014566198189461
+Prevalence,Hungary,Both,20+ years,Anxiety disorders,Percent,2014,0.0429407838364714,0.0529038233437845,0.0345617502392118
+Prevalence,Montenegro,Both,20+ years,Anxiety disorders,Percent,2014,0.0439883540509367,0.0542382851791394,0.0354359698548289
+Prevalence,Bulgaria,Both,20+ years,Anxiety disorders,Percent,2014,0.0436294170989765,0.0535876040700289,0.0349719327192969
+Prevalence,North Macedonia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0007964237312031,0.0009318953042918,0.0006785326644793
+Prevalence,Serbia,Both,20+ years,Anxiety disorders,Percent,2014,0.0418935662879073,0.0515627312936108,0.0338133953212215
+Prevalence,Croatia,Both,20+ years,Anxiety disorders,Percent,2014,0.0435875355449785,0.0537532614311025,0.0350275838287075
+Prevalence,Hungary,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1082028254371203,0.1189711933031514,0.0985674639733791
+Prevalence,Slovakia,Both,20+ years,Anxiety disorders,Percent,2014,0.0426402245041469,0.0521114198858709,0.0344445326802759
+Prevalence,Montenegro,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1000355993916731,0.1101185269884739,0.0910664682918885
+Prevalence,Poland,Both,20+ years,Anxiety disorders,Percent,2014,0.0408459170607757,0.0472296891528161,0.0352651876165756
+Prevalence,Czechia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0010543211916919,0.0011385206276977,0.0009650989652178
+Prevalence,Slovakia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0008684851764,0.0010118478422509,0.0007397031645224
+Prevalence,Slovenia,Both,20+ years,Anxiety disorders,Percent,2014,0.0420246439674616,0.0518213659688001,0.0337283701776954
+Prevalence,Slovakia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0696589084744806,0.0769565911826219,0.0632196482957032
+Prevalence,Poland,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0009303856274988,0.0009555336253644,0.000897515874038
+Prevalence,Belarus,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0005485097383653,0.0006030592179396,0.0004993875335349
+Prevalence,Romania,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0663015331236196,0.0731211163327602,0.0596858293195207
+Prevalence,Lithuania,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0008123367582357,0.0008875536049233,0.0007409965375029
+Prevalence,Romania,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0008416164731149,0.0009024271542005,0.0007811677469253
+Prevalence,Latvia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000812268978607,0.0008960859276997,0.0007280093218578
+Prevalence,Slovenia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0813517739887182,0.0895880020020044,0.0732328241793019
+Prevalence,Japan,Both,20+ years,Depressive disorders,Percent,2014,0.030814299503166,0.0334555987986202,0.0281434456553519
+Prevalence,Estonia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0715958253071637,0.0791646590645575,0.0646676828517295
+Prevalence,Serbia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.001278504056768,0.001450072637017,0.0011244425210814
+Prevalence,Montenegro,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0012647869262641,0.0014754315437887,0.0010561622520018
+Prevalence,Brunei Darussalam,Both,20+ years,Depressive disorders,Percent,2014,0.0225119855500739,0.0265493912928078,0.019147991871004
+Prevalence,Croatia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.099216222602883,0.1077579979161261,0.0909065032330522
+Prevalence,Estonia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0007723907947885,0.0008363509951138,0.0007041525316904
+Prevalence,Serbia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1167034151492599,0.1269313739748787,0.1069317080520272
+Prevalence,Latvia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0708596055878003,0.0776027382975294,0.0643883092037234
+Prevalence,Poland,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0892803921924569,0.0998259937031796,0.0796997073825734
+Prevalence,North Macedonia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.113554474698288,0.1241401909683508,0.1025819953402605
+Prevalence,Republic of Moldova,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0004274993344575,0.0004670594904159,0.000394645857575
+Prevalence,Hungary,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0013893842657582,0.0015041323639643,0.0012785804082314
+Prevalence,Slovenia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0011269852426481,0.0012210723133959,0.0010320283767044
+Prevalence,Belarus,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0412081422491554,0.0455003609427703,0.037386637730849
+Prevalence,Lithuania,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0576564326008986,0.0628097019676631,0.0532795243402865
+Prevalence,Republic of Korea,Both,20+ years,Depressive disorders,Percent,2014,0.030731208768554,0.0340507357255829,0.0275801547604763
+Prevalence,Czechia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.099066646652277,0.1087108282246682,0.0901243194479262
+Prevalence,Republic of Moldova,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0709382583106599,0.0787067475528675,0.0643428617464631
+Prevalence,Singapore,Both,20+ years,Depressive disorders,Percent,2014,0.0273871506153032,0.0305019449789379,0.0242105646388378
+Prevalence,Lithuania,Both,20+ years,Anxiety disorders,Percent,2014,0.0516768941210574,0.0635143060265911,0.0415714772303047
+Prevalence,Latvia,Both,20+ years,Anxiety disorders,Percent,2014,0.0449502325513436,0.0548289662661343,0.0363693569174509
+Prevalence,Belarus,Both,20+ years,Anxiety disorders,Percent,2014,0.043120471902635,0.0526494294259996,0.034355208173935
+Prevalence,Japan,Both,20+ years,Anxiety disorders,Percent,2014,0.0263597660575447,0.0302893392857501,0.0228318170578692
+Prevalence,Australia,Both,20+ years,Depressive disorders,Percent,2014,0.0628220175143431,0.0705176113230928,0.0557401913085984
+Prevalence,Brunei Darussalam,Both,20+ years,Anxiety disorders,Percent,2014,0.0351122386220726,0.0441436208932978,0.0277660085832212
+Prevalence,Singapore,Both,20+ years,Anxiety disorders,Percent,2014,0.0331384637853974,0.0413293044839497,0.0261308586821604
+Prevalence,New Zealand,Both,20+ years,Anxiety disorders,Percent,2014,0.0875600886913642,0.1023045426596596,0.0752608302553615
+Prevalence,Australia,Both,20+ years,Anxiety disorders,Percent,2014,0.0642314046814834,0.0763755638564404,0.0530810536639813
+Prevalence,Republic of Korea,Both,20+ years,Anxiety disorders,Percent,2014,0.0409213699638326,0.0458149660153493,0.036636830922459
+Prevalence,Republic of Korea,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1349225030185096,0.1415857275200855,0.1286453463440375
+Prevalence,Ukraine,Both,20+ years,Anxiety disorders,Percent,2014,0.0384668922882107,0.0446748258811979,0.0328662524577276
+Prevalence,Australia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0014213215215131,0.0015273949499001,0.0012968113073745
+Prevalence,Estonia,Both,20+ years,Anxiety disorders,Percent,2014,0.042449266587359,0.0516099214310919,0.0340246610028211
+Prevalence,Singapore,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0006991862089902,0.0007774837315981,0.0006250088542673
+Prevalence,Republic of Moldova,Both,20+ years,Anxiety disorders,Percent,2014,0.0468423543510069,0.0578738818881948,0.0373893107295659
+Prevalence,Russian Federation,Both,20+ years,Anxiety disorders,Percent,2014,0.0413188785992164,0.0478068987011094,0.0354707974163079
+Prevalence,Japan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0023813038189711,0.0025496315343186,0.0021516114693787
+Prevalence,Ukraine,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0554449213014177,0.0629477176341378,0.049193641645581
+Prevalence,New Zealand,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0011910376507407,0.0012896220205234,0.0010797438868282
+Prevalence,Republic of Korea,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0012755060727953,0.0014573312285627,0.00112515082748
+Prevalence,Japan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.109992643159562,0.1227307277232556,0.0987367254268905
+Prevalence,New Zealand,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0623227437767077,0.0651960749628517,0.0594316296975449
+Prevalence,Brunei Darussalam,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002973053622958,0.0003620712697875,0.0002455385447693
+Prevalence,Andorra,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000938148615076,0.0011926772899862,0.0007275861530656
+Prevalence,Australia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0559062985788657,0.0615002848741829,0.0505837513568277
+Prevalence,Brunei Darussalam,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1258091044681302,0.1350395909811694,0.1175961639776305
+Prevalence,Singapore,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1146444752940823,0.1242759012707384,0.1047851638666678
+Prevalence,Ukraine,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0006589130766912,0.0007139100273516,0.0006076499113419
+Prevalence,Russian Federation,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0006349385927472,0.0006457083387137,0.0006222002074066
+Prevalence,Andorra,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0640847624906056,0.070993938405431,0.0574110035021903
+Prevalence,Russian Federation,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0603968850896082,0.0673627355096956,0.0540618084746226
+Prevalence,Austria,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0013435754490307,0.0014342312923345,0.0012440854821985
+Prevalence,New Zealand,Both,20+ years,Depressive disorders,Percent,2014,0.0462595234243336,0.0517315865205778,0.041560614192545
+Prevalence,Cyprus,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000716852758624,0.000826932137962,0.0006203437924741
+Prevalence,Belgium,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0014469793377154,0.001550461042279,0.0013339200025784
+Prevalence,Belgium,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0728259517475967,0.0798409715159453,0.0662851917820806
+Prevalence,Austria,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0468733651638736,0.050295585154829,0.0439061897052202
+Prevalence,Cyprus,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0912511417631888,0.0983425294728245,0.0832345863627943
+Prevalence,Austria,Both,20+ years,Depressive disorders,Percent,2014,0.0428408073489045,0.0489563850680881,0.0380549979407267
+Prevalence,Belgium,Both,20+ years,Depressive disorders,Percent,2014,0.0517112614750677,0.0580881891038038,0.0460119152716122
+Prevalence,Andorra,Both,20+ years,Anxiety disorders,Percent,2014,0.0615368202718675,0.0758892890282336,0.0487355653798364
+Prevalence,Andorra,Both,20+ years,Depressive disorders,Percent,2014,0.0526936856326465,0.0613128506932025,0.0457093549520869
+Prevalence,Austria,Both,20+ years,Anxiety disorders,Percent,2014,0.0653046429323181,0.0799668501772905,0.0531999711932179
+Prevalence,Denmark,Both,20+ years,Anxiety disorders,Percent,2014,0.0577948870559697,0.0708163776970331,0.0466350020784852
+Prevalence,Belgium,Both,20+ years,Anxiety disorders,Percent,2014,0.0574594820057283,0.0704125075716905,0.0460475891277483
+Prevalence,France,Both,20+ years,Anxiety disorders,Percent,2014,0.0717773955940042,0.0882197866273822,0.0574871146624122
+Prevalence,Finland,Both,20+ years,Anxiety disorders,Percent,2014,0.0443285578738859,0.0542605805286389,0.0363610873670229
+Prevalence,France,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0021250754404396,0.0023106020934215,0.0019564083626649
+Prevalence,Germany,Both,20+ years,Anxiety disorders,Percent,2014,0.0715753771584275,0.0871078436013997,0.057931741856705
+Prevalence,France,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0564200827081217,0.0610528988841527,0.0519911895754646
+Prevalence,Germany,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0016521612558035,0.0017441003237898,0.001546331912846
+Prevalence,Cyprus,Both,20+ years,Anxiety disorders,Percent,2014,0.0693181798602411,0.0861691983838257,0.0556099878504256
+Prevalence,Cyprus,Both,20+ years,Depressive disorders,Percent,2014,0.0432950771390589,0.0501993514013656,0.0375670609032372
+Prevalence,Denmark,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0018541019768997,0.0019700993850995,0.0017310327845178
+Prevalence,Denmark,Both,20+ years,Depressive disorders,Percent,2014,0.0512843424568707,0.0583570903015596,0.0450149296663721
+Prevalence,Greece,Both,20+ years,Anxiety disorders,Percent,2014,0.0639124822756973,0.0713775477606939,0.0570026154177317
+Prevalence,Finland,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0012109945367088,0.0013272031296995,0.0011026124972987
+Prevalence,Ireland,Both,20+ years,Anxiety disorders,Percent,2014,0.0753906892504733,0.0931866193212874,0.0607728427827296
+Prevalence,Finland,Both,20+ years,Depressive disorders,Percent,2014,0.0586136370481853,0.0644776036720889,0.0529238425221151
+Prevalence,Iceland,Both,20+ years,Anxiety disorders,Percent,2014,0.0599451560107984,0.0739590990155659,0.0483314158003889
+Prevalence,Finland,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0960409099930999,0.1047617807234372,0.0883283414054964
+Prevalence,Denmark,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0585414144508074,0.0647625562880394,0.0538642141505878
+Prevalence,Greece,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0859847097793466,0.093420647042944,0.0793828841635773
+Prevalence,Ireland,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0011074879273285,0.0012092319197335,0.0010189010178794
+Prevalence,Israel,Both,20+ years,Anxiety disorders,Percent,2014,0.0439672841117856,0.0544806939841587,0.0356991238573619
+Prevalence,Iceland,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0626078041444048,0.0687026457589806,0.0565702204121967
+Prevalence,France,Both,20+ years,Depressive disorders,Percent,2014,0.0575419026601423,0.0648298234523132,0.0508683010395682
+Prevalence,Italy,Both,20+ years,Anxiety disorders,Percent,2014,0.0620271059430343,0.071483220960044,0.0536536925594794
+Prevalence,Luxembourg,Both,20+ years,Anxiety disorders,Percent,2014,0.0608580087018997,0.0755812701676681,0.0489700023061187
+Prevalence,Iceland,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.001495908313569,0.0016405199931002,0.0013667040558103
+Prevalence,Germany,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0661929879012737,0.0730089819649831,0.0612017326191054
+Prevalence,Greece,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0014480375557588,0.0015545014637543,0.0013288559617166
+Prevalence,Italy,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0805959724103803,0.0907369556083489,0.0712677738291862
+Prevalence,Malta,Both,20+ years,Anxiety disorders,Percent,2014,0.0665934882744534,0.0822998749601834,0.0536743491527534
+Prevalence,Luxembourg,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0011793497355561,0.0012953171419386,0.0010773820328257
+Prevalence,Germany,Both,20+ years,Depressive disorders,Percent,2014,0.0510738986425693,0.0566247397661629,0.0460257873288138
+Prevalence,Israel,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0005970491685908,0.0006415767761979,0.000548532427929
+Prevalence,Italy,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0012288753796982,0.0013115033142431,0.0011309816629592
+Prevalence,Luxembourg,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0651211384626087,0.071752084979087,0.05884326301037
+Prevalence,Malta,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0883678638725504,0.0969398441309964,0.0799783388889062
+Prevalence,Netherlands,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0017055385772109,0.0017951055586586,0.0016038173402252
+Prevalence,Ireland,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0538977212956701,0.059559935771513,0.0488366944792555
+Prevalence,Israel,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0827531037634799,0.0887800199001636,0.0769448618299016
+Prevalence,Malta,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0007509941244389,0.0008191343441993,0.0006835931477446
+Prevalence,Greece,Both,20+ years,Depressive disorders,Percent,2014,0.0704447002468475,0.0786266621610073,0.063686960955238
+Prevalence,Iceland,Both,20+ years,Depressive disorders,Percent,2014,0.0426222042738468,0.0487809705346369,0.0376912091463178
+Prevalence,Norway,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.063019758004702,0.0705485194049664,0.0555440353941699
+Prevalence,Netherlands,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0640876997401447,0.0699901169730539,0.0583860707126645
+Prevalence,Norway,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0014734607595695,0.0015743241214642,0.0013468890102226
+Prevalence,Netherlands,Both,20+ years,Anxiety disorders,Percent,2014,0.0730094014909931,0.0891700908651339,0.0595101826815625
+Prevalence,Portugal,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0006560633029518,0.0007030425820915,0.0006148698571653
+Prevalence,Spain,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.00129268187072,0.0014028039147634,0.0011808032900631
+Prevalence,Ireland,Both,20+ years,Depressive disorders,Percent,2014,0.0586606411184022,0.0645630710530516,0.0535308505616944
+Prevalence,Portugal,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1300450258603937,0.1416690842810886,0.1199048443651113
+Prevalence,Sweden,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0006743888855606,0.0007138543583627,0.000624153469231
+Prevalence,Spain,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1184458485266846,0.1254234136503656,0.1114620198514903
+Prevalence,Israel,Both,20+ years,Depressive disorders,Percent,2014,0.0624636730333429,0.072203416497113,0.0555306173480344
+Prevalence,Sweden,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.083356867053052,0.0927252907371494,0.0741451076393413
+Prevalence,Spain,Both,20+ years,Anxiety disorders,Percent,2014,0.0606679452741397,0.0679589515640182,0.0526901782738703
+Prevalence,Portugal,Both,20+ years,Anxiety disorders,Percent,2014,0.0893627189123373,0.1072489053986945,0.0744198167658767
+Prevalence,Norway,Both,20+ years,Anxiety disorders,Percent,2014,0.0777394026631621,0.0888083087107671,0.0670036638273715
+Prevalence,Italy,Both,20+ years,Depressive disorders,Percent,2014,0.0535173773847193,0.0601657472909041,0.0474953511340071
+Prevalence,Sweden,Both,20+ years,Anxiety disorders,Percent,2014,0.0579836863163203,0.0668486068077711,0.0499237419475008
+Prevalence,Switzerland,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0012451942814581,0.0013583064663696,0.0011350265535681
+Prevalence,Switzerland,Both,20+ years,Anxiety disorders,Percent,2014,0.0792388632612188,0.0937038004721374,0.0654078361466569
+Prevalence,United Kingdom,Both,20+ years,Anxiety disorders,Percent,2014,0.0528263431141786,0.0607475889410873,0.0456061678792916
+Prevalence,Switzerland,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1024166263994835,0.1115178867749142,0.0933701718226084
+Prevalence,Luxembourg,Both,20+ years,Depressive disorders,Percent,2014,0.0471467305453306,0.0531172744153708,0.0421663869576774
+Prevalence,United Kingdom,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0015996668594491,0.0016611209505476,0.0015001611127174
+Prevalence,United Kingdom,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0958722514590173,0.1032612335737672,0.0887622046068735
+Prevalence,Argentina,Both,20+ years,Anxiety disorders,Percent,2014,0.059885442370988,0.0658391955440737,0.0541873817460314
+Prevalence,Argentina,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0004467619093375,0.0004767520518889,0.0004188981017873
+Prevalence,Argentina,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0742186571973757,0.0811829626800716,0.068465566524277
+Prevalence,Chile,Both,20+ years,Anxiety disorders,Percent,2014,0.0672991347850499,0.0849798349463663,0.0541464613988672
+Prevalence,Chile,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0003099570535402,0.000328273324142,0.0002909096217407
+Prevalence,Uruguay,Both,20+ years,Anxiety disorders,Percent,2014,0.0620227634450449,0.0780730087320912,0.0497133914439608
+Prevalence,Chile,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0981739635460445,0.1054428325039141,0.0909816845982123
+Prevalence,Uruguay,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0007484719901642,0.0007914863860801,0.000699969525473
+Prevalence,Uruguay,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0839890265325612,0.090750685908053,0.0767342279986188
+Prevalence,Canada,Both,20+ years,Anxiety disorders,Percent,2014,0.0539922696857152,0.066781881804197,0.0432526802198612
+Prevalence,Canada,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.001955823670839,0.0021157079482606,0.0017905307082609
+Prevalence,United States of America,Both,20+ years,Anxiety disorders,Percent,2014,0.0666914111839903,0.0771546458128109,0.0574487407617253
+Prevalence,Canada,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0842140800170547,0.0954597498127791,0.0762753856670642
+Prevalence,United States of America,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0017587576138892,0.0018230824686453,0.0016435815432135
+Prevalence,Malta,Both,20+ years,Depressive disorders,Percent,2014,0.0435226025642853,0.0505727834708831,0.0381049121091945
+Prevalence,United States of America,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1400787551535311,0.1485424355577038,0.1325216352451136
+Prevalence,Antigua and Barbuda,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000151225217498,0.0001649267706351,0.0001384428197377
+Prevalence,Antigua and Barbuda,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1379588886445748,0.148465582964265,0.1271672335729609
+Prevalence,Bahamas,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002349327386856,0.0002646376975061,0.0002094709971739
+Prevalence,Antigua and Barbuda,Both,20+ years,Anxiety disorders,Percent,2014,0.0551512854962645,0.0693781490140925,0.043839616197562
+Prevalence,Bahamas,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1221677365104763,0.1349647874153796,0.1118162670381962
+Prevalence,Barbados,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002189163274465,0.0002452202848446,0.0001901120017911
+Prevalence,Netherlands,Both,20+ years,Depressive disorders,Percent,2014,0.0493544230410642,0.0548265302532604,0.044244687283343
+Prevalence,Bahamas,Both,20+ years,Anxiety disorders,Percent,2014,0.0552503325138227,0.0689611099586678,0.0434889155464231
+Prevalence,Barbados,Both,20+ years,Anxiety disorders,Percent,2014,0.0539539479235248,0.0673737537645174,0.0432941765584592
+Prevalence,Barbados,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1552631056260197,0.1664735417891697,0.1446436261637612
+Prevalence,Norway,Both,20+ years,Depressive disorders,Percent,2014,0.0528978973515653,0.059739552734813,0.0471447006968586
+Prevalence,Belize,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001574043671969,0.0001683562408427,0.0001467113392493
+Prevalence,Belize,Both,20+ years,Anxiety disorders,Percent,2014,0.0540480236558449,0.0684793906886679,0.0424026642217692
+Prevalence,Belize,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0899802435130963,0.0972159643777436,0.0838226026593828
+Prevalence,Cuba,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0008285410684419,0.000885161149006,0.0007722856261048
+Prevalence,Cuba,Both,20+ years,Anxiety disorders,Percent,2014,0.0531256505294983,0.0660907788285238,0.0420574596974315
+Prevalence,Portugal,Both,20+ years,Depressive disorders,Percent,2014,0.0649024265210743,0.0705746977687658,0.0590543427653552
+Prevalence,Spain,Both,20+ years,Depressive disorders,Percent,2014,0.0681025732161355,0.0751373848924587,0.0621520013033911
+Prevalence,Cuba,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0941279185322208,0.1035352063789153,0.0850861939818832
+Prevalence,Sweden,Both,20+ years,Depressive disorders,Percent,2014,0.0630040116554343,0.0690827321849735,0.0572729718125674
+Prevalence,Switzerland,Both,20+ years,Depressive disorders,Percent,2014,0.0554447629317363,0.0623420667470657,0.0495333132607359
+Prevalence,Dominica,Both,20+ years,Anxiety disorders,Percent,2014,0.0537974393988416,0.0660532369611547,0.0427413981908574
+Prevalence,Dominica,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0003058415796164,0.0003540190697632,0.0002656538548866
+Prevalence,United Kingdom,Both,20+ years,Depressive disorders,Percent,2014,0.0619126291222568,0.0696330155966322,0.0552358214761817
+Prevalence,Dominica,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1572442502657829,0.1720598559767414,0.1449983533925228
+Prevalence,Dominican Republic,Both,20+ years,Anxiety disorders,Percent,2014,0.0556501933336411,0.0699678390940514,0.0441672385030629
+Prevalence,Dominican Republic,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001971647921848,0.000239471040534,0.0001566818761012
+Prevalence,Dominican Republic,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1058435563362672,0.1156017017873792,0.096601557837113
+Prevalence,Argentina,Both,20+ years,Depressive disorders,Percent,2014,0.0355229241814462,0.0392823102276461,0.0319532070748058
+Prevalence,Grenada,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002130153875432,0.0002308009728665,0.000194797073822
+Prevalence,Grenada,Both,20+ years,Anxiety disorders,Percent,2014,0.0542193301758498,0.0682361018010545,0.0427476310485634
+Prevalence,Grenada,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1509590726494513,0.1652548501714226,0.1390700042049821
+Prevalence,Chile,Both,20+ years,Depressive disorders,Percent,2014,0.0517702568907473,0.0589986107930187,0.045648540486947
+Prevalence,Guyana,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001073876487239,0.0001240701045122,9.26575969324e-05
+Prevalence,Uruguay,Both,20+ years,Depressive disorders,Percent,2014,0.0431677611081629,0.0490869342427042,0.0377183240978906
+Prevalence,Guyana,Both,20+ years,Anxiety disorders,Percent,2014,0.0551316087002152,0.0704097436236791,0.0438064871991222
+Prevalence,Canada,Both,20+ years,Depressive disorders,Percent,2014,0.0418780299961416,0.0469860359469583,0.0377068054943685
+Prevalence,Haiti,Both,20+ years,Anxiety disorders,Percent,2014,0.0569465372450722,0.0732523262820879,0.0444126582201883
+Prevalence,Guyana,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1977317533127682,0.2153622223820234,0.1848869020031995
+Prevalence,Haiti,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001112381795406,0.0001695066008311,7.1441417258e-05
+Prevalence,Haiti,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1100598420972809,0.1208029913993506,0.1005723426644326
+Prevalence,Jamaica,Both,20+ years,Anxiety disorders,Percent,2014,0.0524201750206695,0.0659593503217521,0.0415646457398957
+Prevalence,United States of America,Both,20+ years,Depressive disorders,Percent,2014,0.0572286823778865,0.062855094288829,0.051969432713665
+Prevalence,Jamaica,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002970783980784,0.0003173150683793,0.0002762169894494
+Prevalence,Saint Lucia,Both,20+ years,Anxiety disorders,Percent,2014,0.0541333892848822,0.0676734690627889,0.0434734643291378
+Prevalence,Saint Lucia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001803741436183,0.0001958721377059,0.0001661619130981
+Prevalence,Saint Vincent and the Grenadines,Both,20+ years,Anxiety disorders,Percent,2014,0.0538118330586036,0.067919825792669,0.0428336769960279
+Prevalence,Saint Vincent and the Grenadines,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001623880065495,0.0001753916259871,0.0001497183944246
+Prevalence,Jamaica,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1000605248568952,0.1080413790334648,0.0940247841578107
+Prevalence,Saint Vincent and the Grenadines,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1711351421954776,0.186622587018342,0.157682313346374
+Prevalence,Suriname,Both,20+ years,Anxiety disorders,Percent,2014,0.0533778366520619,0.0664947220579861,0.0422933473253454
+Prevalence,Saint Lucia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.174783684903039,0.1877233682091867,0.1610708221291358
+Prevalence,Suriname,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002321129009742,0.000261149178706,0.0002043823131765
+Prevalence,Trinidad and Tobago,Both,20+ years,Anxiety disorders,Percent,2014,0.050830569440633,0.0637676024206042,0.0405128439378313
+Prevalence,Trinidad and Tobago,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001985492361951,0.000226824557614,0.0001711042711254
+Prevalence,Suriname,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.158857019469167,0.1700374928225358,0.1476467112949668
+Prevalence,Trinidad and Tobago,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1958398269763555,0.212015381750958,0.1825005251595922
+Prevalence,Antigua and Barbuda,Both,20+ years,Depressive disorders,Percent,2014,0.0408584109303124,0.0477829595259725,0.0352805350416748
+Prevalence,Bolivia (Plurinational State of),Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001517108988445,0.0002039971980182,0.0001113969629541
+Prevalence,Bolivia (Plurinational State of),Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0678326391362246,0.0735490440438853,0.062289772451491
+Prevalence,Ecuador,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000113776044437,0.000125831536919,0.0001029059365686
+Prevalence,Bolivia (Plurinational State of),Both,20+ years,Anxiety disorders,Percent,2014,0.0700306370263966,0.0903549598479973,0.0553806816034239
+Prevalence,Bahamas,Both,20+ years,Depressive disorders,Percent,2014,0.0415391376620441,0.0489397394273065,0.0353818773054667
+Prevalence,Ecuador,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0905704426013841,0.0961254874991323,0.0851194715110374
+Prevalence,Peru,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001330126702895,0.0001610351237228,0.0001089246682084
+Prevalence,Ecuador,Both,20+ years,Anxiety disorders,Percent,2014,0.066262083914594,0.0834158838183275,0.0524279193911308
+Prevalence,Peru,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0425747015086851,0.0454787945382671,0.0399273595707807
+Prevalence,Peru,Both,20+ years,Anxiety disorders,Percent,2014,0.0683869317397607,0.0868015724856128,0.0539528723518312
+Prevalence,Barbados,Both,20+ years,Depressive disorders,Percent,2014,0.0448612839766893,0.0511152477619683,0.0388512860447848
+Prevalence,Colombia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001865756512083,0.0001992880297601,0.0001752016052708
+Prevalence,Colombia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0778446952650712,0.0845902353828941,0.0728753676179597
+Prevalence,Colombia,Both,20+ years,Anxiety disorders,Percent,2014,0.0493241354832012,0.0587445562936153,0.0407865107339687
+Prevalence,Belize,Both,20+ years,Depressive disorders,Percent,2014,0.0446502671406219,0.0523927646795466,0.0385289279000594
+Prevalence,Costa Rica,Both,20+ years,Anxiety disorders,Percent,2014,0.0509794851641762,0.0641041670227428,0.0401330350067854
+Prevalence,Costa Rica,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001375977061741,0.0001465096362894,0.0001283997835318
+Prevalence,Costa Rica,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1018625363793345,0.1099865645188248,0.0941093165447529
+Prevalence,El Salvador,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001360188980621,0.0001493825328269,0.0001232652018815
+Prevalence,Cuba,Both,20+ years,Depressive disorders,Percent,2014,0.0567170762190677,0.0636725163688711,0.0498982566424298
+Prevalence,El Salvador,Both,20+ years,Anxiety disorders,Percent,2014,0.0531142374815731,0.0671422186053407,0.042007779066378
+Prevalence,El Salvador,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0873704840274606,0.0951457209975369,0.0801542445008051
+Prevalence,Guatemala,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,7.28361073953e-05,7.63545906056e-05,6.89039469476e-05
+Prevalence,Guatemala,Both,20+ years,Anxiety disorders,Percent,2014,0.0523135953217758,0.0666514038750877,0.0412470068466427
+Prevalence,Dominica,Both,20+ years,Depressive disorders,Percent,2014,0.0424573637232273,0.0491469780010721,0.0367543823691367
+Prevalence,Guatemala,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.105233705347569,0.1129278252859399,0.0976128491945692
+Prevalence,Honduras,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002143308799237,0.0002892869693561,0.0001559463920956
+Prevalence,Honduras,Both,20+ years,Anxiety disorders,Percent,2014,0.0510853598893837,0.0660721342239292,0.0399701406912942
+Prevalence,Honduras,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0945974753072987,0.1030717575581814,0.0867841686241067
+Prevalence,Dominican Republic,Both,20+ years,Depressive disorders,Percent,2014,0.0533562763488296,0.0621025470494636,0.0461941285900709
+Prevalence,Mexico,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001105313683175,0.0001136220141101,0.0001070220482464
+Prevalence,Mexico,Both,20+ years,Anxiety disorders,Percent,2014,0.0451321555647876,0.0527287132148588,0.0382186003086912
+Prevalence,Grenada,Both,20+ years,Depressive disorders,Percent,2014,0.0448623152119712,0.0522983995475286,0.038761239794085
+Prevalence,Mexico,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1264145753420618,0.1383429588607917,0.1152911636481764
+Prevalence,Guyana,Both,20+ years,Depressive disorders,Percent,2014,0.0708402292889673,0.0812596695056327,0.0613502963444611
+Prevalence,Nicaragua,Both,20+ years,Anxiety disorders,Percent,2014,0.0529549906370764,0.068327073577431,0.0412792518836006
+Prevalence,Nicaragua,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,6.98391096751e-05,7.91901576738e-05,6.16532067505e-05
+Prevalence,Haiti,Both,20+ years,Depressive disorders,Percent,2014,0.0488021567670494,0.058914284636504,0.0416474221812304
+Prevalence,Jamaica,Both,20+ years,Depressive disorders,Percent,2014,0.0409624227605085,0.0475995355384155,0.035041617537465
+Prevalence,Panama,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001623529512035,0.0001760316766651,0.0001492341082619
+Prevalence,Saint Lucia,Both,20+ years,Depressive disorders,Percent,2014,0.0457931012540553,0.0528838738366109,0.0398103552551864
+Prevalence,Panama,Both,20+ years,Anxiety disorders,Percent,2014,0.0468893799459772,0.059058115941346,0.0371963878812065
+Prevalence,Nicaragua,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0920615394078511,0.1017144690167566,0.0838377125024286
+Prevalence,Saint Vincent and the Grenadines,Both,20+ years,Depressive disorders,Percent,2014,0.0466063093391171,0.0537006015006967,0.0407152687253024
+Prevalence,Venezuela (Bolivarian Republic of),Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002604273700796,0.0002762693871045,0.0002444530541445
+Prevalence,Suriname,Both,20+ years,Depressive disorders,Percent,2014,0.0662602917715941,0.0758940814920647,0.0575121989942279
+Prevalence,Panama,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0949403266701993,0.1026733646242998,0.0880648937746013
+Prevalence,Venezuela (Bolivarian Republic of),Both,20+ years,Anxiety disorders,Percent,2014,0.0494857717762085,0.0629783272815943,0.0393506239530359
+Prevalence,Trinidad and Tobago,Both,20+ years,Depressive disorders,Percent,2014,0.0533149595078283,0.0613488388626066,0.0468877993888338
+Prevalence,Venezuela (Bolivarian Republic of),Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0845287431780576,0.0914070611511205,0.0791323414861719
+Prevalence,Brazil,Both,20+ years,Anxiety disorders,Percent,2014,0.0992214015090031,0.1154617112110199,0.0844377206389465
+Prevalence,Brazil,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002341265726731,0.0002420281352485,0.0002242810915065
+Prevalence,Paraguay,Both,20+ years,Anxiety disorders,Percent,2014,0.0880833638179798,0.1107736055589962,0.0696027141143996
+Prevalence,Brazil,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0692824323143018,0.0774711951507413,0.062601204797435
+Prevalence,Bolivia (Plurinational State of),Both,20+ years,Depressive disorders,Percent,2014,0.0489072338941651,0.0560686680209531,0.0425531257132229
+Prevalence,Paraguay,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0771920927079092,0.0836001780041753,0.0717777337130061
+Prevalence,Paraguay,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001927218750264,0.0002271950656189,0.0001628314095297
+Prevalence,Ecuador,Both,20+ years,Depressive disorders,Percent,2014,0.0470157603659178,0.0534551159947169,0.0409801908573944
+Prevalence,Peru,Both,20+ years,Depressive disorders,Percent,2014,0.0310953947481456,0.0354776970170204,0.0270976809715695
+Prevalence,Algeria,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,7.42820379143e-05,8.72938941543e-05,6.10553407514e-05
+Prevalence,Algeria,Both,20+ years,Anxiety disorders,Percent,2014,0.0584623995982761,0.074474388820149,0.0454754234506766
+Prevalence,Colombia,Both,20+ years,Depressive disorders,Percent,2014,0.0314837998847587,0.0353292916659673,0.0280027192081542
+Prevalence,Algeria,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1012348131843766,0.107836341502699,0.0949468869858741
+Prevalence,Costa Rica,Both,20+ years,Depressive disorders,Percent,2014,0.0476399555713113,0.0551509049451508,0.0414790709456114
+Prevalence,Bahrain,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001189653271171,0.0001402398067515,0.0001028017828267
+Prevalence,El Salvador,Both,20+ years,Depressive disorders,Percent,2014,0.0503291567908279,0.0581009534661882,0.0437024672962125
+Prevalence,Bahrain,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1235453566744624,0.1371050821962574,0.1104852223840056
+Prevalence,Bahrain,Both,20+ years,Anxiety disorders,Percent,2014,0.0564243173037414,0.0723448064943923,0.0439255345121363
+Prevalence,Egypt,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001538904746042,0.0001745183079693,0.0001341162182117
+Prevalence,Guatemala,Both,20+ years,Depressive disorders,Percent,2014,0.0527892004530624,0.0618026294181116,0.0454816744264004
+Prevalence,Egypt,Both,20+ years,Anxiety disorders,Percent,2014,0.0529954290927899,0.0683447703110005,0.0417018119886357
+Prevalence,Egypt,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0672464028269532,0.0738596766334905,0.061134774745243
+Prevalence,Honduras,Both,20+ years,Depressive disorders,Percent,2014,0.0443543916267466,0.0518977152700165,0.0382851304058389
+Prevalence,Iran (Islamic Republic of),Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001210395301124,0.0001298630038042,0.0001128078507182
+Prevalence,Iran (Islamic Republic of),Both,20+ years,Anxiety disorders,Percent,2014,0.0905260109601569,0.1056152666458228,0.0760389061373633
+Prevalence,Mexico,Both,20+ years,Depressive disorders,Percent,2014,0.0534574978194013,0.0599568124179009,0.0481206247562597
+Prevalence,Iran (Islamic Republic of),Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0691220026249556,0.0763489239902376,0.0628067362715958
+Prevalence,Iraq,Both,20+ years,Anxiety disorders,Percent,2014,0.0617855611746924,0.0778932309368224,0.0486099810249772
+Prevalence,Iraq,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001504341950789,0.0002011310047941,0.0001137338567622
+Prevalence,Nicaragua,Both,20+ years,Depressive disorders,Percent,2014,0.0464969934169627,0.0537773505815805,0.0407325193217289
+Prevalence,Iraq,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1489525920306114,0.1607559760816899,0.1388627247206645
+Prevalence,Jordan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001178879263034,0.0001369723051216,9.99807378817e-05
+Prevalence,Jordan,Both,20+ years,Anxiety disorders,Percent,2014,0.0602216801928859,0.0768309478983741,0.0463249349404948
+Prevalence,Panama,Both,20+ years,Depressive disorders,Percent,2014,0.0435730552137715,0.0504119917414177,0.0376546432427246
+Prevalence,Kuwait,Both,20+ years,Anxiety disorders,Percent,2014,0.0567876124813597,0.0731713864355053,0.043077824248102
+Prevalence,Jordan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1301846906500093,0.1394878289695038,0.1215595827962359
+Prevalence,Kuwait,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,6.77041571839e-05,7.3524112207e-05,6.22271943609e-05
+Prevalence,Venezuela (Bolivarian Republic of),Both,20+ years,Depressive disorders,Percent,2014,0.0466941244725621,0.0533607921467649,0.0408105508062596
+Prevalence,Kuwait,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1351423544182003,0.1430526550543901,0.1257009797797932
+Prevalence,Lebanon,Both,20+ years,Anxiety disorders,Percent,2014,0.0737465107536656,0.0925553370025834,0.0582624010000487
+Prevalence,Brazil,Both,20+ years,Depressive disorders,Percent,2014,0.0535240539863328,0.0588302830216007,0.0491682730501992
+Prevalence,Lebanon,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0003849838504972,0.0004512495565022,0.0003242286023038
+Prevalence,Lebanon,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1398453283129105,0.15145943861052,0.1301704648498732
+Prevalence,Libya,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002378749076164,0.0002976366070352,0.0001838769109335
+Prevalence,Libya,Both,20+ years,Anxiety disorders,Percent,2014,0.0619924040162891,0.0792805726800276,0.0483105681679824
+Prevalence,Libya,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1051502555812209,0.1152925919476367,0.0960335817435108
+Prevalence,Morocco,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001619386114425,0.0002163802174332,0.0001135635032802
+Prevalence,Morocco,Both,20+ years,Anxiety disorders,Percent,2014,0.0579795593845254,0.0728841575560055,0.0458684703081135
+Prevalence,Paraguay,Both,20+ years,Depressive disorders,Percent,2014,0.0453191374487433,0.0522151505192023,0.0391379442181268
+Prevalence,Morocco,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1561870740731072,0.1696368931883115,0.143550615178234
+Prevalence,Palestine,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000163686805523,0.0001848763436289,0.0001451870045068
+Prevalence,Palestine,Both,20+ years,Anxiety disorders,Percent,2014,0.0648677662663406,0.0834983812195343,0.0501471942401891
+Prevalence,Oman,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,3.55816612058e-05,4.31565622275e-05,2.93584313116e-05
+Prevalence,Palestine,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0810989810359507,0.0874300169201441,0.0749950963689987
+Prevalence,Oman,Both,20+ years,Anxiety disorders,Percent,2014,0.0568870503198612,0.0740132687084695,0.0434890492465451
+Prevalence,Qatar,Both,20+ years,Anxiety disorders,Percent,2014,0.050745310176739,0.0647879760511942,0.0388121692894578
+Prevalence,Qatar,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,6.79514288309e-05,8.50118428057e-05,5.37802511142e-05
+Prevalence,Qatar,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.084609841587331,0.0927493649785702,0.0759908915098503
+Prevalence,Oman,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0540476609642225,0.0584541529556764,0.0494896692765517
+Prevalence,Saudi Arabia,Both,20+ years,Anxiety disorders,Percent,2014,0.0567634936704984,0.0721596136213706,0.0441803054157691
+Prevalence,Saudi Arabia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.05756725424e-05,5.9533719101e-05,4.23765209601e-05
+Prevalence,Algeria,Both,20+ years,Depressive disorders,Percent,2014,0.0589149871077242,0.0703780349999039,0.050237839708831
+Prevalence,Syrian Arab Republic,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001479475658856,0.0001909163532708,0.0001059113584618
+Prevalence,Saudi Arabia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0919921681148466,0.1022053727423734,0.0828968065316468
+Prevalence,Syrian Arab Republic,Both,20+ years,Anxiety disorders,Percent,2014,0.063161604378609,0.0800373374407181,0.0494245159058643
+Prevalence,Syrian Arab Republic,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0912696634510275,0.0996853585797548,0.0825046473001503
+Prevalence,Tunisia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002680025803098,0.0003677366930609,0.0001855240709349
+Prevalence,Tunisia,Both,20+ years,Anxiety disorders,Percent,2014,0.0599785709740489,0.0755059407853011,0.0474207132292429
+Prevalence,Turkey,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0005609410335257,0.0006482611664321,0.00048449342217
+Prevalence,Tunisia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1279699022775302,0.137974459888822,0.1187438174513331
+Prevalence,Turkey,Both,20+ years,Anxiety disorders,Percent,2014,0.0512316956958153,0.0645275696080003,0.0407143520386604
+Prevalence,Turkey,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.083064074268916,0.0883012187458129,0.0779528110475612
+Prevalence,United Arab Emirates,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.70702989679e-05,7.82170295799e-05,4.26197753165e-05
+Prevalence,United Arab Emirates,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0532380534583975,0.0595848709044802,0.0472095452289108
+Prevalence,United Arab Emirates,Both,20+ years,Anxiety disorders,Percent,2014,0.0496014020336052,0.0642135380987579,0.0375131856895836
+Prevalence,Yemen,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,8.67274705079e-05,0.0001333850775628,5.78638308363e-05
+Prevalence,Bahrain,Both,20+ years,Depressive disorders,Percent,2014,0.066109090277566,0.0782856911585605,0.0563272227765325
+Prevalence,Yemen,Both,20+ years,Anxiety disorders,Percent,2014,0.0604124017698799,0.0779384220544897,0.047300880475912
+Prevalence,Yemen,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0426661344895034,0.0450398955653538,0.0403280381016124
+Prevalence,Egypt,Both,20+ years,Depressive disorders,Percent,2014,0.0553571263925047,0.0652706465901404,0.0482970675847441
+Prevalence,Iran (Islamic Republic of),Both,20+ years,Depressive disorders,Percent,2014,0.0761643661449983,0.0902475215047513,0.0650763407278971
+Prevalence,Iraq,Both,20+ years,Depressive disorders,Percent,2014,0.0573288199179232,0.0659256349090522,0.0494705858575704
+Prevalence,Afghanistan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,7.918413516e-05,0.0001173893546248,4.95220744386e-05
+Prevalence,Jordan,Both,20+ years,Depressive disorders,Percent,2014,0.0571861743838952,0.0690778033699022,0.048488696049178
+Prevalence,Afghanistan,Both,20+ years,Anxiety disorders,Percent,2014,0.0604433862577228,0.0774801416493318,0.046415644127682
+Prevalence,Afghanistan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1253105573651684,0.1364072427557345,0.1155382920112002
+Prevalence,Kuwait,Both,20+ years,Depressive disorders,Percent,2014,0.0587358375915541,0.0702710169277754,0.0496916392947465
+Prevalence,Lebanon,Both,20+ years,Depressive disorders,Percent,2014,0.0718418099606244,0.0818089679964968,0.0640932979178647
+Prevalence,Bangladesh,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,6.55692372557e-05,9.69859456371e-05,5.10137159708e-05
+Prevalence,Bangladesh,Both,20+ years,Anxiety disorders,Percent,2014,0.0424141856385194,0.0538546329843852,0.0332084474263606
+Prevalence,Bangladesh,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0764467985510028,0.0812556474149351,0.071548595551525
+Prevalence,Libya,Both,20+ years,Depressive disorders,Percent,2014,0.0637785879784659,0.0752913955949091,0.0540153600197585
+Prevalence,Bhutan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.73076607017e-05,7.72740061608e-05,3.84046884951e-05
+Prevalence,Morocco,Both,20+ years,Depressive disorders,Percent,2014,0.0747907518937983,0.0867704538330348,0.0646082969236615
+Prevalence,Palestine,Both,20+ years,Depressive disorders,Percent,2014,0.0952318529114263,0.1126796061892757,0.0824591271138538
+Prevalence,Oman,Both,20+ years,Depressive disorders,Percent,2014,0.0560211522696211,0.0672231204860394,0.0476246213123834
+Prevalence,Qatar,Both,20+ years,Depressive disorders,Percent,2014,0.0569718216541606,0.0677985780403566,0.0482145423294257
+Prevalence,Bhutan,Both,20+ years,Anxiety disorders,Percent,2014,0.0426917750644637,0.0546433963023115,0.0336961982118877
+Prevalence,India,Both,20+ years,Anxiety disorders,Percent,2014,0.0402600370110402,0.0469645334891557,0.0343765564823862
+Prevalence,Bhutan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0562896893039089,0.0602908448491712,0.0520556899949284
+Prevalence,India,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,7.49721748541e-05,8.05853984113e-05,6.88127618216e-05
+Prevalence,Saudi Arabia,Both,20+ years,Depressive disorders,Percent,2014,0.0602998445415184,0.0719144661649764,0.0510033101580994
+Prevalence,Syrian Arab Republic,Both,20+ years,Depressive disorders,Percent,2014,0.0584108341371713,0.0696436917497381,0.0494735669181893
+Prevalence,Tunisia,Both,20+ years,Depressive disorders,Percent,2014,0.0745820235902681,0.0866538570178703,0.063728403037449
+Prevalence,Nepal,Both,20+ years,Anxiety disorders,Percent,2014,0.0430037487250187,0.0539484128538996,0.034017993670203
+Prevalence,India,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0678256836331713,0.0746756787923255,0.0615593125251146
+Prevalence,Nepal,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,6.63679850277e-05,9.28084175887e-05,4.91861169061e-05
+Prevalence,United Arab Emirates,Both,20+ years,Depressive disorders,Percent,2014,0.0520339814357289,0.0634864548395645,0.0432958584726686
+Prevalence,Turkey,Both,20+ years,Depressive disorders,Percent,2014,0.0571002863515322,0.0651738842249246,0.0503042221795851
+Prevalence,Nepal,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.080377099783099,0.0867646705661652,0.07426467514978
+Prevalence,Pakistan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001392929960618,0.0001760417320271,0.0001042148583294
+Prevalence,Pakistan,Both,20+ years,Anxiety disorders,Percent,2014,0.0450506069958452,0.0530085803636597,0.0376892727065243
+Prevalence,Yemen,Both,20+ years,Depressive disorders,Percent,2014,0.0712698847411464,0.0857322062957327,0.0606875114401589
+Prevalence,Pakistan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0779373165009261,0.0859071581415742,0.0710155440390724
+Prevalence,Angola,Both,20+ years,Anxiety disorders,Percent,2014,0.0466944530321588,0.0608925750311546,0.0364715951902402
+Prevalence,Angola,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,9.83099146553e-05,0.0001309324514301,7.24395063241e-05
+Prevalence,Angola,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0578301871425713,0.0634698424306092,0.0527532206407695
+Prevalence,Central African Republic,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,9.48802174046e-05,0.0001777024691002,5.79377737475e-05
+Prevalence,Central African Republic,Both,20+ years,Anxiety disorders,Percent,2014,0.0488001344515433,0.064112430945037,0.0380686162055307
+Prevalence,Central African Republic,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0702435532101499,0.0771655801791377,0.064101163738363
+Prevalence,Congo,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001208608295724,0.0001561046252327,8.85073892885e-05
+Prevalence,Democratic Republic of the Congo,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,6.59062502176e-05,0.0001210765458647,4.07648409683e-05
+Prevalence,Congo,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0527060205379811,0.0575312225624995,0.0480572224879918
+Prevalence,Congo,Both,20+ years,Anxiety disorders,Percent,2014,0.0448733742363914,0.0583414142705312,0.0349936483327634
+Prevalence,Democratic Republic of the Congo,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0440519954637422,0.0479600965490518,0.0404894174796584
+Prevalence,Equatorial Guinea,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,9.6183407503e-05,0.0001500540381987,5.9778233587e-05
+Prevalence,Democratic Republic of the Congo,Both,20+ years,Anxiety disorders,Percent,2014,0.045354973843557,0.0587372249262344,0.0353811525331131
+Prevalence,Afghanistan,Both,20+ years,Depressive disorders,Percent,2014,0.0731607008608152,0.086978173075281,0.0627453409289849
+Prevalence,Bangladesh,Both,20+ years,Depressive disorders,Percent,2014,0.0685994964531192,0.0780851951996877,0.0589034062016055
+Prevalence,Equatorial Guinea,Both,20+ years,Anxiety disorders,Percent,2014,0.0458841458102244,0.059775547918758,0.0355271192278892
+Prevalence,Equatorial Guinea,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0528919500487478,0.0582511674275808,0.0484267318813042
+Prevalence,Gabon,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001656717806947,0.0002194440716107,0.0001184600385642
+Prevalence,Bhutan,Both,20+ years,Depressive disorders,Percent,2014,0.057005422735336,0.066117118525047,0.0496205435763205
+Prevalence,Gabon,Both,20+ years,Anxiety disorders,Percent,2014,0.0459595650600415,0.058632514533404,0.0357287173279022
+Prevalence,Gabon,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0702663797160307,0.0766350621763535,0.0642035986547259
+Prevalence,India,Both,20+ years,Depressive disorders,Percent,2014,0.0548377406376011,0.0609149909713607,0.0498453762701842
+Prevalence,Burundi,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,4.5435596926e-05,6.71726356677e-05,3.31570323256e-05
+Prevalence,Nepal,Both,20+ years,Depressive disorders,Percent,2014,0.073035730330738,0.0835566766452504,0.0645045738283423
+Prevalence,Burundi,Both,20+ years,Anxiety disorders,Percent,2014,0.0471473313317746,0.0616000840163799,0.0364492237777716
+Prevalence,Pakistan,Both,20+ years,Depressive disorders,Percent,2014,0.0567759580626206,0.0653570019059801,0.0495854350248274
+Prevalence,Burundi,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.023638472367688,0.0259394549985319,0.0214080358218797
+Prevalence,Comoros,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,7.55694504935e-05,0.0001023999998082,5.11394847127e-05
+Prevalence,Comoros,Both,20+ years,Anxiety disorders,Percent,2014,0.0461231494147645,0.0593101857625553,0.0362073435344801
+Prevalence,Comoros,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0446122515571218,0.048429165685437,0.0409299640134637
+Prevalence,Angola,Both,20+ years,Depressive disorders,Percent,2014,0.0864755380163391,0.1020941223129465,0.0742207840751542
+Prevalence,Djibouti,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,8.30751900529e-05,0.0001233588438272,5.33530992738e-05
+Prevalence,Central African Republic,Both,20+ years,Depressive disorders,Percent,2014,0.0891979852639799,0.1061962324329014,0.0762615337249375
+Prevalence,Djibouti,Both,20+ years,Anxiety disorders,Percent,2014,0.0448124695751918,0.0589064956143309,0.0347630171631134
+Prevalence,Congo,Both,20+ years,Depressive disorders,Percent,2014,0.0833631963020599,0.0985093197003743,0.0719516150589422
+Prevalence,Djibouti,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.024181982147229,0.0265823840274284,0.0216646567853877
+Prevalence,Democratic Republic of the Congo,Both,20+ years,Depressive disorders,Percent,2014,0.080627112547998,0.095217253465613,0.0688502835324239
+Prevalence,Eritrea,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,7.20202220154e-05,9.59075431852e-05,5.22156923632e-05
+Prevalence,Equatorial Guinea,Both,20+ years,Depressive disorders,Percent,2014,0.0850988689657018,0.1016263500780763,0.0719020345482835
+Prevalence,Eritrea,Both,20+ years,Anxiety disorders,Percent,2014,0.0480382830493766,0.0624278583576919,0.0369832223468018
+Prevalence,Eritrea,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0351172975631119,0.0386763950000987,0.0321382652284515
+Prevalence,Gabon,Both,20+ years,Depressive disorders,Percent,2014,0.083907943950208,0.0975300700067894,0.0725714268956507
+Prevalence,Ethiopia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.40656143964e-05,6.18049301166e-05,4.68579370094e-05
+Prevalence,Ethiopia,Both,20+ years,Anxiety disorders,Percent,2014,0.0481394199942482,0.0571906743140654,0.0398407636454793
+Prevalence,Ethiopia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0298723388959435,0.0330228450237617,0.0268325340457369
+Prevalence,Kenya,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,2.8641959391e-05,3.65444688474e-05,2.29102376475e-05
+Prevalence,Kenya,Both,20+ years,Anxiety disorders,Percent,2014,0.0466337445350332,0.0554416295530635,0.0386979917611563
+Prevalence,Kenya,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0166713232750247,0.0183257663666961,0.0149508852158623
+Prevalence,Madagascar,Both,20+ years,Anxiety disorders,Percent,2014,0.0495743034903494,0.0649956299881639,0.0379931296289367
+Prevalence,Madagascar,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,4.55049228871e-05,6.26515703164e-05,3.37750418584e-05
+Prevalence,Madagascar,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.022848064520892,0.025200715737382,0.0206320020854303
+Prevalence,Malawi,Both,20+ years,Anxiety disorders,Percent,2014,0.0488828803308074,0.0640630095056478,0.0374621300757131
+Prevalence,Malawi,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,2.26261472043e-05,2.86032180074e-05,1.80058118853e-05
+Prevalence,Malawi,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.016212016321756,0.0177040973244735,0.0148065106518846
+Prevalence,Mauritius,Both,20+ years,Anxiety disorders,Percent,2014,0.045146378183287,0.0557874959453939,0.0356994263294327
+Prevalence,Mauritius,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001809911291391,0.0001935006886393,0.0001691457286736
+Prevalence,Mauritius,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1660238278046903,0.1787381625980602,0.1556209043421918
+Prevalence,Mozambique,Both,20+ years,Anxiety disorders,Percent,2014,0.0501151272297381,0.0651487539048278,0.0385168430580975
+Prevalence,Mozambique,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.5472917529e-05,6.75411844701e-05,4.44398280837e-05
+Prevalence,Mozambique,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0268673915126303,0.0297794339347212,0.0243735415564501
+Prevalence,Rwanda,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.99493801997e-05,8.34420477621e-05,4.21635717956e-05
+Prevalence,Rwanda,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0177448233147851,0.0193312713705602,0.0161614403548434
+Prevalence,Seychelles,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002111574332885,0.000238166148014,0.0001852813119344
+Prevalence,Rwanda,Both,20+ years,Anxiety disorders,Percent,2014,0.0473601955695595,0.0612160280380508,0.0367284863302356
+Prevalence,Seychelles,Both,20+ years,Anxiety disorders,Percent,2014,0.0439317863741688,0.0550802537086521,0.0350533502983407
+Prevalence,Seychelles,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1334364441763866,0.1448682575448139,0.1232849904692507
+Prevalence,Somalia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,4.41737282199e-05,8.47028615606e-05,2.69996499035e-05
+Prevalence,Somalia,Both,20+ years,Anxiety disorders,Percent,2014,0.0451914556673506,0.0590891659759109,0.0346211162600742
+Prevalence,Somalia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0248900511594743,0.0275439688167144,0.02267473892697
+Prevalence,United Republic of Tanzania,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,6.08249166272e-05,7.99173246613e-05,4.85545146199e-05
+Prevalence,United Republic of Tanzania,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0211243525096545,0.0229344029555451,0.0191679556035844
+Prevalence,Uganda,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.16896696449e-05,6.39638326471e-05,4.133949167e-05
+Prevalence,United Republic of Tanzania,Both,20+ years,Anxiety disorders,Percent,2014,0.0487318103309231,0.0635923525529652,0.0374442272889027
+Prevalence,Uganda,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0217838587023822,0.0237696785813893,0.0198608551451532
+Prevalence,Uganda,Both,20+ years,Anxiety disorders,Percent,2014,0.0492668593329973,0.0641532382245358,0.0375707406250986
+Prevalence,Zambia,Both,20+ years,Anxiety disorders,Percent,2014,0.0497806785407832,0.0659333474169785,0.0383269600732226
+Prevalence,Zambia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,8.40753837413e-05,0.0001409679507492,6.1946879876e-05
+Prevalence,Zambia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0396889040117709,0.0433526209637888,0.0362107665620607
+Prevalence,Botswana,Both,20+ years,Anxiety disorders,Percent,2014,0.0445146463224179,0.0578781389619702,0.0343313593297215
+Prevalence,Botswana,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001626334838272,0.0002040094122226,0.0001237481274975
+Prevalence,Botswana,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0425774392645425,0.045910019985215,0.039094544130377
+Prevalence,Lesotho,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002628585447446,0.0003622462007629,0.0001765018814265
+Prevalence,Lesotho,Both,20+ years,Anxiety disorders,Percent,2014,0.0443740765445922,0.0565054335870459,0.0348424674710989
+Prevalence,Burundi,Both,20+ years,Depressive disorders,Percent,2014,0.063597327276995,0.0743370475008234,0.0545048645435078
+Prevalence,Lesotho,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0460758771921439,0.0495086347916024,0.042083335952782
+Prevalence,Namibia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.99977974636e-05,7.5749026426e-05,4.47224339346e-05
+Prevalence,Namibia,Both,20+ years,Anxiety disorders,Percent,2014,0.0440940192110813,0.0569570637328109,0.0341576306369247
+Prevalence,Comoros,Both,20+ years,Depressive disorders,Percent,2014,0.0597110740440273,0.0696087607276307,0.0519386488577966
+Prevalence,Namibia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0384302913802121,0.0421132982114848,0.0348100664446501
+Prevalence,South Africa,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000262432118843,0.0002806063942481,0.000245069246524
+Prevalence,Djibouti,Both,20+ years,Depressive disorders,Percent,2014,0.0612655537128812,0.0722411010133862,0.0530419938200738
+Prevalence,South Africa,Both,20+ years,Anxiety disorders,Percent,2014,0.0479174637601015,0.0559868805850782,0.0403183753495539
+Prevalence,Eritrea,Both,20+ years,Depressive disorders,Percent,2014,0.0655892703007122,0.077484023458402,0.056664522486203
+Prevalence,Ethiopia,Both,20+ years,Depressive disorders,Percent,2014,0.0642252638103428,0.0739860536566198,0.056681994183944
+Prevalence,Kenya,Both,20+ years,Depressive disorders,Percent,2014,0.0662928789032857,0.0749771585769253,0.0593393987881179
+Prevalence,Madagascar,Both,20+ years,Depressive disorders,Percent,2014,0.064674350911001,0.0757932799982239,0.0555726982424307
+Prevalence,Malawi,Both,20+ years,Depressive disorders,Percent,2014,0.0566787634859681,0.0661525904971993,0.0488247636998626
+Prevalence,Mauritius,Both,20+ years,Depressive disorders,Percent,2014,0.0564969474499517,0.0652495089920471,0.049267121893875
+Prevalence,Mozambique,Both,20+ years,Depressive disorders,Percent,2014,0.0683569484890827,0.0798466636782216,0.0590512940743579
+Prevalence,Rwanda,Both,20+ years,Depressive disorders,Percent,2014,0.0683267885645297,0.0807343476767257,0.0588753887710479
+Prevalence,Seychelles,Both,20+ years,Depressive disorders,Percent,2014,0.0386043989829352,0.045459992335386,0.0333535916902861
+Prevalence,Somalia,Both,20+ years,Depressive disorders,Percent,2014,0.0655852299800563,0.0773925090195337,0.0563806662922294
+Prevalence,United Republic of Tanzania,Both,20+ years,Depressive disorders,Percent,2014,0.0640451238517723,0.0748328358779447,0.0553709933140915
+Prevalence,Uganda,Both,20+ years,Depressive disorders,Percent,2014,0.09016359058335,0.104908526500397,0.0777099324890541
+Prevalence,Zambia,Both,20+ years,Depressive disorders,Percent,2014,0.0573526601143714,0.0672886405465974,0.049662511181693
+Prevalence,Botswana,Both,20+ years,Depressive disorders,Percent,2014,0.0613965284062393,0.0718487371394696,0.0530831797766564
+Prevalence,Lesotho,Both,20+ years,Depressive disorders,Percent,2014,0.0818606971285929,0.0945870289795981,0.0712687305289055
+Prevalence,South Africa,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0615610829882991,0.0676850116632333,0.055758020303795
+Prevalence,Namibia,Both,20+ years,Depressive disorders,Percent,2014,0.052428891203921,0.0613307811506239,0.0453921340321752
+Prevalence,Eswatini,Both,20+ years,Anxiety disorders,Percent,2014,0.044346907227783,0.0577830499271022,0.034616774541664
+Prevalence,Eswatini,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0002221181908379,0.0003177402289204,0.0001261701022655
+Prevalence,South Africa,Both,20+ years,Depressive disorders,Percent,2014,0.0629348002207159,0.0694857224804771,0.0568129957232294
+Prevalence,Eswatini,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0572780779153657,0.0623538266613439,0.052393458122605
+Prevalence,Zimbabwe,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001236605975884,0.0001548796569203,9.88687790292e-05
+Prevalence,Zimbabwe,Both,20+ years,Anxiety disorders,Percent,2014,0.0407748396738254,0.0524636372539695,0.0315312862550722
+Prevalence,Zimbabwe,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0383560804201813,0.0419486641069544,0.0349416653298776
+Prevalence,Eswatini,Both,20+ years,Depressive disorders,Percent,2014,0.0649228069775799,0.0752540771234138,0.0558615086683408
+Prevalence,Benin,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.24710022483e-05,6.80547802547e-05,4.11698615975e-05
+Prevalence,Benin,Both,20+ years,Anxiety disorders,Percent,2014,0.0364040472664981,0.0468180159085146,0.0283825182383464
+Prevalence,Benin,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0588786667632801,0.0632276731406844,0.0542625803708207
+Prevalence,Burkina Faso,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.18383775333e-05,7.84373402697e-05,3.79591598896e-05
+Prevalence,Zimbabwe,Both,20+ years,Depressive disorders,Percent,2014,0.0468774204325168,0.0550368723728786,0.0402782804265338
+Prevalence,Burkina Faso,Both,20+ years,Anxiety disorders,Percent,2014,0.035713811240414,0.0465292250310829,0.0278767131328116
+Prevalence,Burkina Faso,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0379753211502792,0.0411722276163734,0.0350657244698395
+Prevalence,Cameroon,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,7.13105118899e-05,9.5953732945e-05,5.07379284381e-05
+Prevalence,Cameroon,Both,20+ years,Anxiety disorders,Percent,2014,0.0363699241256714,0.0468650597435004,0.0282992290992779
+Prevalence,Cameroon,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0452564249279107,0.0487079498286651,0.0418410139606002
+Prevalence,Cabo Verde,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001507048380786,0.0001821421123447,0.0001222072088613
+Prevalence,Cabo Verde,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0795978159186038,0.0876246210880282,0.0735002946927734
+Prevalence,Cabo Verde,Both,20+ years,Anxiety disorders,Percent,2014,0.0351672130697358,0.0448228933358133,0.0275668874945369
+Prevalence,Chad,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.79276057937e-05,8.15878494392e-05,4.22539751172e-05
+Prevalence,Chad,Both,20+ years,Anxiety disorders,Percent,2014,0.0370789439071227,0.0473852091056098,0.0288949490973449
+Prevalence,Chad,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0481226847248695,0.0523935137983365,0.0440533544224866
+Prevalence,Côte d'Ivoire,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,3.3272505598e-05,4.3483077642e-05,2.48420793159e-05
+Prevalence,Benin,Both,20+ years,Depressive disorders,Percent,2014,0.0612238113567178,0.0714446241993292,0.0528981207935393
+Prevalence,Côte d'Ivoire,Both,20+ years,Anxiety disorders,Percent,2014,0.0364494496922813,0.0472616307632906,0.028142517555364
+Prevalence,Gambia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,2.6666994887e-05,3.4471888443e-05,1.87960676377e-05
+Prevalence,Côte d'Ivoire,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0495852666910647,0.0539411504184547,0.0453615132548729
+Prevalence,Gambia,Both,20+ years,Anxiety disorders,Percent,2014,0.0369602811411692,0.0476768177650205,0.0287390949244571
+Prevalence,Gambia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0491229544428382,0.0535778255880723,0.0447123061256617
+Prevalence,Burkina Faso,Both,20+ years,Depressive disorders,Percent,2014,0.0642254061836534,0.0746670451690134,0.0559926918704014
+Prevalence,Ghana,Both,20+ years,Anxiety disorders,Percent,2014,0.0351248605004364,0.0453648497782062,0.0273501432373277
+Prevalence,Cameroon,Both,20+ years,Depressive disorders,Percent,2014,0.0630006236282736,0.0742350228015878,0.0543250669558256
+Prevalence,Ghana,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.13877151393e-05,6.16903418681e-05,4.2569207299e-05
+Prevalence,Cabo Verde,Both,20+ years,Depressive disorders,Percent,2014,0.0719645667911862,0.0837305611682601,0.0628039929466609
+Prevalence,Ghana,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0529821819655877,0.0568823662664846,0.0492502662884627
+Prevalence,Guinea,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,8.22999989063e-05,0.0001099688875996,6.12961153792e-05
+Prevalence,Chad,Both,20+ years,Depressive disorders,Percent,2014,0.0717574171926478,0.0832698462954678,0.0620349617512842
+Prevalence,Guinea,Both,20+ years,Anxiety disorders,Percent,2014,0.0369489172691203,0.0472262065267495,0.0287307530576089
+Prevalence,Guinea,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0394209705011909,0.042083386532046,0.037128561501753
+Prevalence,Guinea-Bissau,Both,20+ years,Anxiety disorders,Percent,2014,0.0358604673352823,0.0467003613177269,0.0276616616034622
+Prevalence,Guinea-Bissau,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,6.61992565723e-05,9.05234698573e-05,4.75379618724e-05
+Prevalence,Côte d'Ivoire,Both,20+ years,Depressive disorders,Percent,2014,0.052824297728968,0.0622864376546495,0.0454534690408692
+Prevalence,Guinea-Bissau,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0534834578026822,0.0583503673207956,0.0490027147416183
+Prevalence,Liberia,Both,20+ years,Anxiety disorders,Percent,2014,0.0379602736937028,0.0494722309514311,0.0295549934782544
+Prevalence,Liberia,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,4.11058763102e-05,6.31889666498e-05,2.7279924467e-05
+Prevalence,Gambia,Both,20+ years,Depressive disorders,Percent,2014,0.0762630138669215,0.0898218536730197,0.0657891522683396
+Prevalence,Liberia,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0531719684667983,0.0579408149969745,0.0491622415614822
+Prevalence,Mali,Both,20+ years,Anxiety disorders,Percent,2014,0.0330189705008103,0.042593536757717,0.025482309259136
+Prevalence,Ghana,Both,20+ years,Depressive disorders,Percent,2014,0.0606873731732639,0.0708572763160704,0.052241368550041
+Prevalence,Mali,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,4.38102966439e-05,5.47343803061e-05,3.42972718595e-05
+Prevalence,Guinea,Both,20+ years,Depressive disorders,Percent,2014,0.0612469745638227,0.0715974292133029,0.0526226049528654
+Prevalence,Mali,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0955115048644721,0.1045301888155208,0.0873981474614162
+Prevalence,Mauritania,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,6.27026041357e-05,8.02915899115e-05,4.64666470058e-05
+Prevalence,Mauritania,Both,20+ years,Anxiety disorders,Percent,2014,0.0331986493323058,0.0428270605010362,0.026060875325292
+Prevalence,Mauritania,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0346246163196676,0.0371585362462458,0.0322509412135008
+Prevalence,Niger,Both,20+ years,Anxiety disorders,Percent,2014,0.0345947540568865,0.0444564389493834,0.0267403217342359
+Prevalence,Guinea-Bissau,Both,20+ years,Depressive disorders,Percent,2014,0.0606245432200068,0.0722755745538971,0.0516795004166735
+Prevalence,Niger,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,3.44256289203e-05,5.83381627453e-05,2.33411205057e-05
+Prevalence,Niger,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0456017516160132,0.049434924528252,0.0415527518650662
+Prevalence,Nigeria,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,1.26119845048e-05,1.58802753883e-05,9.8880738627e-06
+Prevalence,Nigeria,Both,20+ years,Anxiety disorders,Percent,2014,0.0365630887523637,0.0434523931348204,0.030514582633457
+Prevalence,Liberia,Both,20+ years,Depressive disorders,Percent,2014,0.0673535930646601,0.0758437392890681,0.0598555137473328
+Prevalence,Nigeria,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0339570937838283,0.0373098313253776,0.0305445386458077
+Prevalence,Sao Tome and Principe,Both,20+ years,Anxiety disorders,Percent,2014,0.0353561932630493,0.0451827396844939,0.0274553570100388
+Prevalence,Sao Tome and Principe,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0001510545808577,0.0001946336534242,0.0001152981059938
+Prevalence,Mali,Both,20+ years,Depressive disorders,Percent,2014,0.049480760820708,0.0581998274354563,0.0428797764197444
+Prevalence,Mauritania,Both,20+ years,Depressive disorders,Percent,2014,0.0516245417743354,0.0606986698556655,0.0445321843348108
+Prevalence,Senegal,Both,20+ years,Anxiety disorders,Percent,2014,0.0342274207346845,0.0442717143313388,0.0266911597812002
+Prevalence,Sao Tome and Principe,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0565846916101789,0.0614724209887043,0.0519745933081733
+Prevalence,Senegal,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,7.37509705588e-05,9.56820330619e-05,5.76918816498e-05
+Prevalence,Niger,Both,20+ years,Depressive disorders,Percent,2014,0.0576978652576342,0.0678680438135635,0.0497012266681952
+Prevalence,Senegal,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0756104346043384,0.0816115515547632,0.0704632444010903
+Prevalence,Nigeria,Both,20+ years,Depressive disorders,Percent,2014,0.0520734487308989,0.059605120235897,0.0465090174271416
+Prevalence,Sierra Leone,Both,20+ years,Anxiety disorders,Percent,2014,0.0389676532220086,0.0500457887444008,0.0301736476982225
+Prevalence,Sierra Leone,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.22354301243e-05,7.17061603691e-05,3.81517124375e-05
+Prevalence,Sao Tome and Principe,Both,20+ years,Depressive disorders,Percent,2014,0.0514905816119973,0.0608066796780641,0.0440610903339326
+Prevalence,Senegal,Both,20+ years,Depressive disorders,Percent,2014,0.0554173029521028,0.0644023294715357,0.0483981619291367
+Prevalence,Sierra Leone,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0482968152959821,0.0529570516763163,0.0441117632355361
+Prevalence,Togo,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,6.46171357639e-05,9.06052789215e-05,4.23636497351e-05
+Prevalence,Togo,Both,20+ years,Anxiety disorders,Percent,2014,0.0386085421708222,0.0492998261205615,0.0296770905000847
+Prevalence,Togo,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0323177676437417,0.0348471621164923,0.0297662678732943
+Prevalence,Sierra Leone,Both,20+ years,Depressive disorders,Percent,2014,0.0610861348451046,0.0719559788686969,0.0527149031208864
+Prevalence,Togo,Both,20+ years,Depressive disorders,Percent,2014,0.0621205997662128,0.0726627345505253,0.0533707582468752
+Prevalence,American Samoa,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0003624283307333,0.0004218114980374,0.0003151976511357
+Prevalence,American Samoa,Both,20+ years,Depressive disorders,Percent,2014,0.0381691362855598,0.0452330947041453,0.0326307742318554
+Prevalence,American Samoa,Both,20+ years,Anxiety disorders,Percent,2014,0.0445912219719714,0.0553120183321054,0.0354385357161526
+Prevalence,Bermuda,Both,20+ years,Depressive disorders,Percent,2014,0.0469236181750971,0.0538820652640514,0.0410697240982303
+Prevalence,American Samoa,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.3000528172001974,0.3295081306904087,0.2760961866993592
+Prevalence,Cook Islands,Both,20+ years,Depressive disorders,Percent,2014,0.0470348685244131,0.0558901649099476,0.039242553392388
+Prevalence,Bermuda,Both,20+ years,Anxiety disorders,Percent,2014,0.053853002278421,0.0668954310000488,0.0430047056060667
+Prevalence,Cook Islands,Both,20+ years,Anxiety disorders,Percent,2014,0.0452958160779115,0.0559790624046515,0.0363385544105299
+Prevalence,Bermuda,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.001088902528678,0.0012462641463315,0.0009574219070323
+Prevalence,Cook Islands,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000537098524717,0.0006290086380762,0.0004549287392422
+Prevalence,Greenland,Both,20+ years,Depressive disorders,Percent,2014,0.0839576359147728,0.095656534276753,0.0730500408384983
+Prevalence,Bermuda,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0998274664697824,0.1076319757909983,0.0909978600726963
+Prevalence,Cook Islands,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.2992881433006118,0.3174739458847701,0.2807376588229588
+Prevalence,Greenland,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0012386990210013,0.0014293836487366,0.0010611069069643
+Prevalence,Greenland,Both,20+ years,Anxiety disorders,Percent,2014,0.0640647360866464,0.0797434332851473,0.050237496384043
+Prevalence,Guam,Both,20+ years,Anxiety disorders,Percent,2014,0.0446836445662418,0.0554050197562593,0.0358061302144676
+Prevalence,Greenland,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0360502878301373,0.039717967221111,0.0325773504610812
+Prevalence,Guam,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0005272856857264,0.0005783220216184,0.000481393262847
+Prevalence,Guam,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1158320735664949,0.1264856415083166,0.1070164211992879
+Prevalence,Guam,Both,20+ years,Depressive disorders,Percent,2014,0.0460562414547397,0.0534360552774156,0.0400150241216901
+Prevalence,Monaco,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0033048146133907,0.0039440977752221,0.0027640373554621
+Prevalence,Nauru,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0003867182463075,0.0005202441621021,0.000198298025122
+Prevalence,Monaco,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0689301818438347,0.0767811163618332,0.0617436643426994
+Prevalence,Monaco,Both,20+ years,Depressive disorders,Percent,2014,0.0593098174778361,0.0705873604692819,0.0496633041152758
+Prevalence,Nauru,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1832599659421688,0.1955933044627082,0.1720782513471009
+Prevalence,Nauru,Both,20+ years,Anxiety disorders,Percent,2014,0.0447142236253913,0.0565210723956244,0.0348454152045492
+Prevalence,Monaco,Both,20+ years,Anxiety disorders,Percent,2014,0.0604249473656724,0.0742484865080237,0.0488024503249091
+Prevalence,Niue,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0004929542487659,0.0006305421921044,0.0003755380162742
+Prevalence,Nauru,Both,20+ years,Depressive disorders,Percent,2014,0.0447058381587333,0.0546382097049288,0.0372484228084498
+Prevalence,Niue,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.273341856489442,0.2955148529594287,0.2535479427347678
+Prevalence,Northern Mariana Islands,Both,20+ years,Anxiety disorders,Percent,2014,0.0444778138729964,0.0549448454580854,0.0349907017981185
+Prevalence,Niue,Both,20+ years,Depressive disorders,Percent,2014,0.0468712151801967,0.0555744988100126,0.0391696582519794
+Prevalence,Northern Mariana Islands,Both,20+ years,Depressive disorders,Percent,2014,0.0411972369207916,0.049102302787667,0.0349265377855891
+Prevalence,Palau,Both,20+ years,Anxiety disorders,Percent,2014,0.0437899503826169,0.0545769011125435,0.0346174036114906
+Prevalence,Niue,Both,20+ years,Anxiety disorders,Percent,2014,0.0450189566703721,0.0557756227050317,0.0360356425825003
+Prevalence,Northern Mariana Islands,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1304839318946952,0.1425660905549425,0.1187647435912657
+Prevalence,Northern Mariana Islands,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000498984804536,0.0005923771653363,0.0004010291894237
+Prevalence,Palau,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000645885270449,0.0008076599500656,0.0005183916837276
+Prevalence,Puerto Rico,Both,20+ years,Anxiety disorders,Percent,2014,0.0540513981558024,0.0663254672961628,0.0436111642711718
+Prevalence,Palau,Both,20+ years,Depressive disorders,Percent,2014,0.0463123011853681,0.0552757172707409,0.0383148805221368
+Prevalence,Saint Kitts and Nevis,Both,20+ years,Anxiety disorders,Percent,2014,0.0545388096411688,0.0686523629044406,0.0433881612785947
+Prevalence,Puerto Rico,Both,20+ years,Depressive disorders,Percent,2014,0.040658872518232,0.0461761047156167,0.0358326824871296
+Prevalence,Puerto Rico,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0004101044692641,0.0004412335831982,0.0003770102122831
+Prevalence,Saint Kitts and Nevis,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.000142954673521,0.0001591561499957,0.0001266456296629
+Prevalence,Puerto Rico,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.20379555683557,0.2178402829675675,0.189274675963242
+Prevalence,Saint Kitts and Nevis,Both,20+ years,Depressive disorders,Percent,2014,0.0562376857547182,0.0689807636626413,0.0463423188988147
+Prevalence,San Marino,Both,20+ years,Anxiety disorders,Percent,2014,0.0615758052490064,0.0760813877642474,0.0495524137556439
+Prevalence,Saint Kitts and Nevis,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1300057866683923,0.1408243563036232,0.1180309576993717
+Prevalence,Palau,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.2346959759700964,0.2488694371339292,0.2220779073775657
+Prevalence,San Marino,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0013011054934375,0.0015434788129489,0.0010695614457974
+Prevalence,San Marino,Both,20+ years,Depressive disorders,Percent,2014,0.0602031924311914,0.0721107799475553,0.0503204638337333
+Prevalence,San Marino,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0706369158798425,0.0779762304135559,0.0640012473575329
+Prevalence,Tokelau,Both,20+ years,Anxiety disorders,Percent,2014,0.0449892654502177,0.0553674411625183,0.036073603256787
+Prevalence,Tokelau,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.2571387484962789,0.2776583178307775,0.2385675852108071
+Prevalence,Tuvalu,Both,20+ years,Anxiety disorders,Percent,2014,0.0447552414077656,0.0556429668211799,0.0356075325487882
+Prevalence,Tuvalu,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0003225052283991,0.0004310896426297,0.0002401134556458
+Prevalence,Tokelau,Both,20+ years,Depressive disorders,Percent,2014,0.0461018790973951,0.054505629295967,0.0387790909852895
+Prevalence,Tokelau,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0003802079699398,0.0004793442231284,0.000296892659463
+Prevalence,Tuvalu,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.1425013261865843,0.1551618805869975,0.1309937229313784
+Prevalence,United States Virgin Islands,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,0.0004049646834431,0.00049662256814,0.0003263761875733
+Prevalence,Tuvalu,Both,20+ years,Depressive disorders,Percent,2014,0.045583801571983,0.0544089480133287,0.0381675345806619
+Prevalence,United States Virgin Islands,Both,20+ years,Anxiety disorders,Percent,2014,0.0538497668125121,0.0660517094113671,0.0430859690549759
+Prevalence,United States Virgin Islands,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.2514652751906629,0.2732023788229928,0.2318770275819037
+Prevalence,United States Virgin Islands,Both,20+ years,Depressive disorders,Percent,2014,0.0482495651009724,0.0554738487897691,0.0420177409845264
+Prevalence,South Sudan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,5.8164029256e-05,8.35890080104e-05,3.93901587476e-05
+Prevalence,South Sudan,Both,20+ years,Anxiety disorders,Percent,2014,0.0561429911571625,0.073351118109014,0.0426127379524745
+Prevalence,South Sudan,Both,20+ years,Depressive disorders,Percent,2014,0.0638760089517776,0.0755801033353654,0.0550417732254088
+Prevalence,South Sudan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0220667232539482,0.0242872880593933,0.0200551023246528
+Prevalence,Sudan,Both,20+ years,Anxiety disorders,Percent,2014,0.0599795589410795,0.077680549971273,0.0463128570466365
+Prevalence,Sudan,Both,20+ years,"Tracheal, bronchus, and lung cancer",Percent,2014,7.88941154547e-05,0.0001125782075601,5.33769639783e-05
+Prevalence,Sudan,Both,20+ years,Depressive disorders,Percent,2014,0.0628187375494923,0.075732133640421,0.0534006912773096
+Prevalence,Sudan,Both,20+ years,Diabetes mellitus type 2,Percent,2014,0.0717742451571181,0.0775954764095541,0.0661196252354937
