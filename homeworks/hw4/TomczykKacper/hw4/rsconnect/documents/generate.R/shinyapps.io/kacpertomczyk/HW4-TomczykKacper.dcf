@@ -1,0 +1,12 @@
+name: HW4-TomczykKacper
+title: HW4-TomczykKacper
+username: kacpertomczyk
+account: kacpertomczyk
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13579822
+bundleId: 9504756
+url: https://kacpertomczyk.shinyapps.io/HW4-TomczykKacper/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
