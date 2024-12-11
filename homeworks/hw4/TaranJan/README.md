@@ -1,5 +1,10 @@
 ## Analiza danych: jakie województwa najczęściej opuszczają swoje dzieci
 ##### Zgłoszenie na projektu BI_NGO fundacji Gajusz
+
+
+#### Link do apki w shiny
+https://jantar.shinyapps.io/projekt-bi_ngo/
+
 #### Na czym się skupiłem
 
 W analizie danych skupiłem się na różnicach pomiędzy różnymi województwami w latach 2014 - 2023. Chciałem sprawdzić czy istnieją pewne zależności pomiędzy różnymi województwami w dbaniu o wychowanie dzieci w pierwotnej rodzinie.
