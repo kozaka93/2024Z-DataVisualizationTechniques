@@ -60,6 +60,8 @@ df <- df_raw %>%
   filter(Type.1 %in% c("Fire", "Water", "Grass", "Poison", "Electric")) %>%
   mutate(Type.1 = factor(Type.1, levels = c("Fire", "Water", "Grass", "Poison",  "Electric")))
 
+df
+
 plot_ly(
   data = df, 
   x = ~Attack, 
@@ -203,6 +205,31 @@ plot_ly(
 ##    https://plotly.com/r/statistical-charts
 ## 2. Dodać przycisk(i) zmieniające typ wykresu
 ##    https://plotly.com/r/custom-buttons
+
+df_fire_water_electric <- df_raw %>% 
+  filter(Type.1 %in% c("Fire", "Water", "Electric"))
+
+plot_ly(
+  data = df_fire_water_electric, 
+  x = ~Type.1, 
+  y = ~HP,
+  type = "box"
+) %>% layout(
+  title = "HP distribution",
+  xaxis = list(title = "TYPE"),
+  yaxis = list(range = c(0, 140)),
+  updatemenus = list(
+    list(
+      x = 1, y = 1,
+      buttons = list(
+        list(method = "restyle",
+             args = list("type", "box"),
+             label = "Boxplot"),
+        list(method = "restyle",
+             args = list("type", "violin"),
+             label = "Violinplot")
+      ))
+  ))
 
 
 
