@@ -1,0 +1,68 @@
+---
+title: "Praca domowa 4"
+author: "Szymon Kiełtyka"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    theme: united
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(patchwork)
+
+noworodki <- read.csv("noworodki.csv")
+urodzenia <- read.csv("urodzenia.csv")
+names(noworodki)[2:18] <- 2007:2023
+names(urodzenia)[2:18] <- 2007:2023
+df <- pivot_longer(noworodki, cols = 2:18, names_to = "rok", values_to = "noworodki") %>%
+  left_join(pivot_longer(urodzenia, cols = 2:18, names_to = "rok", values_to = "urodzenia"), by = c("rok", "Wojewodztwo"))
+```
+
+## Dane
+
+Moja analiza została przygotowana na podstawie danych o liczbie urodzeń i liczbie noworodków pozostawionych w szpitalach w poszczególnych województwach w latach 2007-2023.
+
+## Wpływ programu 500+ na liczbę urodzeń i liczbę pozostawionych noworodków w Polsce
+
+```{r, message=FALSE}
+p1 <- df %>%
+  filter(Wojewodztwo == "Polska") %>%
+  mutate(rok = as.numeric(rok)) %>%
+  ggplot(aes(x = rok, y = urodzenia)) +
+  geom_line() +
+  geom_point() +
+  geom_vline(xintercept = 2016, linetype = "dashed", color = "red") +  
+  annotate("text", x = 2015, y = 310000, label = "Wprowadzenie 500+", color = "red", vjust = 3, angle = 90, size = 2.5) +
+  labs(title = "Liczba urodzeń i pozostawionych noworodków w latach 2007-2023",
+       x = NULL,
+       y = "Liczba urodzeń") +
+  theme_minimal() +
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank())
+
+p2 <- df %>%
+  filter(Wojewodztwo == "Polska") %>%
+  mutate(rok = as.numeric(rok)) %>%
+  ggplot(aes(x = rok, y = noworodki)) +
+  geom_line() +
+  geom_point() +
+  geom_vline(xintercept = 2016, linetype = "dashed", color = "red") +
+  labs(x = "Rok", y = "Liczba pozostawionych\nnoworodków") +
+  theme_minimal()
+
+p1 / p2
+```
+
+**Komentarz** Z górnego wykresu wynika, że wzrost liczby urodzeń w Polsce po wprowadzeniu 500+ w 2016 był tylko chwilowy, a od 2018 roku liczba urodzeń była mniejsza niż przed 2016 rokiem. Na dolnym wykresie widać wyraźny spadek pozostawień noworodków po wprowadzeniu programu 500+. Liczba noworodków pozostawionych w szpitalach w Polsce w latach 2007-2016 była zawsze powyżej 700, a od 2016 roku zaczęła spadać i utrzymuje się poniżej 650.
+
+
+
+
+
+
+
