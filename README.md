@@ -99,7 +99,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>10</td>
     <td>12-12</td>
     <td>-</td>
-    <td>R: Shiny - advanced</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab10">R: Shiny - advanced</a></td>
     <td>Consultations: problems with data, change the topic, prototype of plots</td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/issues/316">HW4</a> (6p)</td>
   </tr>
