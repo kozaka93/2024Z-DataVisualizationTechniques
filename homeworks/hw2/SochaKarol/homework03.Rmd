@@ -1,0 +1,65 @@
+---
+title: "Praca domowa 3"
+author: "Karol Socha"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    theme: united
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+```
+
+## Niepoprawna wizualizacja
+
+  Jako przykład nieprawidłowej wizualizacji wykorzystałem wykres przedstawiający wyniki anonimowej ankiety przeprowadzonej wśród graczy amerykańskiej ligi hokeja NHL dotyczącej tego, w którym mieście chcieliby zobaczyć nową ligową drużynę. 
+  Niestety oś x na wykresie nie jest poprawnie przeskalowana, przez co z wykresu można odczytać, że np. 54 jest około trzy razy większe od 47, a 4 jest dwa razy większe od 3. Dodatkowo kolumna przedstawiająca najczęściej udzielaną odpowiedź jest w innym kolorze, moim zdaniem niepotrzebnie.
+
+![](C:/Users/kerel/OneDrive/Dokumenty/R_scripts/bad_plot.jpeg)
+Źródło: The Athletic NHL staff (survey of players), Poll open from Sept. 27 to Nov. 10, 2024.
+Data publikacji: 20/11/2024
+
+## Poprawiona wizualizacja
+
+W utworzonym przeze mnie wykresie zastosowałem odpowiednią skalę, przedstawiającą realne proporcje oraz usunąłem dodatkowy kolor kolumny.
+
+```{r zadanie 1, message=FALSE}
+
+team <- c("Houston", "Quebec City", "Arizona", "Atlanta", "Toronto", "Austin", "Saskatoon", "San Diego")
+val <- c(54, 47, 24, 17, 8, 4, 3, 3)
+nhl_df <- data.frame(team, val) %>% 
+  arrange(val)
+
+nhl_df$team <- factor(nhl_df$team, levels = nhl_df$team)
+
+plot <- ggplot(nhl_df, aes(x = team, y = val)) + 
+  geom_col(fill = "white") + coord_flip() + 
+  labs(
+    title = "Where would you like to see a new NHL team play?",
+    subtitle = "175 votes"
+  ) +
+  geom_text(aes(label = val), color = "white", hjust = -0.5) + 
+  theme_minimal() +
+  theme(
+    plot.title = element_text(color = "white", face = "bold", size = 17, hjust = 0.5),
+    plot.subtitle = element_text(color = "white", size = 15, hjust = 0.5),
+    panel.background = element_rect(fill = "black"), 
+    plot.background = element_rect(fill = "black"), 
+    axis.text = element_text(color = "white"),         
+    panel.grid.major = element_line(color = "black"),
+    panel.grid.minor = element_line(color = "black"),
+    legend.position = "none",
+    axis.text.y = element_text(size = 10)
+  )
+
+plot
+```
+
+
