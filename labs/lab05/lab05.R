@@ -3,8 +3,6 @@
 ###           LABORATORIUM 5            ###
 ###########################################
 
-# install.packages("maps")
-# install.packages("mapdata")
 library(ggplot2)
 library(maps)
 library(mapdata)
@@ -136,7 +134,6 @@ ggplot(data = states) +
   coord_map("albers", 25, 50) +
   theme(legend.position = "None")
 
-head(states)
 
 
 ## Zadanie 1
@@ -144,15 +141,6 @@ head(states)
 # Wypełnij całość jednym kolorem.
 #? Wybierz c("california", "oregon", "washington")  
 
-df <- states %>% 
-  filter(region %in% c("california", "oregon", "washington"))
-
-ggplot(data = df) +
-  geom_polygon(aes(x = long, y = lat, group = group), color = "white", fill = "navy") +
-  coord_map("albers", 25, 50) +
-  theme(legend.position = "None")
-
-dim(df)
 
 
 # Przyjrzyjmy się teraz bliżej Kalifornii
@@ -177,41 +165,20 @@ ca_base + theme_minimal() +
 
 # Dodatkowe źródło danych
 # Ramka danych na podstawie infomracji z Wikipedii
-pop_and_area <- read.csv("C:/Users/kerel/OneDrive/Dokumenty/R_scripts/TWD_projects/2024Z-DataVisualizationTechniques/labs/lab05/pop_and_area.csv")
-head(pop_and_area)
+pop_and_area <- read.csv("pop_and_area.csv")
+
 ca <- ca_county %>% left_join(pop_and_area, by = c("subregion" = "Country"))
 
 ca$people_per_sq_mile <- ca$Population/ca$Area.sq.mi
-
-head(ca)
 
 
 ## Zadanie 2
 # A)
 # Przygotuj wykres na którym będzie gęstość zaludnienia.
 # Zapewnij czytelność przygotowanej mapy.
-
-
-ca_base + 
-  geom_polygon(data = ca, aes(fill = log10(people_per_sq_mile)), color = "white") +
-  scale_fill_fermenter(palette = 8, trans = "log10", direction = 1)
-
 # B)
 # Przygotuj wykres na którym będzie gęstość zaludnienia, ale liczona na kilometry kwadratowe.
 # Zapewnij czytelność przygotowanej mapy.
-
-ca$people_per_sq_km <- ca$people_per_sq_mile * 0.386
-
-ca_density <- ca_base + 
-  geom_polygon(data = ca, aes(fill = log10(people_per_sq_km)), color = "white") +
-  scale_fill_fermenter(palette = 8, trans = "log10", direction = 1) +
-  theme_void() +
-  geom_polygon(color = "black", fill = NA) +
-  labs(title = "",
-       subtitle= "",
-       fill = "")
-
-ca_density
 
 
 
@@ -224,38 +191,8 @@ ca_density + coord_map(xlim = c(-123, -121.0),  ylim = c(36, 38))
 # Narysuj mapę świata i zaznacz na niej wskaźnik utworzony poprzez wylosowanie zmiennej 
 # z rozdkładu normalnego o średniej 0 i wariancji 5. Użyj odpowiedniej skali kolorystycznej.
 
-values <- as.data.frame(rnorm(length(unique(w1$region)), 0, sqrt(5)))
 
-colnames(values) <- "values"
 
-w2 <- w1 %>% 
-  select(region) %>% 
-  distinct() %>% 
-  mutate(values = values)
-
-w3 <- w1 %>% 
-  left_join(w2)
-
-head(w3)
-
-world <- ggplot(data = w3) + 
-  geom_polygon(data = w3, aes(x = long, y = lat, fill = region, group = group))
-world
-
-ggplot(data = states) +
-  geom_polygon(aes(x = long, y = lat, fill = region, group = group), color = "white") +
-  coord_map("albers", 25, 50) +
-  theme(legend.position = "None")
-
-index_table <- data.frame(region = unique(country$region),
-                          index = rnorm(length(unique(w1$region)), 0, sqrt(5)))
-
-country %>% filter(long<180) %>% 
-  left_join(index_table) %>% 
-  ggplot(aes(x = long, y = lat, group = group)) +
-  geom_polygon(aes(fill = index), color = "black", linewidth = 0.3) +
-  coord_map("mollweide") 
-  
 
 ### leaflet ###
 

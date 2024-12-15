@@ -1,6 +1,5 @@
 library(dplyr);
 library(tidyr);
-library(stringr);
 
 df_orders <- read.csv('C:/Users/kerel/OneDrive/Dokumenty/R_scripts/TWD_projects/2024Z-DataVisualizationTechniques/homeworks/hw1/dane/orders.csv');
 df_order_items <- read.csv('C:/Users/kerel/OneDrive/Dokumenty/R_scripts/TWD_projects/2024Z-DataVisualizationTechniques/homeworks/hw1/dane/order_items.csv');
@@ -12,14 +11,21 @@ df_staffs <- read.csv('C:/Users/kerel/OneDrive/Dokumenty/R_scripts/TWD_projects/
 df_stocks <- read.csv('C:/Users/kerel/OneDrive/Dokumenty/R_scripts/TWD_projects/2024Z-DataVisualizationTechniques/homeworks/hw1/dane/stocks.csv');
 df_stores <- read.csv('C:/Users/kerel/OneDrive/Dokumenty/R_scripts/TWD_projects/2024Z-DataVisualizationTechniques/homeworks/hw1/dane/stores.csv');
 
-
+head(df_orders)
+head(df_order_items)
+head(df_products)
+head(df_brands)
+head(df_categories)
+head(df_customers)
+head(df_staffs)
+head(df_stocks)
+head(df_stores)
 
 ####### Zadanie 1
 # Który produkt był najczęściej kupowany w każdym kwartale w podziale na stany z których pochodzą klienci? 
 # Podaj nazwę produktu i rok jego produkcji.
 
 ## Odpowiedz przypisana do zmiennej
-
 ANS_TASK_01 <- function(df_orders, df_order_items, df_customers, df_products) {
   
   o0 <- select(df_orders, order_id, customer_id, order_date)
@@ -45,7 +51,7 @@ ANS_TASK_01 <- function(df_orders, df_order_items, df_customers, df_products) {
   t2
 }
 
-
+ANS_TASK_01(df_orders, df_order_items, df_customers, df_products)
 
 ####### Zadanie 2 
 # Jaki procent wszystkich zamowien nie został zrealizowany w kazdym miesiącu? 
@@ -54,23 +60,24 @@ ANS_TASK_01 <- function(df_orders, df_order_items, df_customers, df_products) {
 
 ANS_TASK_02 <- function(df_orders) {
   
-  o <- df_orders %>% 
-    select(order_id, order_status, order_date) %>% 
-    mutate(order_date = as.Date(order_date, format = "%Y-%m-%d"),
-           month = as.integer(format(order_date, "%m"))) %>% 
+  o <- select(df_orders, order_id, order_status, order_date)
+  o <- mutate(o, order_date = as.Date(order_date, format = "%Y-%m-%d"))
+  o <- mutate(o, month = as.integer(format(order_date, "%m")))
+  
+  o <- o %>% 
     group_by(month) %>% 
-    summarize(percent_undelivered = sum(order_status != 4)/n()*100)
+    summarise(percent_undelivered = (sum(order_status != 4)/n())*100, .groups = "drop")
   
   o
 }
 
+ANS_TASK_02(df_orders)
 
 
 ####### Zadanie 3
 # Jaki produkt przyniósł największy przychód w kazdym roku?
 
 ## Odpowiedz przypisana do zmiennej
-
 ANS_TASK_03 <- function(df_orders, df_order_items, df_products) {
   
   o <- df_orders %>% 
@@ -100,7 +107,7 @@ ANS_TASK_03 <- function(df_orders, df_order_items, df_products) {
   t
 }
 
-
+ANS_TASK_03(df_orders, df_order_items, df_products)
 
 ####### Zadanie 4
 ## Ile klientów zrobilo najwieksze zakupy (czyli zrobili najwięcej zamówień) w kazdym roku i ile to było zamówień? 
@@ -120,13 +127,13 @@ ANS_TASK_04 <- function(df_orders) {
     arrange(year, desc(number_of_orders)) %>%
     group_by(year) %>% 
     filter(number_of_orders == max(number_of_orders)) %>% 
-    summarize(max_number_of_orders = first(number_of_orders),
+    summarize(number_of_orders = first(number_of_orders),
               n_of_cus_with_max_orders = n(), .groups = 'drop')
   
   o
 }
 
-
+ANS_TASK_04(df_orders)
 
 ####### Zadanie 5
 # Z jakiej domeny mailowej najczęsciej robiono zamówienia w każdym roku? Ile było tych zamówień?
@@ -156,9 +163,9 @@ ANS_TASK_05 <- function(df_orders, df_customers) {
   
   t
 }
+
+ANS_TASK_05(df_orders, df_customers)
   
-
-
 ####### Zadanie 6
 # Zobacz ile aktywnych klientow miala firma w stanie Kalifornia i Teksasie? 
 # Czy w bazie klientów z tych stanów są tacy, którzy nie zrobili żadnego zamówienia w 2018?
@@ -191,6 +198,7 @@ ANS_TASK_06 <- function(df_customers, df_orders) {
   a
 }
 
+ANS_TASK_06(df_customers, df_orders)
 
 
 ####### Zadanie 7
@@ -225,7 +233,7 @@ ANS_TASK_07 <- function(df_orders, df_customers, df_order_items) {
   t
 }
 
-
+ANS_TASK_07(df_orders, df_customers, df_order_items)
 
 ####### Zadanie 8
 # Oblicz jaka była maksymalna i minimalna oraz mediana liczby zamówień złożonych każdego dnia w poszczególnych kwartalach.
@@ -238,25 +246,13 @@ ANS_TASK_08 <- function(df_orders) {
     select(order_id, order_date) %>% 
     mutate(order_date = as.Date(order_date, format = "%Y-%m-%d")) %>% 
     mutate(month = as.integer(format(order_date, "%m"))) %>% 
+    # mutate(day = as.integer(format(order_date, "%d"))) %>%
     mutate(quarter = case_when(1 <= month & month <= 3 ~ 1, 
                                4 <= month & month <= 6 ~ 2,
                                7 <= month & month <= 9 ~ 3, 
                                10 <= month & month <= 12 ~ 4)) %>% 
     mutate(day_month = as.character(format(order_date, "%m-%d"))) %>% 
     select(-month)
-  
-  all_dates <- data.frame(seq(as.Date("2016-01-01"),as.Date("2016-12-31"),by="1 day"))
-  
-  colnames(all_dates) <- c("dates")
-  
-  all_dates <- all_dates %>% 
-    mutate(day_month = as.character(format(dates, "%m-%d")),
-           month = as.integer(format(dates, "%m"))) %>% 
-    select(day_month, month) %>% 
-    mutate(quarter = case_when(1 <= month & month <= 3 ~ 1, 
-                               4 <= month & month <= 6 ~ 2,
-                               7 <= month & month <= 9 ~ 3, 
-                               10 <= month & month <= 12 ~ 4))
   
   o1 <- o %>%
     group_by(order_date, quarter) %>% 
@@ -266,117 +262,31 @@ ANS_TASK_08 <- function(df_orders) {
     ungroup() %>% 
     group_by(day_month, quarter) %>% 
     summarise(n_per_day_of_year = sum(n_of_orders)) %>% 
-    ungroup() 
-  
-  o2 <- all_dates %>% 
-    left_join(o1, by = c("day_month", "quarter")) %>% 
-    mutate(n_per_day_of_year = replace_na(n_per_day_of_year, 0)) %>% 
+    ungroup() %>% 
     group_by(quarter) %>%
     summarise(max_of_the_day = max(n_per_day_of_year),
               min_of_the_day = min(n_per_day_of_year),
               mean_of_the_day = mean(n_per_day_of_year))
-  
-  o2
+  o1
 }
 
-
-
+ANS_TASK_08(df_orders)
+# Tak, wiem, ze minimalna ilosc w kwartale 3 i 4 musi byc 0, ale nie zdazylem tego zrobic
+  
 ####### Zadanie 9 
 # Jaki był średni czas dostarczania zamówienia w zależności od roku i  stanu w którym mieszkał klient. 
 # Jako rozwiązanie przygotuj szeroka postac tabeli, która będzie miała informację o każdym stanie w innej kolumnie
 
 ## Odpowiedz przypisana do zmiennej
-
-ANS_TASK_09 <- function(df_orders, df_customers) {
-  
-  o <- df_orders %>% 
-    select(order_id, customer_id, order_status, order_date, shipped_date) %>% 
-    filter(order_status == 4)
-  
-  cus <- df_customers %>% 
-    select(customer_id, state)
-  
-  o1 <- o %>% 
-    left_join(cus) %>% 
-    mutate(order_date = as.Date(order_date, format = "%Y-%m-%d"),
-           shipped_date = as.Date(shipped_date, format = "%Y-%m-%d")) %>% 
-    mutate(o_year = as.integer(format(order_date, "%Y")),
-           o_month = as.integer(format(order_date, "%m")),
-           o_day = as.integer(format(order_date, "%d")),
-           d_year = as.integer(format(shipped_date, "%Y")),
-           d_month = as.integer(format(shipped_date, "%m")),
-           d_day = as.integer(format(shipped_date, "%d"))) %>% 
-    mutate(przestepny = case_when(o_year %% 4 == 0 ~ 1,
-                                  o_year %% 4 != 0 ~ 0)) %>% 
-    mutate(days_in_month = case_when(o_month %in% c(1, 3, 5, 7, 8, 10, 12) ~ 31,
-                                     o_month %in% c(4, 6, 9, 11) ~ 30,
-                                     o_month == 2 & przestepny == 0 ~ 28,
-                                     o_month == 2 & przestepny == 1 ~ 29)) %>% 
-    select(order_id, customer_id, state, o_year, o_day, d_day, days_in_month) %>% 
-    mutate(delivery_time = case_when(d_day - o_day >= 0 ~ d_day - o_day,
-                                     d_day - o_day < 0 ~ d_day - o_day + days_in_month)) %>% 
-    select(order_id, customer_id, state, o_year, delivery_time) %>% 
-    group_by(o_year, state) %>% 
-    summarize(mean_delivery_time_in_days = mean(delivery_time)) %>% 
-    ungroup() %>% 
-    pivot_wider(names_from = state, values_from = mean_delivery_time_in_days)
-  
-  o1
-}
+ANS_TASK_09 <- NA
 
 
-  
 ####### Zadanie 10
 # Od jakich liter zaczynają się nazwiska klientów, którzy robili zamówienia co roku. 
 # Przeanalizuj jak często występuje każda litera wśród tych nazwisk.
 
 ## Odpowiedz przypisana do zmiennej
-
-ANS_TASK_10 <- function(df_orders, df_customers) {
-  
-  o <- df_orders %>% 
-    select(order_id, customer_id, order_date)
-  
-  cus <- df_customers %>% 
-    select(customer_id, last_name)
-  
-  t <- o %>% 
-    left_join(cus) %>% 
-    mutate(order_date = as.Date(order_date, format = "%Y-%m-%d"),
-           year = as.integer(format(order_date, "%Y"))) %>% 
-    arrange(last_name) %>% 
-    select(last_name, year)
-  
-  t_2016 <- t %>% 
-    filter(year == 2016) %>% 
-    select(last_name)
-  
-  t_2017 <- t %>% 
-    filter(year == 2017) %>% 
-    select(last_name)
-  
-  t_2018 <- t %>% 
-    filter(year == 2018) %>% 
-    select(last_name)
-  
-  t_inter <- intersect(t_2016, t_2017)
-  
-  t_inter <- intersect(t_inter, t_2018)
-  
-  t_letters <- t_inter %>%
-    mutate(letters = str_split(last_name, "")) %>%
-    unnest(letters) %>%
-    group_by(last_name, letters) %>%
-    summarise(count = n()) %>%
-    ungroup() %>%
-    arrange(letters) %>%
-    group_by(letters) %>%
-    summarize(occurances = sum(count))
-  
-  t_letters 
-  
-}
-
+ANS_TASK_10 <- NA
 
 
 ####### Zadanie 11
@@ -385,54 +295,7 @@ ANS_TASK_10 <- function(df_orders, df_customers) {
 # Dodaj do zestawienia informację ile razy klient kupował najnowszy produkt (rower został wyprodukowany w tym roku, kiedy złożono zamówienie)
 
 ## Odpowiedz przypisana do zmiennej
-
-ANS_TASK_11 <- function(df_orders, df_order_items, df_customers, df_products, df_categories) {
-  
-  o <- df_orders %>% 
-    select(order_id, customer_id, order_date) %>% 
-    mutate(order_date = as.Date(order_date, format = "%Y-%m-%d"),
-           o_year = as.integer(format(order_date, "%Y"))) %>% 
-    select(-order_date)
-  
-  oi <- df_order_items %>% 
-    select(-c(list_price, discount))
-  
-  cus <- df_customers %>% 
-    select(customer_id, first_name, last_name) %>% 
-    mutate(customer_name = paste(first_name, last_name, sep = " ")) %>% 
-    select(-c(first_name, last_name))
-  
-  p <- df_products %>% 
-    select(-c(brand_id,product_name, list_price))
-  
-  c <- df_categories
-  
-  t <- o %>% 
-    left_join(cus) %>% 
-    left_join(oi) %>% 
-    left_join(p) %>% 
-    left_join(c) %>% 
-    select(-c(item_id, category_id, customer_id))
-  
-  t1 <- t %>% 
-    group_by(customer_name, category_name) %>% 
-    summarize(quantity_of_category = sum(quantity)) %>% 
-    pivot_wider(names_from = category_name, values_from = quantity_of_category) %>% 
-    replace(is.na(t1), 0) %>% 
-    ungroup()
-  
-  t2 <- t %>% 
-    mutate(newest_quantity = case_when(o_year == model_year ~ quantity,
-                                       o_year != model_year ~ 0)) %>% 
-    group_by(customer_name) %>% 
-    summarize(how_many_newest = sum(newest_quantity)) %>% 
-    ungroup()
-  
-  t3 <- t1 %>% 
-    left_join(t2)
-  
-  t3
-}
+ANS_TASK_11 <- NA
 
 
 ### Zadanie 12
@@ -440,39 +303,7 @@ ANS_TASK_11 <- function(df_orders, df_order_items, df_customers, df_products, df
 # Jako średni rabat rozumiemy różnicę procentową miedzy przychodem wynikającym z ceny katalogowej a przychodem faktycznym uwzględniającym udzielony rabat
 
 ## Odpowiedz przypisana do zmiennej
-
-ANS_TASK_12 <- function(df_orders, df_order_items, df_products) {
-  
-  oi <- df_order_items %>% 
-    select(order_id, product_id, quantity, list_price, discount)
-  
-  p <- df_products %>% 
-    select(product_id, product_name)
-  
-  o <- df_orders %>% 
-    select(order_id, order_date)
-  
-  t <- oi %>% 
-    left_join(o) %>% 
-    left_join(p) %>% 
-    mutate(order_date = as.Date(order_date, format = "%Y-%m-%d"),
-           day_of_week = weekdays(order_date),
-           list_profit = quantity * list_price,
-           real_profit = list_price * (1 - discount) * quantity) %>% 
-    select(-c(product_id, order_date, quantity, list_price, discount)) %>%
-    group_by(product_name, day_of_week) %>% 
-    summarize(sum_list_profit = sum(list_profit),
-              sum_real_profit = sum(real_profit)) %>% 
-    mutate(discount = (sum_list_profit - sum_real_profit) / sum_list_profit * 100) %>% 
-    select(-c(sum_list_profit, sum_real_profit)) %>% 
-    pivot_wider(names_from = day_of_week, values_from = discount) %>% 
-    relocate(product_name, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) %>% 
-    left_join(p) %>% 
-    relocate(product_id) %>% 
-    arrange(product_id) 
-  
-  t
-}
+ANS_TASK_12 <- NA
 
 
 
@@ -487,4 +318,3 @@ names(solutions) <- c("Task01", "Task02", "Task03", "Task04", "Task05", "Task06"
 
 ### Proszę zmienić tylko nazwę pliku w komendzie saveRDS na swoje Nazwisko i Imię (bez polskich znaków)
 saveRDS(solutions, file = "SochaKarol.rds")
-

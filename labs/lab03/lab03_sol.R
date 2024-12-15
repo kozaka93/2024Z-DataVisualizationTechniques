@@ -3,7 +3,7 @@
 ###           LABORATORIUM 3            ###
 ###########################################
 
-# install.packages("SmarterPoland")
+install.packages("SmarterPoland")
 library(SmarterPoland)
 ?countries
 View(countries)
@@ -17,7 +17,7 @@ View(countries)
 # continent - jakościowa, nominalna
 
 # ggplot2
-# install.packages("ggplot2")
+install.packages("ggplot2")
 library(ggplot2)
 
 ## 1. Główna funkcja ggplot2 ----> ggplot()
@@ -216,6 +216,7 @@ spotify_2023 %>%
   theme_bw() +
   scale_y_continuous(expand = c(0,0))
 
+
 # Zadanie 5
 # Jak wygląda zależnośc pomiędzy energią a tanecznością utworów? Dodaj podział 
 # ze względu na skalę (mode).
@@ -232,4 +233,3 @@ spotify_2023 %>%
   scale_colour_manual(values = c("navyblue", "orange")) + 
   scale_x_continuous(limits = c(0,100)) + 
   scale_y_continuous(limits = c(0,100)) 
-
