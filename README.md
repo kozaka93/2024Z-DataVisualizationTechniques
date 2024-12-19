@@ -90,7 +90,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>9</td>
     <td>12-05</td>
-    <td>Dashboard</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/blob/main/lectures/L9-dashboards.pdf">Dashboard</a></td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab09">R: Shiny - introduction & exercise</a></td>
     <td>Group work (P2.1): idea, data sources</td>
     <td>P2 (1p)</td>
@@ -106,7 +106,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>11</td>
     <td>12-19</td>
-    <td>History of Statistical Graphics <br>The International Business Communication Standards</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/blob/main/lectures/L11-history.pdf">History of Statistical Graphics </a><br><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/blob/main/lectures/L11-IBCS.pdf">The International Business Communication Standards</a></td>
     <td>Python: pandas, numpy, pandas.plot</td>
     <td>Group work (P2.2): data exploration, prototype of plots</td>
     <td>P2 (2p)</td>
