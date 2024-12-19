@@ -107,7 +107,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>11</td>
     <td>12-19</td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/blob/main/lectures/L11-history.pdf">History of Statistical Graphics </a><br><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/blob/main/lectures/L11-IBCS.pdf">The International Business Communication Standards</a></td>
-    <td>Python: pandas, numpy, pandas.plot</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab11">Python: pandas, numpy, pandas.plot</a></td>
     <td>Group work (P2.2): data exploration, prototype of plots</td>
     <td>P2 (2p)</td>
   </tr>
