@@ -1,0 +1,14 @@
+Opis wykorzystanych danych:
+W mojej wizualizacji korzystam z dwóch plików z danymi - Noworodki pozostawione w szpitalu 2007-2023
+ oraz Urodzenia żywe w Polsce 2007-2023. Analizowałem w niej lieczbę opuszczonych noworodków w kolejnych latach na
+podstawie województw. Porównuję ją do sytuacji w całym kraju. Dane z plików przekształcam w pliku HW4_TWD do postaci tabeli "długiej" (pivot_longer)
+i zapisuje do pliku dane.csv Aplikacja shiny znajduje się w pliku AplikacjaHW4.
+
+
+Komentarz od wizualizacji:
+Użytkownik aplikacji może wybrać dowolny przedział lat oraz analizowane województwo, a także czy uwzględniać w wizualzacji
+całą Polskę. Dodatkowo istnieje checkbox dodający moment wprowadzenia programy 500+ w Polsce. Dla całej polski wprowadzenie 
+500+ daje jedynie chwilowy spadek, w różnych województwach natomiast nie można zauważyć jednoznacznego wzrostu/spadku. 
+Co ciekawe po wprowadzeniu 500+ w województwie mazowieckim liczba opuszczonych noworodków wzrosła. W większości województw
+widać delikatny spadek stosunku noworodków opuszczonych do liczby urodzeń natomiast w województwie lubuskim stosunek ten
+osiągnał najwyższy wynik w 2023 roku.
