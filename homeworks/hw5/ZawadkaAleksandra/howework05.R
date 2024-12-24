@@ -12,32 +12,7 @@ nodes <- data.frame(
 )
 
 edges <- data.frame(from = integer(0), to = integer(0))
-for (l in 1:(layers - 1)) {
-  start_index <- sum(1:(l-1)) + 1
-  end_index <- sum(1:l)
-  next_start_index <- end_index + 1
-  next_end_index <- sum(1:(l + 1))
-  new_edges <- expand.grid(from = start_index:end_index, to = next_start_index:next_end_index)
-  new_edges <- new_edges[new_edges$from != new_edges$to, ]
-  edges <- rbind(edges, new_edges)
-}
 
-x_coords <- unlist(lapply(1:layers, function(l) seq(-l + 1, l - 1, length.out = l)))
-y_coords <- rep(1:layers, times = 1:layers) * -2
-library(igraph)
-library(magick)
-
-layers <- 25
-available_colors <- c("red", "gold", "blue", "white")
-
-nodes <- data.frame(
-  id = 1:sum(1:layers),
-  layer = rep(1:layers, times = 1:layers),
-  x = unlist(lapply(1:layers, function(l) seq(-l + 1, l - 1, length.out = l))),
-  y = rep(1:layers, times = 1:layers) * -2
-)
-
-edges <- data.frame(from = integer(0), to = integer(0))
 for (l in 1:(layers - 1)) {
   start_index <- sum(1:(l-1)) + 1
   end_index <- sum(1:l)
