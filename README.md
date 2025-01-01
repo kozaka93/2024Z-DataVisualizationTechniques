@@ -90,7 +90,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>9</td>
     <td>12-05</td>
-    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/blob/main/lectures/L9-dashboards.pdf">Dashboard</a></td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/blob/main/lectures/L09-dashboards.pdf">Dashboard</a></td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab09">R: Shiny - introduction & exercise</a></td>
     <td>Group work (P2.1): idea, data sources</td>
     <td>P2 (1p)</td>
@@ -114,7 +114,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>12</td>
     <td>01-02</td>
-    <td>Graph visualisation</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/blob/main/lectures/L12-graphs.pdf">Graph visualisation</a></td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab12">Python: matplotlib, seaborn</a></td>
     <td>Consultations: discuss about app design, final plots</td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/issues/380">HW5</a> (6p)</td>
