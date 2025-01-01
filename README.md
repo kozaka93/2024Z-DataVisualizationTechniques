@@ -122,7 +122,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>13</td>
     <td>01-09</td>
-    <td>Revision</td>
+    <td><i>Revision</i></td>
     <td>Python: graphs + plotly</td>
     <td>Group work( P2.3): Plots and prototype of app</td>
     <td>P2 (2p)</td>
@@ -130,7 +130,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
   <tr>
     <td>14</td>
     <td>01-16</td>
-    <td>Test</td>
+    <td><i>Test</i></td>
     <td>Python: matplotlib, seaborn - advanced</td>
     <td>Consultations: prototype of app</td>
     <td>HW6 (6p)</td>
