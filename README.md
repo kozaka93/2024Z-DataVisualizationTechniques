@@ -115,7 +115,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>12</td>
     <td>01-02</td>
     <td>Graph visualisation</td>
-    <td>Python: matplotlib, seaborn</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab12">Python: matplotlib, seaborn</a></td>
     <td>Consultations: discuss about app design, final plots</td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/issues/380">HW5</a> (6p)</td>
   </tr>
