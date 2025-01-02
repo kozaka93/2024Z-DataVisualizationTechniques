@@ -1,0 +1,124 @@
+---
+title: "Praca domowa 5"
+author: "Adam Ryski"
+date: "2025-01-02"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    theme: united
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+library(readxl)
+library(tidyr)
+```
+### 🎄🎄 Choinka 🎄🎄
+Oto choinka śnieżną nocą.
+```{r wykres 1, message=FALSE, warning = FALSE}
+
+tree_body <- function(n){
+  n = n
+  a <- runif(n, min=-50, max=50)
+  b <- runif(n, min=-10, max=80)
+  tree <- data.frame(a, b)
+  tree2 <- tree %>% filter(b  < -4*a + 80)  %>% filter(b  < 4*a + 80) %>% filter(b > 0)
+  tree2
+}
+
+tree_base <- function(n){
+  n = n
+  a <- runif(n, min=-3, max=3)
+  b <- runif(n, min=-20, max=0)
+  data.frame(a, b)
+}
+
+star <- function(n) {
+  thickness = 0.2
+  a <- runif(n, min=-thickness, max=thickness)
+  b <- runif(n, min=80-thickness, max=80+thickness)
+  data.frame(a, b)
+}
+
+chains <- function(n) {
+  f <- function(a) {
+    1/18 * a * (a + 24) + 16
+  }
+  n = n
+  a <- runif(n, min=-50, max=50)
+  b <- runif(n, min=-10, max=80)
+  tree <- data.frame(a, b)
+  tree2 <- tree %>% filter(b  < -4 * a + 80)  %>% filter(b  < 4 * a + 80) %>% filter(b > 0)
+  chain1 <- tree2 %>% filter(b < f(a)) %>% filter(b > f(a) - 4)
+  chain2 <- tree2 %>% filter(b < f(a) + 20) %>% filter(b > f(a) - 4 + 20)
+  chain3 <- tree2 %>% filter(b < f(a) + 40) %>% filter(b > f(a) - 4 + 40)
+  rbind(chain1, chain2, chain3)
+}
+
+chains2 <- function(n) {
+  f <- function(a) {
+    1/18 * (a - 12) * (a + 12) + 16
+  }
+  n = n
+  a <- runif(n, min=-50, max=50)
+  b <- runif(n, min=-10, max=80)
+  tree <- data.frame(a, b)
+  tree2 <- tree %>% filter(b  < -4 * a + 80)  %>% filter(b  < 4 * a + 80) %>% filter(b > 0)
+  chain1 <- tree2 %>% filter(b < f(a)) %>% filter(b > f(a) - 4)
+  chain2 <- tree2 %>% filter(b < f(a) + 20) %>% filter(b > f(a) - 4 + 20)
+  chain3 <- tree2 %>% filter(b < f(a) + 40) %>% filter(b > f(a) - 4 + 40)
+  chain4 <- tree2 %>% filter(b < f(a) + 60) %>% filter(b > f(a) - 4 + 60)
+  rbind(chain1, chain2, chain3, chain4)
+}
+
+snow <- function(n) {
+  a <- runif(n, min=-50, max=50)
+  b <- runif(n, min=-5, max=85)
+  data.frame(a, b)
+}
+
+balls <- function(n, s){
+  set.seed(s)
+  n = n
+  a <- runif(n, min=-50, max=50)
+  b <- runif(n, min=-10, max=70)
+  rm(.Random.seed, envir=globalenv())
+  tree <- data.frame(a, b)
+  tree2 <- tree %>% filter(b  < -4*a + 80)  %>% filter(b  < 4*a + 80) %>% filter(b > 0)
+  tree2
+}
+    
+ggplot() + 
+  geom_point(data=snow(100), aes(x=a, y=b), shape=8, fill="white", color="white", size=0.70) +
+  geom_point(data=snow(100), aes(x=a, y=b), shape=8, fill="white", color="white", size=0.80) +
+  geom_point(data=snow(100), aes(x=a, y=b), shape=8, fill="white", color="white", size=0.90) +
+  geom_point(data=snow(100), aes(x=a, y=b), shape=8, fill="white", color="white", size=1) +
+  geom_point(data=tree_base(40000), aes(x=a, y=b), shape=21, color="#856c5b", size=1) +
+  geom_point(data=tree_body(1000), aes(x=a, y=b), shape=21, color="#abcea9", size=1) + 
+  geom_point(data=tree_body(15000), aes(x=a, y=b), shape=21, color="#78b075", size=1) + 
+  geom_point(data=tree_body(15000), aes(x=a, y=b), shape=21,  color="#50874d", size=1) + 
+  geom_point(data=tree_body(10000), aes(x=a, y=b), shape=21, color="#31532f", size=1) + 
+  geom_point(data=tree_body(300), aes(x=a, y=b), shape=21, color="#121f11", size=1) + 
+   geom_point(data=star(100), aes(x=a, y=b), shape=8, fill="#f5ff1e", color="#f0ff1e", size=5) +
+  geom_point(data=star(100), aes(x=a, y=b), shape=8, fill="#f5cf1f", color="#f5cf1f", size=3) +
+  geom_point(data=balls(70, 17), aes(x=a, y=b), shape=19, fill="#c0c0c0", color="#c0c0c0", size=4) +
+  geom_point(data=balls(70, 131), aes(x=a, y=b), shape=19, fill="#f5cf1f", color="#f5cf1f", size=4) +
+  geom_point(data=chains(4000), aes(x=a, y=b), shape=21, fill="white", color="white", size=1.5) +
+  geom_point(data=chains(4000), aes(x=a, y=b), shape=21, fill="#dbfefe", color="#dbfefe", size=1.5) +
+  geom_point(data=chains(4000), aes(x=a, y=b), shape=21, fill="#bbfdfd", color="#bbfdfd", size=1.5) +
+  geom_point(data=chains2(4000), aes(x=a, y=b), shape=21, fill="#fb7b7b", color="#fb7b7b", size=1.5) +
+  geom_point(data=chains2(4000), aes(x=a, y=b), shape=21, fill="#fa5454", color="#fa5454", size=1.5) +
+  geom_point(data=snow(20), aes(x=a, y=b), shape=8, fill="white", color="white", size=1.5) +
+  scale_x_continuous(limits = c(-50, 50), breaks = NULL,, expand = c(0,0)) + 
+  scale_y_continuous(limits = c(-10, 85), breaks = NULL, expand = c(0,0))  +
+  theme(panel.background = element_rect(fill = "#212121")) +
+  theme(panel.grid.major.x = element_blank(), panel.grid.major.y = element_blank(), axis.title.x=element_blank(), axis.title.y=element_blank())
+  
+```
+
+
+
