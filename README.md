@@ -123,7 +123,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>13</td>
     <td>01-09</td>
     <td><i>Revision</i></td>
-    <td>Python: graphs + plotly</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab13">Python: graphs + plotly</a></td>
     <td>Group work( P2.3): Plots and prototype of app</td>
     <td>P2 (2p)</td>
   </tr>
