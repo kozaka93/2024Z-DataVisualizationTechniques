@@ -133,7 +133,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td><i>Test</i></td>
     <td>Python: matplotlib, seaborn - advanced</td>
     <td>Consultations: prototype of app</td>
-    <td>HW6 (6p)</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/issues/444">HW6 </a>(6p)</td>
   </tr>
   <tr>
     <td>15</td>
