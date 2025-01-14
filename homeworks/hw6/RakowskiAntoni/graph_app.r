@@ -1,6 +1,5 @@
 library(shiny)
 library(igraph)
-library(plotly)
 library(dplyr)
 
 set.seed(123)
