@@ -1,0 +1,8 @@
+# prop_name, value
+name,7th_graders
+description,"A small multiplex network of friendships among 29 seventh grade students in Victoria, Australia. Students nominated classmates for three different activities (who do you get on with in the class, who are your best friends, and who would you prefer to work with). Edge direction for each of these three types of edges indicates if node i nominated node j, and the edge weight gives the frequency of this nomination. Students 1-12 are boys and 13-29 are girls. The KONECT version of this network is the collapse of de Domenico's multiplex version.[^icon]
+[^icon]: Description obtained from the [ICON](https://icon.colorado.edu) project."
+citation,"['M. Vickers and S. Chan, \"Representing Classroom Social Structure.\" Melbourne: Victoria Institute of Secondary Education, (1981)., https://scholar.google.com/scholar?hl=de&as_sdt=0%2C5&q=%22Representing+classroom+social+structure%22&btnG=']"
+url,https://manliodedomenico.com/data.php
+tags,"['Social', 'Offline', 'Multilayer', 'Unweighted', 'Metadata']"
+layer_key,"{1: 'get_on_with', 2: 'best_friends', 3: 'work_with'}"
