@@ -123,7 +123,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>13</td>
     <td>01-09</td>
     <td><i>Revision</i></td>
-    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab13">Python: graphs + plotly</a></td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab13">Python: graphs, matplotlib, seaborn - advanced</a></td>
     <td>Group work( P2.3): Plots and prototype of app</td>
     <td>P2 (2p)</td>
   </tr>
@@ -131,7 +131,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>14</td>
     <td>01-16</td>
     <td><i>Test</i></td>
-    <td>Python: matplotlib, seaborn - advanced</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab14">Python: plotly</a></td>
     <td>Consultations: prototype of app</td>
     <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/issues/444">HW6 </a>(6p)</td>
   </tr>
