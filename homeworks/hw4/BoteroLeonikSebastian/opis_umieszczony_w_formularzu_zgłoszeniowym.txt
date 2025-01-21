@@ -1,6 +1,0 @@
-Rozpatrywałem współczynnik dzieci opuszczonych w różnych województwach w poszczególnych latach.
-Zaskoczyło mnie jak duże mogą być różnice między województwami. W skrajnym przypadku zaobserwowałem około 30x większy współczynnik w zachodniopomorskim niż podkarpackim.
-Sytuacja w zachodniej Polsce, choć zawsze była gorsza, tak w latach 2007-2009 nie widać było tak drastycznej różnice jak współcześnie. Jest to dość przygnębiające. Może jest to objaw jakiegoś głębszego problemu tamtych rejonów.
-Z kolei podkarpackie wypada zaskakująco dobrze. W sumie nie ma sobie równych w całym kraju.
-Mapę zrobiłem w formacie PNG i w dużej rozdzielczości, co powinno sprawić, że ewentualna obróbka w programie powinna być prostsza (wycięcie któregoś kartogramu, zmiana nagłówka, zmiana tła, etc.)
-Wybrałem podziały na lata 2007-2009, 2014-2016 i 2021-2023 ponieważ 1. dzieliło to ładnie zbiór danych, 2. możemy zaobserwować niejako 3 etapu rozwoju Polski z ostatnich lat, tj. pierwsza dekada XXIw. w tym kryzys z 2008; połowa drugiej dekady XXIw. w tym dalszy rozwój kraju i wprowadzenie programu 500+ w 2016; początek trzeciej dekady XXIw. w tym lata pandami i zaraz po niej.
