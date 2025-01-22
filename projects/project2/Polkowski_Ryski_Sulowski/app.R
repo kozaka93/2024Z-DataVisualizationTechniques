@@ -1,33 +1,17 @@
-library(shiny)
 library(bslib)
 library(shinyjs)
 library(dplyr)
 library(readxl)
 library(ggplot2)
 library(plotly)
-library(dplyr)
-library(shiny)
-library(readxl)
-library(ggplot2)
-library(plotly)
-library(dplyr)
 library(scales)
-library(dplyr)
-library(ggplot2)
-library(readxl)
 library(tidyr)
 library(openxlsx)
-library(dplyr)
-library(ggplot2)
 library(stringr)
-library(shiny)
-library(ggplot2)
-library(plotly)
-library(bslib)
-library(dplyr)
-library(readxl)
-library(tidyr)
 library(lubridate)
+library(shiny)
+library(shinythemes)
+
 ### Sleep related
 all_hours <- 0:23
 sleepData <- read_excel("data/sen.xlsx")
@@ -374,6 +358,7 @@ screenTimeScreen <- card(
 
 if (interactive()) {
   ui <- navbarPage(
+    theme = bslib::bs_theme(bootswatch = "sandstone"),
     "The lifestyle of a MiNi student",
     tabPanel("Sleep 🛏️",sleepScreen),
     tabPanel("Times of sleep",timesOfSleepScreen),
@@ -461,11 +446,8 @@ if (interactive()) {
         filter(as.Date(Day) >= input$daterange[1], as.Date(Day) <= input$daterange[2]) %>% 
         filter(Name %in% input$stepsPerson) %>%
         ggplot(aes(x = Day, y = Steps, color = Name)) + geom_line(size = 1.5) + 
-        scale_y_continuous(expand = expansion(mult = c(0, 0))) +
-        theme(
-          axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
-          
-        ) +
+        scale_y_continuous(expand = expansion(mult = c(0, 0)))
+        +theme_minimal()+
         labs(title = "Amount of steps taken each day",
              x = "Date",
              y = "Amount of steps taken") + scale_fill_manual(values=name_colors)
@@ -478,6 +460,7 @@ if (interactive()) {
         group_by(Name) %>% summarise(st = sum(Steps)) %>% 
         ggplot(aes(x = Name, y = st, fill = Name)) + geom_col() + 
         scale_y_continuous(expand = expansion(mult = c(0, 0)), labels = label_comma()) +
+        theme_minimal()+
         labs(title = paste("Sum of steps taken between ", input$daterange[1]," and ", input$daterange[2]),
              x = "Person",
              y = "Sum of steps taken") + scale_fill_manual(values=name_colors)
@@ -511,9 +494,9 @@ if (interactive()) {
               mode = 'lines+markers'
       ) %>% 
         layout(
-          title = "Długość czasu na dworze w poszczególnych dniach", 
-          xaxis = list(title = 'Data', tickmode = "array", tickvals = unique(filteredOutdoorData()$Date), tickangle = -45), 
-          yaxis = list(title = 'Czas spędzony na dworze (w minutach)', range = c(0, 300)),
+          title = "Length of outdoor time by day", 
+          xaxis = list(title = 'Date', tickmode = "array", tickvals = unique(filteredOutdoorData()$Date), tickangle = -45), 
+          yaxis = list(title = 'Outdoor time (in minutes)', range = c(0, 300)),
           margin = list(l = 60, r = 60, t = 60, b = 100)
         ) %>% 
         config(displayModeBar = F)
@@ -527,9 +510,9 @@ if (interactive()) {
               colors = name_colors,
               type = "bar") %>%
         layout(
-          title = "Czas spędzony na dworze a dni tygodnia",
-          xaxis = list(title = "Dzień tygodnia"),
-          yaxis = list(title = "Czas spędzony łącznie na dworze (w minutach)"),
+          title = "Outdoor time vs days of the week",
+          xaxis = list(title = "Day of the week"),
+          yaxis = list(title = "Total outdoor time (in minutes)"),
           barmode = 'group'
         )
     })
@@ -617,7 +600,7 @@ if (interactive()) {
         filter(as.Date(Date) >= input$daterange[1], as.Date(Date) <= input$daterange[2]) %>% 
         filter(Name %in% input$hydrationPerson) %>%
         ggplot(aes(x = factor(Date), y = Amount, fill = Name)) + geom_col() + 
-        scale_y_continuous(expand = expansion(mult = c(0, 0))) +
+        scale_y_continuous(expand = expansion(mult = c(0, 0)))+theme_minimal()+
         theme(
           axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)
         )  + scale_fill_manual(values=name_colors)
@@ -636,4 +619,3 @@ if (interactive()) {
   # Run the application 
   shinyApp(ui = ui, server = server)
 }
-
