@@ -1,33 +1,17 @@
-library(shiny)
 library(bslib)
 library(shinyjs)
 library(dplyr)
 library(readxl)
 library(ggplot2)
 library(plotly)
-library(dplyr)
-library(shiny)
-library(readxl)
-library(ggplot2)
-library(plotly)
-library(dplyr)
 library(scales)
-library(dplyr)
-library(ggplot2)
-library(readxl)
 library(tidyr)
 library(openxlsx)
-library(dplyr)
-library(ggplot2)
+library(lubridate)
 library(stringr)
 library(shiny)
-library(ggplot2)
-library(plotly)
-library(bslib)
-library(dplyr)
-library(readxl)
-library(tidyr)
-library(lubridate)
+library(shinythemes)
+
 ### Sleep related
 all_hours <- 0:23
 sleepData <- read_excel("data/sen.xlsx")
@@ -318,7 +302,7 @@ screenTimeDf$time <- screenTimeDf2$time
 screenTimeDf$day <- parse_date_time(str_replace(str_replace(screenTimeDf$day, " grudnia ", "-12-"), " stycznia ", " -01-"), "dmy")
 
 generateButton <- function(inputId, url) {
-  actionButton(inputId = inputId, label = NULL, style = paste("width: 40px; height: 40px; background: url(", url, ");  background-size: cover; background-position: center; outline-color: #387eff !important;"))
+  actionButton(inputId = inputId, label = NULL, style = paste("width: 40px; height: 40px; background: url(", url, ");  background-size: cover; background-position: center; outline-color: #1e5e8b !important;"))
 }
 
 screenTimeScreen <- card(
@@ -352,7 +336,7 @@ screenTimeScreen <- card(
               br(),
               p(
                 screenTimeIcons$app[i],
-                style = "text-align: center;max-width: 40px; text-overflow: ellipsis; width: 100%;clear:left;align-items: center;justify-content: center;display: inline;margin: auto;outline-color: #387eff !important;",
+                style = "text-align: center;max-width: 40px; text-overflow: ellipsis; width: 100%;clear:left;align-items: center;justify-content: center;display: inline;margin: auto;outline-color: #1e5e8b !important;",
               ),
               style = "font-size: 10px",
             )
@@ -374,6 +358,7 @@ screenTimeScreen <- card(
 
 if (interactive()) {
   ui <- navbarPage(
+    theme = bslib::bs_theme(bootswatch = "sandstone"),
     "The lifestyle of a MiNi student",
     tabPanel("Sleep 🛏️",sleepScreen),
     tabPanel("Times of sleep ⏰",timesOfSleepScreen),
@@ -465,7 +450,7 @@ if (interactive()) {
         theme(
           axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=0.5),
           
-        ) +
+        ) + theme_minimal() +
         labs(title = "Daily steps",
              subtitle = paste("from", input$daterange[1],"to", input$daterange[2]),
              x = "Date",
@@ -488,7 +473,7 @@ if (interactive()) {
         labs(title = "Total steps",
              subtitle = paste("from", input$daterange[1],"to", input$daterange[2]),
              x = "Person",
-             y = "Sum of steps taken") + scale_fill_manual(values=name_colors) +
+             y = "Sum of steps taken") + theme_minimal() + scale_fill_manual(values=name_colors) +
         theme(       axis.text.y = element_text(size = 12),
                      axis.text.x = element_text(size = 12),
                      title = element_text(size=14),
@@ -552,19 +537,15 @@ if (interactive()) {
     selectAllApps <- reactiveVal()
     selectAllApps(0)
     values <- reactiveValues()
-    removeDotsAndWhitespace <- function(value) {
-      str_replace(str_replace(value, " ",  ""), ".", "")
-    }
     lapply(
       X = 1:length(screenTimeIcons$app),
       FUN = function(i) {
         observeEvent(input[[screenTimeIcons$app[i]]], {
           newValue <- ifelse(values[[screenTimeIcons$app[i]]] == 0, 1, 0)
-          iconName <- removeDotsAndWhitespace(screenTimeIcons$app[i])
           if (newValue) {
-            insertUI("head", ui = tags$style(HTML(paste("#", iconName, " { outline: solid !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: solid !important; outline-color: #1e5e8b !important;}", sep=""))))
           } else {
-            insertUI("head", ui = tags$style(HTML(paste("#", iconName, " { outline: none !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: none !important; outline-color: #1e5e8b !important;}", sep=""))))
           }
           values[[screenTimeIcons$app[i]]] <- newValue
           print("UPDATED")
@@ -576,14 +557,12 @@ if (interactive()) {
     observeEvent(input$allAppsCheckbox, {
       val = ifelse(selectAllApps() == 0, 1, 0)
       selectAllApps(val)
-      
       if (val) {
         # Select all apps left
         lapply(
           X = 1:length(screenTimeIcons$app),
           FUN = function(i) {
-            iconName <- removeDotsAndWhitespace(screenTimeIcons$app[i])
-            insertUI("head", ui = tags$style(HTML(paste("#", iconName, " { outline: solid !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: solid !important; outline-color: #1e5e8b !important;}", sep=""))))
             values[[screenTimeIcons$app[i]]] <- 1
           }
         )
@@ -592,9 +571,8 @@ if (interactive()) {
         lapply(
           X = 1:length(screenTimeIcons$app),
           FUN = function(i) {
-            iconName <- removeDotsAndWhitespace(screenTimeIcons$app[i])
             values[[screenTimeIcons$app[i]]] <- 0
-            insertUI("head", ui = tags$style(HTML(paste("#", iconName, " { outline: none !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: none !important; outline-color: #1e5e8b !important;}", sep=""))))
           }
         )
       }
@@ -643,7 +621,7 @@ if (interactive()) {
         filter(as.Date(Date) >= input$daterange[1], as.Date(Date) <= input$daterange[2]) %>% 
         filter(Name %in% input$hydrationPerson) %>%
         ggplot(aes(x = factor(Date), y = Amount, fill = Name)) + geom_col() + 
-        scale_y_continuous(expand = expansion(mult = c(0, 0))) +
+        scale_y_continuous(expand = expansion(mult = c(0, 0))) + theme_minimal() +
         theme(
           axis.text.x = element_text(angle = 45, vjust = 1, hjust=1, size = 12),
           axis.text.y = element_text(size = 12),
@@ -663,14 +641,13 @@ if (interactive()) {
           axis.text.y = element_text(size = 12),
           title = element_text(size=14),
           legend.text = element_text(size = 12),
-        ) + scale_fill_manual(values=name_colors) + 
+        ) + theme_minimal() + scale_fill_manual(values=name_colors) + 
         labs(x = "Person", y = "Amount (ml)", title = "Hydration by person filtered by drink categories", subtitle = paste("since", input$daterange[1], "to",  input$daterange[2])) + 
         scale_y_continuous(expand = expand_scale(mult = c(0, .05)))
-
+      
     )
   }
   
   # Run the application 
   shinyApp(ui = ui, server = server)
 }
-
