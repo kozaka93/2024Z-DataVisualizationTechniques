@@ -7,8 +7,8 @@ library(plotly)
 library(scales)
 library(tidyr)
 library(openxlsx)
-library(stringr)
 library(lubridate)
+library(stringr)
 library(shiny)
 library(shinythemes)
 
@@ -299,10 +299,10 @@ toSeconds <- function(date) {
 screenTimeDf2 <- data.frame(sapply(screenTimeDf$time,toSeconds)) 
 names(screenTimeDf2) <- c('time')
 screenTimeDf$time <- screenTimeDf2$time
-screenTimeDf
+screenTimeDf$day <- parse_date_time(str_replace(str_replace(screenTimeDf$day, " grudnia ", "-12-"), " stycznia ", " -01-"), "dmy")
 
 generateButton <- function(inputId, url) {
-  actionButton(inputId = inputId, label = NULL, style = paste("width: 40px; height: 40px; background: url(", url, ");  background-size: cover; background-position: center; outline-color: #387eff !important;"))
+  actionButton(inputId = inputId, label = NULL, style = paste("width: 40px; height: 40px; background: url(", url, ");  background-size: cover; background-position: center; outline-color: #1e5e8b !important;"))
 }
 
 screenTimeScreen <- card(
@@ -336,7 +336,7 @@ screenTimeScreen <- card(
               br(),
               p(
                 screenTimeIcons$app[i],
-                style = "text-align: center;max-width: 40px; text-overflow: ellipsis; width: 100%;clear:left;align-items: center;justify-content: center;display: inline;margin: auto;outline-color: #387eff !important;",
+                style = "text-align: center;max-width: 40px; text-overflow: ellipsis; width: 100%;clear:left;align-items: center;justify-content: center;display: inline;margin: auto;outline-color: #1e5e8b !important;",
               ),
               style = "font-size: 10px",
             )
@@ -348,7 +348,7 @@ screenTimeScreen <- card(
     
     # Show a plot of the generated distribution
     mainPanel(
-      plotOutput("screenTimePointPlot"),
+      plotOutput("screenTimePointPlot", height = "600px"),
     )
   )
 )
@@ -361,11 +361,11 @@ if (interactive()) {
     theme = bslib::bs_theme(bootswatch = "sandstone"),
     "The lifestyle of a MiNi student",
     tabPanel("Sleep 🛏️",sleepScreen),
-    tabPanel("Times of sleep",timesOfSleepScreen),
+    tabPanel("Times of sleep ⏰",timesOfSleepScreen),
     tabPanel("Steps 👣️", stepsScreen),
-    tabPanel("Hydration 🥛", hydrationScreen),
+    tabPanel("Hydration 💦", hydrationScreen),
     tabPanel("Time outdoors ⛰️", timeOutdoorsScreen),
-    tabPanel("Screen time 🖥️", screenTimeScreen)
+    tabPanel("Screen time 📱️", screenTimeScreen)
   )
   
   isClicked = FALSE
@@ -446,11 +446,21 @@ if (interactive()) {
         filter(as.Date(Day) >= input$daterange[1], as.Date(Day) <= input$daterange[2]) %>% 
         filter(Name %in% input$stepsPerson) %>%
         ggplot(aes(x = Day, y = Steps, color = Name)) + geom_line(size = 1.5) + 
-        scale_y_continuous(expand = expansion(mult = c(0, 0)))
-        +theme_minimal()+
-        labs(title = "Amount of steps taken each day",
+        scale_y_continuous(expand = expansion(mult = c(0, 0))) +
+        theme(
+          axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=0.5),
+          
+        ) + theme_minimal() +
+        labs(title = "Daily steps",
+             subtitle = paste("from", input$daterange[1],"to", input$daterange[2]),
              x = "Date",
-             y = "Amount of steps taken") + scale_fill_manual(values=name_colors)
+             y = "Amount of steps taken") + scale_fill_manual(values=name_colors) +
+        theme(       axis.text.y = element_text(size = 12),
+                     axis.text.x = element_text(size = 12),
+                     title = element_text(size=14),
+                     legend.text = element_text(size = 12)) + 
+        scale_y_continuous(expand = expand_scale(mult = c(0, .05)))
+      
     )
     
     output$steps_Barplot <- renderPlot(
@@ -460,10 +470,15 @@ if (interactive()) {
         group_by(Name) %>% summarise(st = sum(Steps)) %>% 
         ggplot(aes(x = Name, y = st, fill = Name)) + geom_col() + 
         scale_y_continuous(expand = expansion(mult = c(0, 0)), labels = label_comma()) +
-        theme_minimal()+
-        labs(title = paste("Sum of steps taken between ", input$daterange[1]," and ", input$daterange[2]),
+        labs(title = "Total steps",
+             subtitle = paste("from", input$daterange[1],"to", input$daterange[2]),
              x = "Person",
-             y = "Sum of steps taken") + scale_fill_manual(values=name_colors)
+             y = "Sum of steps taken") + theme_minimal() + scale_fill_manual(values=name_colors) +
+        theme(       axis.text.y = element_text(size = 12),
+                     axis.text.x = element_text(size = 12),
+                     title = element_text(size=14),
+                     legend.text = element_text(size = 12))+ 
+        scale_y_continuous(expand = expand_scale(mult = c(0, .05)))
     )
     
     ### Time outdoors
@@ -494,9 +509,9 @@ if (interactive()) {
               mode = 'lines+markers'
       ) %>% 
         layout(
-          title = "Length of outdoor time by day", 
-          xaxis = list(title = 'Date', tickmode = "array", tickvals = unique(filteredOutdoorData()$Date), tickangle = -45), 
-          yaxis = list(title = 'Outdoor time (in minutes)', range = c(0, 300)),
+          title = "Długość czasu na dworze w poszczególnych dniach", 
+          xaxis = list(title = 'Data', tickmode = "array", tickvals = unique(filteredOutdoorData()$Date), tickangle = -45), 
+          yaxis = list(title = 'Czas spędzony na dworze (w minutach)', range = c(0, 300)),
           margin = list(l = 60, r = 60, t = 60, b = 100)
         ) %>% 
         config(displayModeBar = F)
@@ -510,9 +525,9 @@ if (interactive()) {
               colors = name_colors,
               type = "bar") %>%
         layout(
-          title = "Outdoor time vs days of the week",
-          xaxis = list(title = "Day of the week"),
-          yaxis = list(title = "Total outdoor time (in minutes)"),
+          title = "Czas spędzony na dworze a dni tygodnia",
+          xaxis = list(title = "Dzień tygodnia"),
+          yaxis = list(title = "Czas spędzony łącznie na dworze (w minutach)"),
           barmode = 'group'
         )
     })
@@ -528,9 +543,9 @@ if (interactive()) {
         observeEvent(input[[screenTimeIcons$app[i]]], {
           newValue <- ifelse(values[[screenTimeIcons$app[i]]] == 0, 1, 0)
           if (newValue) {
-            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: solid !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: solid !important; outline-color: #1e5e8b !important;}", sep=""))))
           } else {
-            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: none !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: none !important; outline-color: #1e5e8b !important;}", sep=""))))
           }
           values[[screenTimeIcons$app[i]]] <- newValue
           print("UPDATED")
@@ -547,7 +562,7 @@ if (interactive()) {
         lapply(
           X = 1:length(screenTimeIcons$app),
           FUN = function(i) {
-            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: solid !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: solid !important; outline-color: #1e5e8b !important;}", sep=""))))
             values[[screenTimeIcons$app[i]]] <- 1
           }
         )
@@ -557,7 +572,7 @@ if (interactive()) {
           X = 1:length(screenTimeIcons$app),
           FUN = function(i) {
             values[[screenTimeIcons$app[i]]] <- 0
-            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: none !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: none !important; outline-color: #1e5e8b !important;}", sep=""))))
           }
         )
       }
@@ -573,7 +588,7 @@ if (interactive()) {
       }
       selectedApps <- getSelected(values)
       n <- min(10, length(selectedApps))
-      most_time_spent <- screenTimeDf  %>% filter(name %in% screenTimePerson)  %>% filter(app %in% selectedApps)
+      most_time_spent <- screenTimeDf %>% filter(as.Date(day) >= input$daterange[1], as.Date(day) <= input$daterange[2]) %>% filter(name %in% screenTimePerson)  %>% filter(app %in% selectedApps)
       best_apps <- (most_time_spent %>% group_by(app) %>%
                       summarize(total_best_time = sum(time)) %>% arrange(desc(total_best_time)) %>% top_n(n))
       most_time_spent_2 <- most_time_spent %>% filter(app %in% best_apps$app) %>% group_by(name, app) %>%  summarize(total_time = sum(time))
@@ -583,15 +598,21 @@ if (interactive()) {
         labs(y = "App", 
              x = "Time (in minutes)", 
              fill = "Person",
-             title = "Smartphone screentime from 24-09-24 to 50-40-40",
+             title = paste("Smartphone screentime from", input$daterange[1], "to",  input$daterange[2]),
              subtitle = paste("top", n, "most time consuming apps (from selected)"),
         ) +  theme(
           panel.grid.major.x = element_line(colour="grey"),
           panel.grid.minor.x = element_line(colour="grey"),
           panel.grid.major.y = element_blank(),
           panel.grid.minor.y = element_blank(),
+          axis.text.y = element_text(size = 12),
+          axis.text.x = element_text(size = 12),
+          title = element_text(size=14),
+          legend.text = element_text(size = 12),
+          
           panel.background = element_rect(fill = "white"),
           axis.ticks = element_blank()) + scale_fill_manual(values=name_colors)
+      
     })
     
     
@@ -600,19 +621,30 @@ if (interactive()) {
         filter(as.Date(Date) >= input$daterange[1], as.Date(Date) <= input$daterange[2]) %>% 
         filter(Name %in% input$hydrationPerson) %>%
         ggplot(aes(x = factor(Date), y = Amount, fill = Name)) + geom_col() + 
-        scale_y_continuous(expand = expansion(mult = c(0, 0)))+theme_minimal()+
+        scale_y_continuous(expand = expansion(mult = c(0, 0))) + theme_minimal() +
         theme(
-          axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)
-        )  + scale_fill_manual(values=name_colors)
+          axis.text.x = element_text(angle = 45, vjust = 1, hjust=1, size = 12),
+          axis.text.y = element_text(size = 12),
+          title = element_text(size=14),
+          legend.text = element_text(size = 12),
+        )  + scale_fill_manual(values=name_colors)+ labs(x = "Date", y = "Amount (ml)", title = "Hydration by person", subtitle = paste("since", input$daterange[1], "to",  input$daterange[2])) + 
+        scale_y_continuous(expand = expand_scale(mult = c(0, .05)))
     )
     
     output$water_Barplot <- renderPlot(
-      hydration_data %>% filter(Category %in% input$categories) %>% 
+      hydration_data %>% 
+        filter(as.Date(Date) >= input$daterange[1], as.Date(Date) <= input$daterange[2]) %>%  filter(Category %in% input$categories) %>% 
         ggplot(aes(x = Name, y = Amount, fill = Name)) + geom_col() +
         scale_y_continuous(expand = expansion(mult = c(0, 0))) +
         theme(
-          axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)
-        ) + scale_fill_manual(values=name_colors)
+          axis.text.x = element_text( size = 12),
+          axis.text.y = element_text(size = 12),
+          title = element_text(size=14),
+          legend.text = element_text(size = 12),
+        ) + theme_minimal() + scale_fill_manual(values=name_colors) + 
+        labs(x = "Person", y = "Amount (ml)", title = "Hydration by person filtered by drink categories", subtitle = paste("since", input$daterange[1], "to",  input$daterange[2])) + 
+        scale_y_continuous(expand = expand_scale(mult = c(0, .05)))
+      
     )
   }
   
