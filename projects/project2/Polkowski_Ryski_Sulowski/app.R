@@ -552,15 +552,19 @@ if (interactive()) {
     selectAllApps <- reactiveVal()
     selectAllApps(0)
     values <- reactiveValues()
+    removeDotsAndWhitespace <- function(value) {
+      str_replace(str_replace(value, " ",  ""), ".", "")
+    }
     lapply(
       X = 1:length(screenTimeIcons$app),
       FUN = function(i) {
         observeEvent(input[[screenTimeIcons$app[i]]], {
           newValue <- ifelse(values[[screenTimeIcons$app[i]]] == 0, 1, 0)
+          iconName <- removeDotsAndWhitespace(screenTimeIcons$app[i])
           if (newValue) {
-            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: solid !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", iconName, " { outline: solid !important; outline-color: #387eff !important;}", sep=""))))
           } else {
-            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: none !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", iconName, " { outline: none !important; outline-color: #387eff !important;}", sep=""))))
           }
           values[[screenTimeIcons$app[i]]] <- newValue
           print("UPDATED")
@@ -572,12 +576,14 @@ if (interactive()) {
     observeEvent(input$allAppsCheckbox, {
       val = ifelse(selectAllApps() == 0, 1, 0)
       selectAllApps(val)
+      
       if (val) {
         # Select all apps left
         lapply(
           X = 1:length(screenTimeIcons$app),
           FUN = function(i) {
-            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: solid !important; outline-color: #387eff !important;}", sep=""))))
+            iconName <- removeDotsAndWhitespace(screenTimeIcons$app[i])
+            insertUI("head", ui = tags$style(HTML(paste("#", iconName, " { outline: solid !important; outline-color: #387eff !important;}", sep=""))))
             values[[screenTimeIcons$app[i]]] <- 1
           }
         )
@@ -586,8 +592,9 @@ if (interactive()) {
         lapply(
           X = 1:length(screenTimeIcons$app),
           FUN = function(i) {
+            iconName <- removeDotsAndWhitespace(screenTimeIcons$app[i])
             values[[screenTimeIcons$app[i]]] <- 0
-            insertUI("head", ui = tags$style(HTML(paste("#", screenTimeIcons$app[i], " { outline: none !important; outline-color: #387eff !important;}", sep=""))))
+            insertUI("head", ui = tags$style(HTML(paste("#", iconName, " { outline: none !important; outline-color: #387eff !important;}", sep=""))))
           }
         )
       }
