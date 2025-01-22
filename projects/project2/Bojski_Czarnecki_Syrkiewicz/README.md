@@ -25,16 +25,16 @@ Link: https://micaet.shinyapps.io/proj_twd_eng/ (appearance may vary depending o
   
 Additionally, below are several screenshots of our application, including an image of the heatmap:
 - **Win rate tab**: upper part of first tab 
-  ![First Tab](./Image/First.png)
+  ![First Tab](.Kody/Image/First.png)
 
 - **Events on map tab**: Tab with map plot 
-  ![ProMap Tab](./Image/ProMap.png)
+  ![ProMap Tab](.Kody/Image/ProMap.png)
 
 - **Heatmap**: Heatmap for advanced data visualization (not working on the internet version) 
-  ![Heatmap Tab](./Image/HeatMap.png)
+  ![Heatmap Tab](.Kody/Image/HeatMap.png)
 
 - **Density plot**: A density plot highlighting key performance distributions  
-  ![Density Tab](./Image/Density.png)
+  ![Density Tab](.Kody/Image/Density.png)
 
 ---
 
