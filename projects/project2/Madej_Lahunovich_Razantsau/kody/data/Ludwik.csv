@@ -1,0 +1,552 @@
+Date;Workout Name;Exercise Name;Set Order;Weight;Weight Unit;Reps;RPE;Distance;Distance Unit;Seconds;Notes;Workout Notes;Workout Duration
+2024-12-10 22:21:00;Evening Workout;Bench Press (Dumbbell);1;22;kg;10;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Bench Press (Dumbbell);2;32;kg;10;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Bench Press (Dumbbell);3;34,5;kg;7;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Bench Press (Dumbbell);4;32;kg;9;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Chest Fly (Band);1;30;kg;10;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Chest Fly (Band);2;30;kg;10;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Chest Fly (Band);3;30;kg;8;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Incline Bench Press (Dumbbell);1;27;kg;10;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Incline Bench Press (Dumbbell);2;24,5;kg;7;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Incline Bench Press (Dumbbell);3;22;kg;10;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Incline Bench Press (Dumbbell);4;22;kg;7;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Bench Press (Dumbbell);1;16;kg;8;;;;0;Reversed ;;51m
+2024-12-10 22:21:00;Evening Workout;Bench Press (Dumbbell);2;16;kg;10;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Bench Press (Dumbbell);3;16;kg;8;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);1;25;kg;4;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);2;20;kg;5;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);3;15;kg;7;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);4;10;kg;10;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);5;5;kg;30;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);6;20;kg;4;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);7;15;kg;7;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);8;10;kg;13;;;;0;;;51m
+2024-12-10 22:21:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);9;5;kg;30;;;;0;;;51m
+2024-12-12 20:48:00;Evening Workout;Seated Row (Machine);1;50;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Seated Row (Machine);2;60;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Seated Row (Machine);3;60;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Seated Row (Machine);4;60;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Seated Row (Machine);5;70;kg;9;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Good Morning (Barbell);1;20;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Good Morning (Barbell);2;50;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Good Morning (Barbell);3;50;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Good Morning (Barbell);4;50;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Iso-Lateral Row (Machine);1;40;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Iso-Lateral Row (Machine);2;60;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Iso-Lateral Row (Machine);3;60;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Iso-Lateral Row (Machine);4;60;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Reverse Fly (Dumbbell);1;6;kg;11;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Reverse Fly (Dumbbell);2;6;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Reverse Fly (Dumbbell);3;6;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Bicep Curl (Cable);1;20;kg;13;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Bicep Curl (Cable);2;15;kg;9;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Bicep Curl (Cable);3;10;kg;8;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Bicep Curl (Cable);4;5;kg;20;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Lat Pulldown (Single Arm);1;20;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Lat Pulldown (Single Arm);2;30;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Lat Pulldown (Single Arm);3;40;kg;6;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Lat Pulldown (Single Arm);4;30;kg;10;;;;0;;;1h 39m
+2024-12-12 20:48:00;Evening Workout;Lat Pulldown (Single Arm);5;30;kg;8;;;;0;;;1h 39m
+2024-12-16 21:05:00;Evening Workout;Bicep Curl (Dumbbell);1;13,5;kg;10;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Bicep Curl (Dumbbell);2;16;kg;10;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Bicep Curl (Dumbbell);3;19,5;kg;10;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Bicep Curl (Dumbbell);4;19,5;kg;7;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Bicep Curl (Dumbbell);5;19,5;kg;8;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Hammer Curl (Dumbbell);1;16;kg;6;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Hammer Curl (Dumbbell);2;16;kg;8;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Hammer Curl (Dumbbell);3;16;kg;9;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Bicep Curl (Cable);1;25;kg;8;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Bicep Curl (Cable);2;20;kg;6;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Bicep Curl (Cable);3;15;kg;8;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Bicep Curl (Cable);4;10;kg;9;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Bicep Curl (Cable);5;5;kg;16;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Cable Kickback;1;20;kg;10;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Cable Kickback;2;20;kg;10;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Cable Kickback;3;20;kg;12;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Cable Kickback;4;15;kg;9;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Cable Kickback;5;10;kg;15;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Cable Kickback;6;5;kg;35;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Triceps Extension (Cable);1;20;kg;7;;;;0;Single Arm;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Triceps Extension (Cable);2;20;kg;10;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Triceps Extension (Cable);3;20;kg;10;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Triceps Extension (Cable);4;20;kg;10;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Triceps Extension (Cable);5;20;kg;7;;;;0;;;1h 23m
+2024-12-16 21:05:00;Evening Workout;Wrist Roller;1;16;kg;20;;;;0;;;1h 23m
+2024-12-18 18:16:00;Evening Workout;Bench Press (Dumbbell);1;22;kg;10;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Bench Press (Dumbbell);2;32;kg;10;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Bench Press (Dumbbell);3;34,5;kg;7;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Bench Press (Dumbbell);4;38;kg;6;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Bench Press (Dumbbell);5;38;kg;6;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Chest Fly (Band);1;30;kg;10;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Chest Fly (Band);2;35;kg;8;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Chest Fly (Band);3;35;kg;6;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Incline Bench Press (Dumbbell);1;27;kg;6;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Incline Bench Press (Dumbbell);2;27;kg;4;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Incline Bench Press (Dumbbell);3;24,5;kg;6;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Incline Bench Press (Dumbbell);4;24,5;kg;7;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Bench Press (Dumbbell);1;22;kg;5;;;;0;Reversed ;;1h
+2024-12-18 18:16:00;Evening Workout;Bench Press (Dumbbell);2;16;kg;7;;;;0;;;1h
+2024-12-18 18:16:00;Evening Workout;Bench Press (Dumbbell);3;16;kg;10;;;;0;;;1h
+2024-12-19 20:02:00;Evening Workout;Lat Pulldown (Single Arm);1;20;kg;10;;;;0;One arm;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Lat Pulldown (Single Arm);2;30;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Lat Pulldown (Single Arm);3;40;kg;5;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Lat Pulldown (Single Arm);4;30;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Lat Pulldown (Single Arm);5;30;kg;8;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Seated Row (Machine);1;50;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Seated Row (Machine);2;60;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Seated Row (Machine);3;70;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Seated Row (Machine);4;70;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Good Morning (Barbell);1;20;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Good Morning (Barbell);2;50;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Good Morning (Barbell);3;50;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Good Morning (Barbell);4;50;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Iso-Lateral Row (Machine);1;40;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Iso-Lateral Row (Machine);2;60;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Iso-Lateral Row (Machine);3;70;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Iso-Lateral Row (Machine);4;70;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Reverse Fly (Dumbbell);1;6;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Reverse Fly (Dumbbell);2;6;kg;10;;;;0;;;1h 3m
+2024-12-19 20:02:00;Evening Workout;Reverse Fly (Dumbbell);3;8,5;kg;9;;;;0;;;1h 3m
+2025-01-04 20:39:00;Evening Workout;Bench Press (Dumbbell);1;22;kg;10;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Bench Press (Dumbbell);2;32;kg;10;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Bench Press (Dumbbell);3;34,5;kg;7;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Bench Press (Dumbbell);4;38;kg;6;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Bench Press (Dumbbell);5;38;kg;5;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Chest Fly (Band);1;30;kg;10;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Chest Fly (Band);2;35;kg;8;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Chest Fly (Band);3;35;kg;8;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Incline Bench Press (Dumbbell);1;22;kg;6;;;;0;Reversed;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Incline Bench Press (Dumbbell);2;22;kg;5;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Incline Bench Press (Dumbbell);3;22;kg;7;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Incline Bench Press (Dumbbell);1;27;kg;6;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Incline Bench Press (Dumbbell);2;27;kg;4;;;;0;;;1h 6m
+2025-01-04 20:39:00;Evening Workout;Incline Bench Press (Dumbbell);3;24,5;kg;6;;;;0;;;1h 6m
+2025-01-05 21:30:00;Legs;Squat (Barbell);1;70;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Squat (Barbell);2;90;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Squat (Barbell);3;100;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Leg Extension (Machine);1;20;kg;10;;;;0;Single leg;;1h 13m
+2025-01-05 21:30:00;Legs;Leg Extension (Machine);2;20;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Leg Extension (Machine);3;20;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Standing Calf Raise (Dumbbell);1;0;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Standing Calf Raise (Dumbbell);2;16;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Standing Calf Raise (Dumbbell);3;22;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Standing Calf Raise (Dumbbell);4;22;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Lying Leg Curl (Machine);1;10;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Lying Leg Curl (Machine);2;10;kg;10;;;;0;;;1h 13m
+2025-01-05 21:30:00;Legs;Lying Leg Curl (Machine);3;15;kg;10;;;;0;;;1h 13m
+2025-01-06 20:22:00;Evening Workout;Bicep Curl (Dumbbell);1;13,5;kg;10;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Bicep Curl (Dumbbell);2;19,5;kg;10;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Bicep Curl (Dumbbell);3;22;kg;6;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Bicep Curl (Dumbbell);4;22;kg;7;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Bicep Curl (Dumbbell);5;22;kg;5;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Hammer Curl (Dumbbell);1;19,5;kg;6;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Hammer Curl (Dumbbell);2;19,5;kg;6;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Hammer Curl (Dumbbell);3;16;kg;8;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Bicep Curl (Cable);1;25;kg;6;;;;0;Single arm;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Bicep Curl (Cable);2;20;kg;5;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Bicep Curl (Cable);3;15;kg;5;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Bicep Curl (Cable);4;10;kg;7;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Bicep Curl (Cable);5;5;kg;16;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Cable Kickback;1;5;kg;10;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Cable Kickback;2;20;kg;6;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Cable Kickback;3;15;kg;10;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Cable Kickback;4;15;kg;12;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Triceps Extension (Cable);1;20;kg;11;;;;0;Single Arm;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Triceps Extension (Cable);2;20;kg;12;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Triceps Extension (Cable);3;20;kg;7;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Triceps Extension;1;20;kg;6;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Triceps Extension;2;15;kg;6;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Triceps Extension;3;10;kg;11;;;;0;;;1h 22m
+2025-01-06 20:22:00;Evening Workout;Triceps Extension;4;5;kg;26;;;;0;;;1h 22m
+2025-01-08 21:46:00;Evening Workout;Lat Pulldown (Single Arm);1;20;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Lat Pulldown (Single Arm);2;30;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Lat Pulldown (Single Arm);3;40;kg;5;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Lat Pulldown (Single Arm);4;30;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Lat Pulldown (Single Arm);5;30;kg;8;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Seated Row (Machine);1;50;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Seated Row (Machine);2;60;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Seated Row (Machine);3;70;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Seated Row (Machine);4;80;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Good Morning (Barbell);1;20;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Good Morning (Barbell);2;50;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Good Morning (Barbell);3;50;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Good Morning (Barbell);4;60;kg;16;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Iso-Lateral Row (Machine);1;40;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Iso-Lateral Row (Machine);2;60;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Iso-Lateral Row (Machine);3;70;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Iso-Lateral Row (Machine);4;70;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Reverse Fly (Dumbbell);1;6;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Reverse Fly (Dumbbell);2;8,5;kg;10;;;;0;;;1h 6m
+2025-01-08 21:46:00;Evening Workout;Reverse Fly (Dumbbell);3;6;kg;20;;;;0;;;1h 6m
+2025-01-09 22:52:00;Evening Workout;Reverse Crunch;1;0;kg;20;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Reverse Crunch;2;0;kg;20;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Reverse Crunch;3;0;kg;20;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Flat Knee Raise;1;;;20;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Flat Knee Raise;2;;;20;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Flat Leg Raise;1;;;20;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Flat Leg Raise;2;;;20;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Russian Twist;1;;;20;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Russian Twist;2;;;20;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Ludwik's abdominal oblique muscles;1;0;kg;10;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Ludwik's abdominal oblique muscles;2;0;kg;20;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Ludwik's abdominal oblique muscles;3;10;kg;10;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Ludwik's abdominal oblique muscles;4;10;kg;10;;;;0;;;50m
+2025-01-09 22:52:00;Evening Workout;Decline Crunch;1;0;kg;20;;;;0;With resistance band;;50m
+2025-01-09 22:52:00;Evening Workout;Decline Crunch;2;0;kg;25;;;;0;;;50m
+2024-12-05 21:40:00;Evening Workout;Bench Press (Dumbbell);1;22;kg;10;;;;0;;;59m
+2024-12-05 21:40:00;Evening Workout;Bench Press (Dumbbell);2;32;kg;10;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Bench Press (Dumbbell);3;34,5;kg;7;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Bench Press (Dumbbell);4;32;kg;9;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Chest Fly (Band);1;30;kg;10;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Chest Fly (Band);2;30;kg;10;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Chest Fly (Band);3;30;kg;8;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Incline Bench Press (Dumbbell);1;27;kg;10;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Incline Bench Press (Dumbbell);2;24,5;kg;7;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Incline Bench Press (Dumbbell);3;22;kg;10;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Incline Bench Press (Dumbbell);4;22;kg;7;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Bench Press (Dumbbell);1;16;kg;8;;;;0;Reversed ;;51m
+2024-12-05 21:40:00;Evening Workout;Bench Press (Dumbbell);2;16;kg;10;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Bench Press (Dumbbell);3;16;kg;8;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);1;25;kg;4;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);2;20;kg;5;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);3;15;kg;7;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);4;10;kg;10;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);5;5;kg;30;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);6;20;kg;4;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);7;15;kg;7;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);8;10;kg;13;;;;0;;;51m
+2024-12-05 21:40:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);9;5;kg;30;;;;0;;;51m
+2024-12-06 21:48:00;Evening Workout;Seated Row (Machine);1;50;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Seated Row (Machine);2;60;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Seated Row (Machine);3;60;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Seated Row (Machine);4;60;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Seated Row (Machine);5;70;kg;9;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Good Morning (Barbell);1;20;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Good Morning (Barbell);2;50;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Good Morning (Barbell);3;50;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Good Morning (Barbell);4;50;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Iso-Lateral Row (Machine);1;40;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Iso-Lateral Row (Machine);2;60;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Iso-Lateral Row (Machine);3;60;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Iso-Lateral Row (Machine);4;60;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Reverse Fly (Dumbbell);1;6;kg;11;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Reverse Fly (Dumbbell);2;6;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Reverse Fly (Dumbbell);3;6;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Bicep Curl (Cable);1;20;kg;13;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Bicep Curl (Cable);2;15;kg;9;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Bicep Curl (Cable);3;10;kg;8;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Bicep Curl (Cable);4;5;kg;20;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Lat Pulldown (Single Arm);1;20;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Lat Pulldown (Single Arm);2;30;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Lat Pulldown (Single Arm);3;40;kg;6;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Lat Pulldown (Single Arm);4;30;kg;10;;;;0;;;1h 39m
+2024-12-06 21:48:00;Evening Workout;Lat Pulldown (Single Arm);5;30;kg;8;;;;0;;;1h 39m
+2024-12-07 20:30:00;Evening Workout;Bicep Curl (Dumbbell);1;13,5;kg;10;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Bicep Curl (Dumbbell);2;16;kg;10;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Bicep Curl (Dumbbell);3;19,5;kg;10;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Bicep Curl (Dumbbell);4;19,5;kg;7;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Bicep Curl (Dumbbell);5;19,5;kg;8;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Hammer Curl (Dumbbell);1;16;kg;6;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Hammer Curl (Dumbbell);2;16;kg;8;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Hammer Curl (Dumbbell);3;16;kg;9;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Bicep Curl (Cable);1;25;kg;8;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Bicep Curl (Cable);2;20;kg;6;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Bicep Curl (Cable);3;15;kg;8;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Bicep Curl (Cable);4;10;kg;9;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Bicep Curl (Cable);5;5;kg;16;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Cable Kickback;1;20;kg;10;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Cable Kickback;2;20;kg;10;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Cable Kickback;3;20;kg;12;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Cable Kickback;4;15;kg;9;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Cable Kickback;5;10;kg;15;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Cable Kickback;6;5;kg;35;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Triceps Extension (Cable);1;20;kg;7;;;;0;Single Arm;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Triceps Extension (Cable);2;20;kg;10;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Triceps Extension (Cable);3;20;kg;10;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Triceps Extension (Cable);4;20;kg;10;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Triceps Extension (Cable);5;20;kg;7;;;;0;;;1h 23m
+2024-12-07 20:30:00;Evening Workout;Wrist Roller;1;16;kg;20;;;;0;;;1h 23m
+2024-12-08 21:30:00;Legs;Squat (Barbell);1;70;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Squat (Barbell);2;90;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Squat (Barbell);3;100;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Leg Extension (Machine);1;20;kg;10;;;;0;Single leg;;1h 13m
+2024-12-08 21:30:00;Legs;Leg Extension (Machine);2;20;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Leg Extension (Machine);3;20;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Standing Calf Raise (Dumbbell);1;0;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Standing Calf Raise (Dumbbell);2;16;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Standing Calf Raise (Dumbbell);3;22;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Standing Calf Raise (Dumbbell);4;22;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Lying Leg Curl (Machine);1;10;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Lying Leg Curl (Machine);2;10;kg;10;;;;0;;;1h 13m
+2024-12-08 21:30:00;Legs;Lying Leg Curl (Machine);3;15;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Squat (Barbell);1;70;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Squat (Barbell);2;90;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Squat (Barbell);3;100;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Leg Extension (Machine);1;20;kg;10;;;;0;Single leg;;1h 13m
+2024-12-15 21:50:00;Legs;Leg Extension (Machine);2;20;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Leg Extension (Machine);3;20;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Standing Calf Raise (Dumbbell);1;0;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Standing Calf Raise (Dumbbell);2;16;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Standing Calf Raise (Dumbbell);3;22;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Standing Calf Raise (Dumbbell);4;22;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Lying Leg Curl (Machine);1;10;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Lying Leg Curl (Machine);2;10;kg;10;;;;0;;;1h 13m
+2024-12-15 21:50:00;Legs;Lying Leg Curl (Machine);3;15;kg;10;;;;0;;;1h 13m
+2024-12-26 22:01:00;Evening Workout;Bench Press (Dumbbell);1;22;kg;10;;;;0;;;59m
+2024-12-26 22:01:00;Evening Workout;Bench Press (Dumbbell);2;32;kg;10;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Bench Press (Dumbbell);3;34,5;kg;7;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Bench Press (Dumbbell);4;32;kg;9;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Chest Fly (Band);1;30;kg;10;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Chest Fly (Band);2;30;kg;10;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Chest Fly (Band);3;30;kg;8;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Incline Bench Press (Dumbbell);1;27;kg;10;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Incline Bench Press (Dumbbell);2;24,5;kg;7;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Incline Bench Press (Dumbbell);3;22;kg;10;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Incline Bench Press (Dumbbell);4;22;kg;7;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Bench Press (Dumbbell);1;16;kg;8;;;;0;Reversed ;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Bench Press (Dumbbell);2;16;kg;10;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Bench Press (Dumbbell);3;16;kg;8;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);1;25;kg;4;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);2;20;kg;5;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);3;15;kg;7;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);4;10;kg;10;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);5;5;kg;30;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);6;20;kg;4;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);7;15;kg;7;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);8;10;kg;13;;;;0;;;1h 4m
+2024-12-26 22:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);9;5;kg;30;;;;0;;;1h 4m
+2024-12-27 20:48:00;Evening Workout;Seated Row (Machine);1;50;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Seated Row (Machine);2;60;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Seated Row (Machine);3;60;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Seated Row (Machine);4;60;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Seated Row (Machine);5;70;kg;9;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Good Morning (Barbell);1;20;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Good Morning (Barbell);2;50;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Good Morning (Barbell);3;50;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Good Morning (Barbell);4;50;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Iso-Lateral Row (Machine);1;40;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Iso-Lateral Row (Machine);2;60;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Iso-Lateral Row (Machine);3;60;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Iso-Lateral Row (Machine);4;60;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Reverse Fly (Dumbbell);1;6;kg;11;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Reverse Fly (Dumbbell);2;6;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Reverse Fly (Dumbbell);3;6;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Bicep Curl (Cable);1;20;kg;13;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Bicep Curl (Cable);2;15;kg;9;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Bicep Curl (Cable);3;10;kg;8;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Bicep Curl (Cable);4;5;kg;20;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Lat Pulldown (Single Arm);1;20;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Lat Pulldown (Single Arm);2;30;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Lat Pulldown (Single Arm);3;40;kg;6;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Lat Pulldown (Single Arm);4;30;kg;10;;;;0;;;1h 20m
+2024-12-27 20:48:00;Evening Workout;Lat Pulldown (Single Arm);5;30;kg;8;;;;0;;;1h 20m
+2024-12-28 20:48:00;Evening Workout;Bicep Curl (Dumbbell);1;13,5;kg;10;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Bicep Curl (Dumbbell);2;16;kg;10;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Bicep Curl (Dumbbell);3;19,5;kg;10;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Bicep Curl (Dumbbell);4;19,5;kg;7;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Bicep Curl (Dumbbell);5;19,5;kg;8;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Hammer Curl (Dumbbell);1;16;kg;6;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Hammer Curl (Dumbbell);2;16;kg;8;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Hammer Curl (Dumbbell);3;16;kg;9;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Bicep Curl (Cable);1;25;kg;8;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Bicep Curl (Cable);2;20;kg;6;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Bicep Curl (Cable);3;15;kg;8;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Bicep Curl (Cable);4;10;kg;9;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Bicep Curl (Cable);5;5;kg;16;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Cable Kickback;1;20;kg;10;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Cable Kickback;2;20;kg;10;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Cable Kickback;3;20;kg;12;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Cable Kickback;4;15;kg;9;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Cable Kickback;5;10;kg;15;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Cable Kickback;6;5;kg;35;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Triceps Extension (Cable);1;20;kg;7;;;;0;Single Arm;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Triceps Extension (Cable);2;20;kg;10;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Triceps Extension (Cable);3;20;kg;10;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Triceps Extension (Cable);4;20;kg;10;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Triceps Extension (Cable);5;20;kg;7;;;;0;;;1h 10m
+2024-12-28 20:48:00;Evening Workout;Wrist Roller;1;16;kg;20;;;;0;;;1h 10m
+2024-12-29 21:50:00;Legs;Squat (Barbell);1;70;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Squat (Barbell);2;90;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Squat (Barbell);3;100;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Leg Extension (Machine);1;20;kg;10;;;;0;Single leg;;1h 17m
+2024-12-29 21:50:00;Legs;Leg Extension (Machine);2;20;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Leg Extension (Machine);3;20;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Standing Calf Raise (Dumbbell);1;0;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Standing Calf Raise (Dumbbell);2;16;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Standing Calf Raise (Dumbbell);3;22;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Standing Calf Raise (Dumbbell);4;22;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Lying Leg Curl (Machine);1;10;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Lying Leg Curl (Machine);2;10;kg;10;;;;0;;;1h 17m
+2024-12-29 21:50:00;Legs;Lying Leg Curl (Machine);3;15;kg;10;;;;0;;;1h 17m
+2025-01-13 20:01:00;Evening Workout;Bench Press (Dumbbell);1;22;kg;10;;;;0;;;1h 17m
+2025-01-13 20:01:00;Evening Workout;Bench Press (Dumbbell);2;32;kg;10;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Bench Press (Dumbbell);3;34,5;kg;7;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Bench Press (Dumbbell);4;32;kg;9;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Chest Fly (Band);1;30;kg;10;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Chest Fly (Band);2;30;kg;10;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Chest Fly (Band);3;30;kg;8;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Incline Bench Press (Dumbbell);1;27;kg;10;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Incline Bench Press (Dumbbell);2;24,5;kg;7;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Incline Bench Press (Dumbbell);3;22;kg;10;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Incline Bench Press (Dumbbell);4;22;kg;7;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Bench Press (Dumbbell);1;16;kg;8;;;;0;Reversed ;;54m
+2025-01-13 20:01:00;Evening Workout;Bench Press (Dumbbell);2;16;kg;10;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Bench Press (Dumbbell);3;16;kg;8;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);1;25;kg;4;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);2;20;kg;5;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);3;15;kg;7;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);4;10;kg;10;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);5;5;kg;30;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);6;20;kg;4;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);7;15;kg;7;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);8;10;kg;13;;;;0;;;54m
+2025-01-13 20:01:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);9;5;kg;30;;;;0;;;54m
+2025-01-14 21:01:00;Evening Workout;Seated Row (Machine);1;50;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Seated Row (Machine);2;60;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Seated Row (Machine);3;60;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Seated Row (Machine);4;60;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Seated Row (Machine);5;70;kg;9;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Good Morning (Barbell);1;20;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Good Morning (Barbell);2;50;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Good Morning (Barbell);3;50;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Good Morning (Barbell);4;50;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Iso-Lateral Row (Machine);1;40;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Iso-Lateral Row (Machine);2;60;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Iso-Lateral Row (Machine);3;60;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Iso-Lateral Row (Machine);4;60;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Reverse Fly (Dumbbell);1;6;kg;11;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Reverse Fly (Dumbbell);2;6;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Reverse Fly (Dumbbell);3;6;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Bicep Curl (Cable);1;20;kg;13;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Bicep Curl (Cable);2;15;kg;9;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Bicep Curl (Cable);3;10;kg;8;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Bicep Curl (Cable);4;5;kg;20;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Lat Pulldown (Single Arm);1;20;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Lat Pulldown (Single Arm);2;30;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Lat Pulldown (Single Arm);3;40;kg;6;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Lat Pulldown (Single Arm);4;30;kg;10;;;;0;;;1h 26m
+2025-01-14 21:01:00;Evening Workout;Lat Pulldown (Single Arm);5;30;kg;8;;;;0;;;1h 26m
+2025-01-15 22:01:00;Evening Workout;Bicep Curl (Dumbbell);1;13,5;kg;10;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Bicep Curl (Dumbbell);2;16;kg;10;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Bicep Curl (Dumbbell);3;19,5;kg;10;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Bicep Curl (Dumbbell);4;19,5;kg;7;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Bicep Curl (Dumbbell);5;19,5;kg;8;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Hammer Curl (Dumbbell);1;16;kg;6;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Hammer Curl (Dumbbell);2;16;kg;8;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Hammer Curl (Dumbbell);3;16;kg;9;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Bicep Curl (Cable);1;25;kg;8;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Bicep Curl (Cable);2;20;kg;6;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Bicep Curl (Cable);3;15;kg;8;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Bicep Curl (Cable);4;10;kg;9;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Bicep Curl (Cable);5;5;kg;16;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Cable Kickback;1;20;kg;10;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Cable Kickback;2;20;kg;10;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Cable Kickback;3;20;kg;12;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Cable Kickback;4;15;kg;9;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Cable Kickback;5;10;kg;15;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Cable Kickback;6;5;kg;35;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Triceps Extension (Cable);1;20;kg;7;;;;0;Single Arm;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Triceps Extension (Cable);2;20;kg;10;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Triceps Extension (Cable);3;20;kg;10;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Triceps Extension (Cable);4;20;kg;10;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Triceps Extension (Cable);5;20;kg;7;;;;0;;;1h 15m
+2025-01-15 22:01:00;Evening Workout;Wrist Roller;1;16;kg;20;;;;0;;;1h 15m
+2025-01-16 22:20:00;Legs;Squat (Barbell);1;70;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Squat (Barbell);2;90;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Squat (Barbell);3;100;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Leg Extension (Machine);1;20;kg;10;;;;0;Single leg;;1h 8m
+2025-01-16 22:20:00;Legs;Leg Extension (Machine);2;20;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Leg Extension (Machine);3;20;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Standing Calf Raise (Dumbbell);1;0;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Standing Calf Raise (Dumbbell);2;16;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Standing Calf Raise (Dumbbell);3;22;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Standing Calf Raise (Dumbbell);4;22;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Lying Leg Curl (Machine);1;10;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Lying Leg Curl (Machine);2;10;kg;10;;;;0;;;1h 8m
+2025-01-16 22:20:00;Legs;Lying Leg Curl (Machine);3;15;kg;10;;;;0;;;1h 8m
+2025-01-19 21:14:00;Evening Workout;Bench Press (Dumbbell);1;22;kg;10;;;;0;;;1h 17m
+2025-01-19 21:14:00;Evening Workout;Bench Press (Dumbbell);2;32;kg;10;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Bench Press (Dumbbell);3;34,5;kg;7;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Bench Press (Dumbbell);4;32;kg;9;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Chest Fly (Band);1;30;kg;10;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Chest Fly (Band);2;30;kg;10;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Chest Fly (Band);3;30;kg;8;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Incline Bench Press (Dumbbell);1;27;kg;10;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Incline Bench Press (Dumbbell);2;24,5;kg;7;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Incline Bench Press (Dumbbell);3;22;kg;10;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Incline Bench Press (Dumbbell);4;22;kg;7;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Bench Press (Dumbbell);1;16;kg;8;;;;0;Reversed ;;58m
+2025-01-19 21:14:00;Evening Workout;Bench Press (Dumbbell);2;16;kg;10;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Bench Press (Dumbbell);3;16;kg;8;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);1;25;kg;4;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);2;20;kg;5;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);3;15;kg;7;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);4;10;kg;10;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);5;5;kg;30;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);6;20;kg;4;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);7;15;kg;7;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);8;10;kg;13;;;;0;;;58m
+2025-01-19 21:14:00;Evening Workout;Triceps Pushdown (Cable - Straight Bar);9;5;kg;30;;;;0;;;58m
+2025-01-20 21:37:00;Evening Workout;Seated Row (Machine);1;50;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Seated Row (Machine);2;60;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Seated Row (Machine);3;60;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Seated Row (Machine);4;60;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Seated Row (Machine);5;70;kg;9;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Good Morning (Barbell);1;20;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Good Morning (Barbell);2;50;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Good Morning (Barbell);3;50;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Good Morning (Barbell);4;50;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Iso-Lateral Row (Machine);1;40;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Iso-Lateral Row (Machine);2;60;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Iso-Lateral Row (Machine);3;60;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Iso-Lateral Row (Machine);4;60;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Reverse Fly (Dumbbell);1;6;kg;11;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Reverse Fly (Dumbbell);2;6;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Reverse Fly (Dumbbell);3;6;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Bicep Curl (Cable);1;20;kg;13;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Bicep Curl (Cable);2;15;kg;9;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Bicep Curl (Cable);3;10;kg;8;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Bicep Curl (Cable);4;5;kg;20;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Lat Pulldown (Single Arm);1;20;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Lat Pulldown (Single Arm);2;30;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Lat Pulldown (Single Arm);3;40;kg;6;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Lat Pulldown (Single Arm);4;30;kg;10;;;;0;;;1h 16m
+2025-01-20 21:37:00;Evening Workout;Lat Pulldown (Single Arm);5;30;kg;8;;;;0;;;1h 16m
+2025-01-21 21:48:00;Evening Workout;Bicep Curl (Dumbbell);1;13,5;kg;10;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Bicep Curl (Dumbbell);2;16;kg;10;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Bicep Curl (Dumbbell);3;19,5;kg;10;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Bicep Curl (Dumbbell);4;19,5;kg;7;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Bicep Curl (Dumbbell);5;19,5;kg;8;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Hammer Curl (Dumbbell);1;16;kg;6;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Hammer Curl (Dumbbell);2;16;kg;8;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Hammer Curl (Dumbbell);3;16;kg;9;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Bicep Curl (Cable);1;25;kg;8;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Bicep Curl (Cable);2;20;kg;6;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Bicep Curl (Cable);3;15;kg;8;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Bicep Curl (Cable);4;10;kg;9;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Bicep Curl (Cable);5;5;kg;16;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Cable Kickback;1;20;kg;10;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Cable Kickback;2;20;kg;10;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Cable Kickback;3;20;kg;12;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Cable Kickback;4;15;kg;9;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Cable Kickback;5;10;kg;15;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Cable Kickback;6;5;kg;35;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Triceps Extension (Cable);1;20;kg;7;;;;0;Single Arm;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Triceps Extension (Cable);2;20;kg;10;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Triceps Extension (Cable);3;20;kg;10;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Triceps Extension (Cable);4;20;kg;10;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Triceps Extension (Cable);5;20;kg;7;;;;0;;;1h 21m
+2025-01-21 21:48:00;Evening Workout;Wrist Roller;1;16;kg;20;;;;0;;;1h 21m
+2025-01-22 23:01:00;Legs;Squat (Barbell);1;70;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Squat (Barbell);2;90;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Squat (Barbell);3;100;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Leg Extension (Machine);1;20;kg;10;;;;0;Single leg;;56m
+2025-01-22 23:01:00;Legs;Leg Extension (Machine);2;20;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Leg Extension (Machine);3;20;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Standing Calf Raise (Dumbbell);1;0;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Standing Calf Raise (Dumbbell);2;16;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Standing Calf Raise (Dumbbell);3;22;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Standing Calf Raise (Dumbbell);4;22;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Lying Leg Curl (Machine);1;10;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Lying Leg Curl (Machine);2;10;kg;10;;;;0;;;56m
+2025-01-22 23:01:00;Legs;Lying Leg Curl (Machine);3;15;kg;10;;;;0;;;56m
