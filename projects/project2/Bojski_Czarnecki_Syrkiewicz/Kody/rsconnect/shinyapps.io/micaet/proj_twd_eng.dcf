@@ -1,0 +1,12 @@
+name: proj_twd_eng
+title:
+username: micaet
+account: micaet
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13755058
+bundleId: 9684992
+url: https://micaet.shinyapps.io/proj_twd_eng/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
