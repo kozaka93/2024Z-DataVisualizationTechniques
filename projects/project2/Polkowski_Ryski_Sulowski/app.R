@@ -2,7 +2,6 @@ library(shiny)
 library(bslib)
 library(shinyjs)
 library(dplyr)
-library(shiny)
 library(readxl)
 library(ggplot2)
 library(plotly)
@@ -96,6 +95,21 @@ sleepScreen <- card(
     # Show a plot of the generated distribution
     mainPanel(
       plotlyOutput("sleepPointPlot", height = "600px"),
+    )
+  ),
+  
+  
+  
+)
+
+timesOfSleepScreen <- card(
+  full_screen = TRUE,
+  sidebarLayout(
+    sidebarPanel(
+      "No selection",
+    ),
+    # Show a plot of the generated distribution
+    mainPanel(
       plotlyOutput("sleepStartHeatmap", height = "300px"),
       plotlyOutput("sleepEndHeatmap", height = "300px")
     )
@@ -104,6 +118,7 @@ sleepScreen <- card(
   
   
 )
+
 
 
 ### Steps related
@@ -277,9 +292,9 @@ timeOutdoorsScreen <- card(
 
 
 ### Screen time
-screenTimeIcons <- read.csv('/Users/adamryski/2024Z-DataVisualizationTechniques/projects/project2/Polkowski_Ryski_Sulowski/data/icons.csv')
-screenTimeDf <- read.csv(('/Users/adamryski/2024Z-DataVisualizationTechniques/projects/project2/Polkowski_Ryski_Sulowski/data/screen_time_2.csv'))
-screenTimeIcons <- read.csv('/Users/adamryski/2024Z-DataVisualizationTechniques/projects/project2/Polkowski_Ryski_Sulowski/data/icons.csv')
+screenTimeIcons <- read.csv('data/icons.csv')
+screenTimeDf <- read.csv(('data/screen_time_2.csv'))
+screenTimeIcons <- read.csv('data/icons.csv')
 names(screenTimeDf) <- c('name', 'app', 'day', 'time')
 
 cutLast <- function(str) {
@@ -361,6 +376,7 @@ if (interactive()) {
   ui <- navbarPage(
     "The lifestyle of a MiNi student",
     tabPanel("Sleep 🛏️",sleepScreen),
+    tabPanel("Times of sleep",timesOfSleepScreen),
     tabPanel("Steps 👣️", stepsScreen),
     tabPanel("Hydration 🥛", hydrationScreen),
     tabPanel("Time outdoors ⛰️", timeOutdoorsScreen),
@@ -404,12 +420,12 @@ if (interactive()) {
               y = ~sleepStartHour, 
               z = ~Frequency, 
               type = "heatmap",
-              hovertemplate = '<b>Osoba:</b> %{x}<br><b>Godzina rozpoczęcia snu:</b> %{y}<br><b>Frekwencja:</b> %{z}<extra></extra>',
+              hovertemplate = '<b>Osoba:</b> %{x}<br><b>Godzina rozpoczęcia snu:</b> %{y}<br><b>Frequency:</b> %{z}<extra></extra>',
               colorscale = "Reds") %>%
         layout(
-          title = "Start snu",
-          xaxis = list(title = "Osoba"),
-          yaxis = list(title = "Godzina rozpoczęcia snu"),
+          title = "Start of the sleep",
+          xaxis = list(title = "Person"),
+          yaxis = list(title = "Hour of going to sleep"),
           hoverlabel = list(
             namelength = 20,    
             align = "left",          
@@ -425,12 +441,12 @@ if (interactive()) {
               z = ~Frequency, 
               type = "heatmap", 
               colorscale = "Reds",
-              hovertemplate = '<b>Osoba:</b> %{x}<br><b>Godzina zakończenia snu:</b> %{y}<br><b>Frekwencja:</b> %{z}<extra></extra>',
+              hovertemplate = '<b>Osoba:</b> %{x}<br><b>Hour of waking up:</b> %{y}<br><b>Frequency:</b> %{z}<extra></extra>',
               colorbar = list(title = "Frekwencja")) %>%
         layout(
-          title = "Koniec snu",
-          xaxis = list(title = "Osoba"),
-          yaxis = list(title = "Godzina zakończenia snu"),
+          title = "End of the sleep",
+          xaxis = list(title = "Person"),
+          yaxis = list(title = "Hour of waking up"),
           hoverlabel = list(
             namelength = 20,    
             align = "left",           
@@ -452,7 +468,7 @@ if (interactive()) {
         ) +
         labs(title = "Amount of steps taken each day",
              x = "Date",
-             y = "Amount of steps taken")
+             y = "Amount of steps taken") + scale_fill_manual(values=name_colors)
     )
     
     output$steps_Barplot <- renderPlot(
@@ -464,7 +480,7 @@ if (interactive()) {
         scale_y_continuous(expand = expansion(mult = c(0, 0)), labels = label_comma()) +
         labs(title = paste("Sum of steps taken between ", input$daterange[1]," and ", input$daterange[2]),
              x = "Person",
-             y = "Sum of steps taken")
+             y = "Sum of steps taken") + scale_fill_manual(values=name_colors)
     )
     
     ### Time outdoors
@@ -592,21 +608,9 @@ if (interactive()) {
           panel.grid.major.y = element_blank(),
           panel.grid.minor.y = element_blank(),
           panel.background = element_rect(fill = "white"),
-          axis.ticks = element_blank())
+          axis.ticks = element_blank()) + scale_fill_manual(values=name_colors)
     })
     
-    
-    # output$distPlot <- renderPlot({
-    #   # generate bins based on input$bins from ui.R
-    #   x    <- faithful[, 2]
-    #   bins <- seq(min(x), max(x), length.out = input$bins + 1)
-    #   
-    #   # draw the histogram with the specified number of bins
-    #   hist(x, breaks = bins, col = 'darkgray', border = 'white',
-    #        xlab = 'Waiting time to next eruption (in mins)',
-    #        main = 'Histogram of waiting times')
-    # })
-    # 
     
     output$drinks_Barplot <- renderPlot(
       hydration_data %>% 
@@ -616,7 +620,7 @@ if (interactive()) {
         scale_y_continuous(expand = expansion(mult = c(0, 0))) +
         theme(
           axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)
-        ) 
+        )  + scale_fill_manual(values=name_colors)
     )
     
     output$water_Barplot <- renderPlot(
@@ -625,7 +629,7 @@ if (interactive()) {
         scale_y_continuous(expand = expansion(mult = c(0, 0))) +
         theme(
           axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)
-        )
+        ) + scale_fill_manual(values=name_colors)
     )
   }
   

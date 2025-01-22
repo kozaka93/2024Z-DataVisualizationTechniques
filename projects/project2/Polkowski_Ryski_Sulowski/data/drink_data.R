@@ -12,13 +12,13 @@ library(readxl)
 library(ggplot2)
 library(plotly)
 library(dplyr)
-drink_data <- read_excel("TWD 2.xlsx", sheet = "Drinks",
+drink_data <- read_excel("data/TWD 2.xlsx", sheet = "Drinks",
                       col_types = c("text", "numeric", "text", 
                                       "text", "date", "skip"))
 
 
 # View(drink_data)
-drink_categories <- read_excel("TWD 2.xlsx", sheet = "Drinks",
+drink_categories <- read_excel("data/TWD 2.xlsx", sheet = "Drinks",
                       col_types = c("skip", "skip", "skip",
                                       "skip", "skip", "text"), n_max = 6)
 # View(drink_categories)
