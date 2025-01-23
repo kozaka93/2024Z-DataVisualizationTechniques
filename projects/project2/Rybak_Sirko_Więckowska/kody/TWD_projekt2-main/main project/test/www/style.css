@@ -1,0 +1,77 @@
+body{
+  background-color: #1D1B56;
+  color: white;
+}
+#margines{
+  height: 50px;
+  width = 100px;
+}
+.cube-container-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cube-container {
+    width: 150px;
+    height: 150px;
+    perspective: 600px;
+    margin: 50px 50px 50px 50px;
+    transition: transform 0.5s ease;
+}
+.text_container{
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center center 0px;
+    -webkit-transform-origin: center center 0px;
+     animation: rotateCube 10s linear infinite;  
+    cursor: pointer;
+}
+
+@keyframes rotateCube {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.face {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 204, 0, 0.6);
+    border: 1px solid #ecf0f1;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s, background 0.5s;
+}
+
+/* Spowolnienie obrotu przy najechaniu */
+
+.cube-container:hover {
+    transform: scale(1.35); /* Powiększenie sześcianu */
+    z-index: 1000; /* Umieszczenie na wierzchu */
+    position: relative; /* Aby z-index działał, ustawiamy pozycję na relative */
+}
+.cube-container:hover .face {
+    background: rgba(204, 143, 0, 0.6); /* Nowy kolor podczas najechania */
+}
+.face:nth-child(1) { transform: rotateY(0deg) translateZ(75px); }   /* Front */
+.face:nth-child(2) { transform: rotateY(180deg) translateZ(75px); } /* Back */
+.face:nth-child(3) { transform: rotateY(90deg) translateZ(75px); }  /* Right */
+.face:nth-child(4) { transform: rotateY(-90deg) translateZ(75px); } /* Left */
+.face:nth-child(5) { transform: rotateX(90deg) translateZ(75px); }  /* Top */
+.face:nth-child(6) { transform: rotateX(-90deg) translateZ(75px); } /* Bottom */
