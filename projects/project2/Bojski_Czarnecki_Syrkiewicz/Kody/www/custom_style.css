@@ -1,0 +1,328 @@
+:root {
+  --g: #c89b3c;
+  --gold_b: #f7bb45;
+  --wh: #f0e6d2;
+  --bg: #181d24;
+  --bg_d: #010a12;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg_d);
+  font-family: "Spiegel";
+  font-size: 16pt;
+  line-height: 20pt;
+  color: var(--g);
+  text-rendering: optimizelegibility;
+  cursor: url("cursor.png"), auto;
+}
+
+.text-img {
+  align: center;
+  background-color: var(--bg) !important;
+  color: var(--wh) !important;
+  font-family: "Beaufort";
+  font-size: 18pt;
+  line-height: 21pt;
+  padding: 10px;
+}
+
+.placeholder{
+  height: 30px;
+}
+
+a,
+button,
+[role="button"] {
+  cursor: url("cursor-pointer.png"), auto;
+}
+
+label {
+  cursor: url("cursor.png"), auto;
+}
+
+.js-plotly-plot .plotly,
+.js-plotly-plot .plotly div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Spiegel";
+}
+
+.container-fluid {
+  display: inherit;
+  width: 100%;
+}
+
+.checkbox {
+  color: var(--gold_b);
+cursor: url("cursor-pointer.png"), auto;
+}
+
+.checkbox label, .radio label {
+  cursor: url("cursor-pointer.png"), auto;
+}
+
+.custom-checkbox input[type="checkbox"]:before {
+  border: 2px solid;
+  color: var(--wh);
+  background-color: var(--bg_d);
+  content: "";
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 15px;
+cursor: url('cursor-pointer.png'), auto;
+}
+
+.custom-checkbox input[type="checkbox"]:checked:after {
+  color: var(-g);
+  background-color: var(--bg_d);
+    content: "✓";
+  font-size: medium;
+  vertical-align: middle;
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 15px;
+cursor: url('cursor-pointer.png'), auto;
+}
+
+
+
+
+.selectize-input.items.full.has-options.has-items {
+  font-family: "Beaufort";
+  font-size: 16pt;
+  font-weight: bold;
+  background-image: var(--bg);
+  color: var(--wh);
+border-image-slice: 1;
+  border-width: 0px;
+border-radius: 0px;
+  border-image: var(--g);
+box-shadow: inset 0 0 2px var(--bg);
+}
+
+.selectize-dropdown [data-selectable].option {
+  opacity: 1;
+  cursor: url("cursor-pointer.png"), auto;
+background-image: var(--bg);
+background: var(--bg);
+}
+
+.updatemenu-button,
+.selectize-input,
+.selectize-control.single .selectize-input,
+.selectize-control.single .selectize-input input
+.selectize-control.single .selectize-input input-active {
+  cursor: url("cursor-pointer.png"), auto;
+background-image: var(--bg_d);
+background: var(--bg);
+border-color: var(--g) var(--g) var(--g) var(--g); 
+}
+
+.selectize-input,.selectize-control.single .selectize-input.input-active {
+    background: var(--bg_d);
+    cursor: text;
+    display: inline-block
+}
+
+.updatemenu-button,
+.selectize-input.items.full.has-options.has-items:active {
+  color: var(--wh);
+}
+
+.selectize-input.items.full.has-options.has-items:hover {
+  cursor: url("cursor-pointer.png"), auto;
+background-image: var(--bg);
+box-shadow: inset 0 0 2px var(--bg);
+}
+
+.selectize-dropdown .selected {
+  cursor: url("cursor-pointer.png"), auto;
+background: var(--bg);
+color: var(--wh)
+}
+
+.selectize-dropdown .active {
+  background: var(--bg);
+  color: var(--g);
+}
+
+.selectize-control.single .selectize-input:not(.no-arrow):after {
+  border-color: var(--g) transparent transparent transparent;
+background: var(--bg);
+}
+
+.selectize-control.single
+  .selectize-input:not(.no-arrow).dropdown-active:after {
+  border-color: transparent transparent var(--g) transparent;
+background: var(--bg)
+}
+
+.option {
+  font-family: "Beaufort";
+  background: var(--bg);
+  color: var(--wh);
+}
+
+.selectize-dropdown-content {
+  background-image: var(--bg);
+box-shadow: inset 0 0 2px var(--bg);
+}
+
+.selectize-dropdown,
+.selectize-dropdown.form-control {
+  border-image: var(--g);
+background: var(--bg)
+font-family: 'Beaufort'; color: #f0e6d2; font-style: italic; font-weight: bold;
+border-image-slice: 1;
+  border-width: 0px;
+border-radius: 0px;
+}
+
+.control-label {
+  font-family: "Beaufort";
+  font-size: 20pt;
+  line-height: 22pt;
+  color: #c89b3c;
+}
+
+rect {
+  cursor: url("cursor-pointer.png"), auto !important;
+}
+
+.slider-custom .irs-bar {
+  background-color: #f0e6d2;
+  border-top-color: #f0e6d2;
+  border-bottom-color: #f0e6d2;
+  cursor: url('cursor-pointer.png'), auto !important;
+}
+.slider-custom .irs-from, .slider-custom .irs-to, .slider-custom .irs-single {
+  background-color: #c89b3c;
+  cursor: url('cursor-pointer.png'), auto !important;
+}
+.slider-custom .irs-handle {
+  cursor: url('cursor-pointer.png'), auto !important;
+  background-color: #c89b3c;
+  border-color: #c89b3c;
+}
+.slider-custom .irs-grid-text {
+font-family: 'Beaufort'; color: #f0e6d2; bottom: 1px; z-index: 1;
+cursor: url('cursor-pointer.png'), auto;
+}
+
+
+
+
+
+
+
+.app-title {
+  display: ruby-text !important;
+  font-family: "Beaufort";
+  font-size: 43pt;
+  line-height: 45pt;
+  color: var(--gold_b);
+text-align: center;
+white-space: nowrap;
+}
+
+.app-title-icon {
+  height: 50;
+vertical-align: middle;
+}
+
+
+.navbar {
+  display: flex;
+  background-color: var(--bg_d);
+  height: 80px;
+}
+
+.navbar-header {
+  display: flex;
+}
+
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  align-items: center;
+  padding: 0px 16px;
+  width: 100%;
+}
+
+.navbar-nav > li > a {
+  color: var(--gold_b);
+  font-family: "Beaufort";
+  width: fit-content;
+  font-size: 16pt;
+  border-top: 2px solid var(--g);
+  border-left: 2px solid var(--g);
+}
+
+.navbar-nav > li > a:hover {
+  color: var(--wh) !important;
+  border-top: 2px solid var(--g);
+  border-left: 2px solid var(--g);
+  transition: 0.3s;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: var(--g);
+  background-image: linear-gradient(to right, var(--g), var(--bg_d));
+  border-left: 2px solid var(--g);
+  border-top: 2px solid var(--g);
+  transition: 0.3s;
+}
+
+.navbar-brand > a {
+  font-family: "Beaufort";
+  font-size: 30pt;
+  line-height: 32pt;
+  color: var(--gold_b) !important;
+  transition: 0.3s;
+}
+
+.navbar-brand > a:hover {
+  color: var(--g)
+  transition: 0.3s;
+}
+
+.dec-l{
+  display: flex;
+  height: 90%;
+  width: 90%;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px;
+  padding: 10px;
+}
+
+.dec-s{
+  display: flex;
+  width: 80%;
+  height: 80%;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px;
+  padding: 10px;
+}
+
+
+
+
