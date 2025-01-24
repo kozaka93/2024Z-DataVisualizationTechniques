@@ -139,7 +139,7 @@ Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabas
     <td>15</td>
     <td>01-23</td>
     <td>Presentation of P2 (part 1)</td>
-    <td>Python: EDA</td>
+    <td><a href="https://github.com/kozaka93/2024Z-DataVisualizationTechniques/tree/main/labs/lab15">Python: EDA</a></td>
     <td>Presentation of P2 (part 2)</td>
     <td>P2 (24p)</td>
   </tr>
