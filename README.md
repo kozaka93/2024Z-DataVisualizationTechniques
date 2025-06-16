@@ -1,6 +1,6 @@
 # Data Visualization Techniques
 
-Winter Semester 2023/24 [@kozaka93](https://github.com/kozaka93) [@maciejchrabaszcz ](https://github.com/maciejchrabaszcz ) [@HubertR21](https://github.com/HubertR21) [@woznicak](https://github.com/woznicak)
+Winter Semester 2024/25 [@kozaka93](https://github.com/kozaka93) [@maciejchrabaszcz ](https://github.com/maciejchrabaszcz ) [@HubertR21](https://github.com/HubertR21) [@woznicak](https://github.com/woznicak)
 
 *Materials for courses conducted at the Faculty of Mathematics and Information Sciences, Warsaw University of Technology.*
 
